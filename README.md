@@ -13,6 +13,7 @@ I source my papers from the following places:
 - [X.com](https://x.com/i/lists/1653485531546767361)
 - [PapersWithCode](https://paperswithcode.com/)
 - [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week)
+- [EmergentMind](https://www.emergentmind.com/)
 - [HuggingFace](https://huggingface.co/papers)
 - [ArxivSanity](http://www.arxiv-sanity.com/)
 
