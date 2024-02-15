@@ -14,6 +14,7 @@ raw notes
 
 **Twitch:**
 
+
 ### Blog
 
 [blog.md](blog.md)
@@ -21,6 +22,8 @@ raw notes
 **Substack:**
 
 **ResearchHub:**
+
+**Reddit:**
 
 
 ### Vertical Video
@@ -33,6 +36,6 @@ hashtags
 
 **TikTok:**
 
-### Reddit
 
+### Raw
 
