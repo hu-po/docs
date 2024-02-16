@@ -28,6 +28,7 @@ https://x.com/gabor/status/1758282791547232482
 https://arxiv.org/pdf/2402.08609.pdf
 https://arxiv.org/pdf/2402.09727.pdf
 https://arxiv.org/pdf/2402.10210.pdf
+https://www.reddit.com/r/aivideo/s/Rxnjud9UwI
 
 ## Notes
 
