@@ -40,3 +40,18 @@ https://arxiv.org/abs/2402.06196
 https://arxiv.org/abs/2402.07896
 https://arxiv.org/abs/2402.07872
 https://youtu.be/0FazXENkQms?si=1ea0K6319mvILz8W
+https://openai.com/research/video-generation-models-as-world-simulators
+https://arxiv.org/pdf/2402.08268.pdf
+
+gaussian splat statistics
+https://arxiv.org/pdf/2402.04362.pdf
+https://arxiv.org/pdf/2312.12337.pdf
+https://arxiv.org/pdf/2310.16818.pdf
+
+ai agents
+https://arxiv.org/pdf/2402.05929.pdf
+https://arxiv.org/pdf/2402.05120.pdf
+https://arxiv.org/pdf/2402.07872.pdf
+
+sora vs gemini
+https://x.com/gabor/status/1758282791547232482
