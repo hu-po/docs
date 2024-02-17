@@ -30,6 +30,7 @@
 - https://x.com/n_karaev/status/1758554094132662636?s=20
 - https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf
 - https://arxiv.org/pdf/2310.01889.pdf
+- https://arxiv.org/pdf/2305.19370.pdf
 
 - sora is japanese for sky?
 - https://www.reddit.com/r/aivideo/s/Rxnjud9UwI
