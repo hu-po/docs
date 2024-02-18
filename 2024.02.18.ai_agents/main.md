@@ -28,6 +28,7 @@
 - https://arxiv.org/pdf/2402.07939.pdf
 - https://arxiv.org/pdf/2402.07456.pdf
 - https://arxiv.org/pdf/2402.10200.pdf
+- https://medium.com/mlearning-ai/softmax-temperature-5492e4007f71
 
 ## Notes
 
