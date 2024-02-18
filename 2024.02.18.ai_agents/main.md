@@ -26,6 +26,8 @@
 - https://arxiv.org/pdf/2402.05120.pdf
 - https://arxiv.org/pdf/2402.07872.pdf
 - https://arxiv.org/pdf/2402.07939.pdf
+- https://arxiv.org/pdf/2402.07456.pdf
+- https://arxiv.org/pdf/2402.10200.pdf
 
 ## Notes
 
