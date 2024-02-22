@@ -1,0 +1,9 @@
+https://arxiv.org/pdf/2402.13753.pdf
+https://arxiv.org/pdf/2402.12479.pdf
+
+Neural Network Diffusion
+https://arxiv.org/pdf/2402.13144.pdf
+
+multi-modal datasets
+https://arxiv.org/pdf/2402.13232.pdf
+https://arxiv.org/pdf/2402.13349.pdf
