@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Neural Network Diffusion
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/dBYp1GI_JW0
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1djxXNXoEwdGZ
 
 **Twitch:**
 
@@ -22,7 +22,7 @@
 
 ### References
 
-references
+https://arxiv.org/pdf/2402.13144.pdf
 
 ## Notes
 
