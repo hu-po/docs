@@ -1,12 +1,10 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# LongRoPE
 
-### Links
+**YouTube:** https://youtube.com/live/PFxi6SmozZ4
 
-**YouTube:**
-
-**X:**
+**X:** https://twitter.com/i/broadcasts/1BRJjPkYWzvKw
 
 **Twitch:**
 
@@ -22,7 +20,7 @@
 
 ### References
 
-references
+https://arxiv.org/pdf/2402.13753.pdf
 
 ## Notes
 

@@ -24,6 +24,8 @@
 
 https://arxiv.org/pdf/2402.13144.pdf
 
+https://www.emergentmind.com/papers/2402.13144
+
 ## Notes
 
 notes
