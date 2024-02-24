@@ -27,6 +27,7 @@ https://www.emergentmind.com/papers/2402.13144
 
 https://arxiv.org/pdf/2305.02463.pdf
 https://github.com/NUS-HPC-AI-Lab/Neural-Network-Diffusion/tree/main
+https://tensorspace.org/html/playground/resnet50.html
 
 ## Notes
 
