@@ -42,6 +42,9 @@ https://arxiv.org/pdf/2209.12892.pdf
 
 https://arxiv.org/abs/2303.17015
 
+CNNs and MLPs have a type of "spatial invariance" similar to images and thus you can use augmentation techniques.
+Diffusion can be done directly in model parameter space, but also a latent parameter space. Only simple versions of both are shown.
+
 ## Notes
 
 notes
