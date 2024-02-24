@@ -23,15 +23,22 @@
 ### References
 
 https://arxiv.org/pdf/2402.13144.pdf
+
 https://www.emergentmind.com/papers/2402.13144
+
 https://arxiv.org/pdf/2305.02463.pdf
+
 https://github.com/NUS-HPC-AI-Lab/Neural-Network-Diffusion/tree/main
+
 https://tensorspace.org/html/playground/resnet50.html
 
-Lottery Ticket, Quantization, Sparsification
 https://arxiv.org/abs/1803.03635
+
 https://arxiv.org/pdf/2402.04291.pdf
+
 https://arxiv.org/pdf/2401.15024.pdf
+
+https://arxiv.org/pdf/2209.12892.pdf
 
 ## Notes
 
