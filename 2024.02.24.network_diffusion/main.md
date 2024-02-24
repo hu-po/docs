@@ -23,8 +23,10 @@
 ### References
 
 https://arxiv.org/pdf/2402.13144.pdf
-
 https://www.emergentmind.com/papers/2402.13144
+
+https://arxiv.org/pdf/2305.02463.pdf
+https://github.com/NUS-HPC-AI-Lab/Neural-Network-Diffusion/tree/main
 
 ## Notes
 
