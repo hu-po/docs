@@ -36,6 +36,9 @@ https://bbycroft.net/llm
 
 https://assets.tivadardanka.com/2022_11_the_dot_product_11_aec50c8a30.png
 
+https://en.wikipedia.org/wiki/Dot_product
+
+Will we eventually learn these rather than hand design these?
 
 ## Notes
 
