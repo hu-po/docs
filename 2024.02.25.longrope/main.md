@@ -40,6 +40,14 @@ https://en.wikipedia.org/wiki/Dot_product
 
 Will we eventually learn these rather than hand design these?
 
+Position embeddings are the new Gabor filters
+
+https://qph.cf2.quoracdn.net/main-qimg-b662a8fc3be57f76c708c171fcf29960
+
+https://miro.medium.com/v2/resize:fit:611/1*qciBJK9ofqkMLnyJrRAQQQ.png
+
+https://i.stack.imgur.com/bN2iA.png
+
 ## Notes
 
 notes
