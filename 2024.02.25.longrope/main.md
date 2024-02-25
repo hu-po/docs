@@ -21,6 +21,8 @@
 ### References
 
 https://arxiv.org/pdf/2402.13753.pdf
+https://arxiv.org/pdf/2306.15595.pdf
+https://arxiv.org/pdf/2104.09864.pdf
 
 ## Notes
 
