@@ -48,6 +48,8 @@ https://miro.medium.com/v2/resize:fit:611/1*qciBJK9ofqkMLnyJrRAQQQ.png
 
 https://i.stack.imgur.com/bN2iA.png
 
+http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+
 ## Notes
 
 notes
