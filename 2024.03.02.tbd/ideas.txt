@@ -26,3 +26,12 @@ https://x.com/mckaywrigley/status/1762175776726663267?s=20
 https://github.com/trueagi-io/hyperon-experimental
 https://github.com/opencog/opencog
 https://arxiv.org/abs/2402.07148
+
+
+https://arxiv.org/pdf/2402.17762.pdf
+https://arxiv.org/pdf/2402.17139.pdf
+https://arxiv.org/pdf/2312.07504.pdf
+
+Sora deep dive?
+https://arxiv.org/pdf/2402.17177.pdf
+https://arxiv.org/pdf/2402.17403.pdf
