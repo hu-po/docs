@@ -35,3 +35,13 @@ https://arxiv.org/pdf/2312.07504.pdf
 Sora deep dive?
 https://arxiv.org/pdf/2402.17177.pdf
 https://arxiv.org/pdf/2402.17403.pdf
+
+https://arxiv.org/pdf/2402.03099v1.pdf
+https://arxiv.org/pdf/2402.15151v1.pdf
+https://arxiv.org/pdf/2402.13616v1.pdf
+
+Gaussian Splat stream
+https://arxiv.org/pdf/2402.17427.pdf
+
+1Bit LLMs popping off right now
+https://www.emergentmind.com/papers/2402.17764
