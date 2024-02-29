@@ -45,3 +45,6 @@ https://arxiv.org/pdf/2402.17427.pdf
 
 1Bit LLMs popping off right now
 https://www.emergentmind.com/papers/2402.17764
+
+Genie interactive experiments, Jim Fan says this is best paper 2024
+https://arxiv.org/pdf/2402.15391.pdf
