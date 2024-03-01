@@ -15,6 +15,7 @@ I source my papers from the following places:
 - [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week)
 - [EmergentMind](https://www.emergentmind.com/)
 - [HuggingFace](https://huggingface.co/papers)
+- [ML-Papers-of-the-Week](https://github.com/dair-ai/ML-Papers-of-the-Week)
 - [ArxivSanity](http://www.arxiv-sanity.com/)
 
 ### Citation
