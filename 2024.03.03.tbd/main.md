@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Humanoid Locomotion
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/LLprTlQsIJc
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1zqJVqVRbAmGB
 
 **Twitch:**
 
@@ -22,7 +22,8 @@
 
 ### References
 
-references
+Humanoid Locomotion as Next Token Prediction
+https://arxiv.org/pdf/2402.19469.pdf
 
 ## Notes
 

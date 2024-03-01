@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Genie World Model
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/wSPLfoq5w68
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1rmxPMRqrNVKN
 
 **Twitch:**
 
@@ -22,7 +22,8 @@
 
 ### References
 
-references
+Genie: Generative Interactive Environments
+https://arxiv.org/pdf/2402.15391.pdf
 
 ## Notes
 
