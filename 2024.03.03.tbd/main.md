@@ -25,6 +25,9 @@
 Humanoid Locomotion as Next Token Prediction
 https://arxiv.org/pdf/2402.19469.pdf
 
+
+https://www.reddit.com/r/singularity/comments/1b3s7k4/unitree_h1_humanoid_robot_breaks_the_world_record/
+
 ## Notes
 
 notes
