@@ -35,6 +35,8 @@ https://miro.medium.com/v2/resize:fit:1152/1*L-VCpM3FfJ7hqlbEfwFJ9g.gif
 
 https://arxiv.org/pdf/2001.02908.pdf
 
+https://worldmodels.github.io/
+
 ## Notes
 
 notes
