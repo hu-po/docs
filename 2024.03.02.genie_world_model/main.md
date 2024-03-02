@@ -39,6 +39,8 @@ https://worldmodels.github.io/
 
 https://miro.medium.com/v2/resize:fit:1400/1*ReJYLqkRu7IU5k9O0ePk1w.png
 
+https://machinelearningmastery.com/wp-content/uploads/2019/06/Example-of-How-Increased-Distortion-of-an-Image-Correlates-with-High-FID-Score.png
+
 ## Notes
 
 notes
