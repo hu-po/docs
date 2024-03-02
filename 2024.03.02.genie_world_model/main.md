@@ -25,6 +25,10 @@
 Genie: Generative Interactive Environments
 https://arxiv.org/pdf/2402.15391.pdf
 
+https://arxiv.org/pdf/1711.00937.pdf
+
+https://arxiv.org/pdf/2001.02908.pdf
+
 ## Notes
 
 notes
