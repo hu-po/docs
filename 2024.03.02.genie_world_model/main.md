@@ -25,6 +25,8 @@
 Genie: Generative Interactive Environments
 https://arxiv.org/pdf/2402.15391.pdf
 
+https://arxiv.org/pdf/1803.10122.pdf
+
 https://arxiv.org/pdf/1711.00937.pdf
 
 https://lilianweng.github.io/posts/2018-08-12-vae/autoencoder-architecture.png
