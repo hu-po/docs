@@ -37,6 +37,8 @@ https://arxiv.org/pdf/2001.02908.pdf
 
 https://worldmodels.github.io/
 
+https://miro.medium.com/v2/resize:fit:1400/1*ReJYLqkRu7IU5k9O0ePk1w.png
+
 ## Notes
 
 notes
