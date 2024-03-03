@@ -38,6 +38,14 @@ https://twitter.com/Tesla_Optimus?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%
 
 https://sanctuary.ai/
 
+https://fl0under.github.io/robotics-notes/images/inverse-kinematics-02-solutions.PNG
+
+https://cdn0.slideserve.com/814485/simple-pendulum-n.jpg
+
+https://www.ubtrobot.com/#
+
+https://shop.unitree.com/products/unitree-h1
+
 ## Notes
 
 notes
