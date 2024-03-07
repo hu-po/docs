@@ -14,8 +14,6 @@
 
 **ResearchHub:**
 
-**YouTube:**
-
 **TikTok:**
 
 **Reddit:**

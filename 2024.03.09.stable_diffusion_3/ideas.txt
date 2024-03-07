@@ -8,3 +8,6 @@ Quantum
 https://arxiv.org/abs/2403.01775
 https://arxiv.org/abs/2403.00910
 https://arxiv.org/abs/2203.01340
+
+Stable Diffusion 3
+https://arxiv.org/pdf/2403.03206.pdf
