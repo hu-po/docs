@@ -1,4 +1,7 @@
 https://arxiv.org/abs/2402.17810
+https://arxiv.org/pdf/2403.03507.pdf
+https://arxiv.org/pdf/2403.03870.pdf
+https://arxiv.org/pdf/2403.03950.pdf
 
 
 3D
@@ -8,6 +11,7 @@ Quantum
 https://arxiv.org/abs/2403.01775
 https://arxiv.org/abs/2403.00910
 https://arxiv.org/abs/2203.01340
+https://arxiv.org/pdf/2311.04186.pdf
 
 Stable Diffusion 3
 https://arxiv.org/pdf/2403.03206.pdf
