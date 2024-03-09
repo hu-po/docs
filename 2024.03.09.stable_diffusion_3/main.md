@@ -24,6 +24,9 @@ https://stability.ai/news/stable-diffusion-3-research-paper
 
 https://arxiv.org/pdf/2403.03206.pdf
 
+
+https://x.com/hashtag/SD3
+
 ## Notes
 
 notes
