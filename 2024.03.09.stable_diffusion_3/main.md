@@ -24,8 +24,9 @@ https://stability.ai/news/stable-diffusion-3-research-paper
 
 https://arxiv.org/pdf/2403.03206.pdf
 
-
 https://x.com/hashtag/SD3
+
+https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
 
 ## Notes
 
