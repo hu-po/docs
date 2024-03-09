@@ -30,6 +30,8 @@ https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
 
 https://sander.ai/2024/02/28/paradox.html
 
+https://www.researchgate.net/profile/Daniel-Vieira-20/publication/333221048/figure/fig3/AS:760646077530114@1558363565757/A-vector-field-visualized-with-two-different-techniques.ppm
+
 ## Notes
 
 notes
