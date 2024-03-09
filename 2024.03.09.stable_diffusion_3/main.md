@@ -34,6 +34,8 @@ https://www.researchgate.net/profile/Daniel-Vieira-20/publication/333221048/figu
 
 https://paperswithcode.com/dataset/cc12m
 
+https://www.researchgate.net/profile/Xifeng-Guo/publication/320658590/figure/fig1/AS:614154637418504@1523437284408/The-structure-of-proposed-Convolutional-AutoEncoders-CAE-for-MNIST-In-the-middle-there.png
+
 ## Notes
 
 notes
