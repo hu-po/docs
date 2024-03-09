@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# TripoSR: 3D from 2D
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/9eKmzpaPyXs
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1yoJMwDVZwOKQ
 
 **Twitch:**
 
@@ -22,7 +22,7 @@
 
 ### References
 
-references
+https://arxiv.org/pdf/2403.02151.pdf
 
 ## Notes
 
