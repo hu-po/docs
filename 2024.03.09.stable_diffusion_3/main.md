@@ -28,6 +28,8 @@ https://x.com/hashtag/SD3
 
 https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
 
+https://sander.ai/2024/02/28/paradox.html
+
 ## Notes
 
 notes
