@@ -24,6 +24,10 @@
 
 https://arxiv.org/pdf/2403.02151.pdf
 
+https://arxiv.org/pdf/2311.04400.pdf
+
+https://huggingface.co/spaces/stabilityai/TripoSR
+
 ## Notes
 
 notes
