@@ -28,6 +28,8 @@ https://arxiv.org/pdf/2311.04400.pdf
 
 https://huggingface.co/spaces/stabilityai/TripoSR
 
+https://arxiv.org/pdf/2112.07945.pdf
+
 codebase summary with Claude
 codebase summary with GPT
 
