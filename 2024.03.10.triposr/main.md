@@ -30,6 +30,8 @@ https://huggingface.co/spaces/stabilityai/TripoSR
 
 https://arxiv.org/pdf/2112.07945.pdf
 
+https://richzhang.github.io/PerceptualSimilarity/
+
 codebase summary with Claude
 codebase summary with GPT
 
