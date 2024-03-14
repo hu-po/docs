@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Video Mamba vs Motion Mamba
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/rzXjKcqkjxM
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1MYGNoYzLWwJw
 
 **Twitch:**
 
@@ -20,7 +20,9 @@
 
 ### References
 
-references
+https://arxiv.org/pdf/2403.06977.pdf
+
+https://arxiv.org/pdf/2403.07487.pdf
 
 ## Notes
 
