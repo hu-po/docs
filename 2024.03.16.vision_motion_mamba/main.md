@@ -24,6 +24,8 @@ https://arxiv.org/pdf/2403.06977.pdf
 
 https://arxiv.org/pdf/2403.07487.pdf
 
+https://en.wikipedia.org/wiki/Zero-order_hold#/media/File:Zeroorderhold.signal.svg
+
 ## Notes
 
 notes
