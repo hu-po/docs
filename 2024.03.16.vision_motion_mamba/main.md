@@ -31,6 +31,10 @@ https://www.youtube.com/watch?v=oSCRZkSQ1CE
 Motion Synthesis Benchmarks
 https://paperswithcode.com/task/motion-synthesis
 
+
+Feature Hierarchy
+https://www.researchgate.net/profile/Sepp-Hochreiter/publication/285593237/figure/fig3/AS:324780386471943@1454445086972/Hierarchical-composition-of-complex-features-DNNs-build-a-feature-from-simpler-parts-A.png
+
 ## Notes
 
 notes
