@@ -26,6 +26,11 @@ https://arxiv.org/pdf/2403.07487.pdf
 
 https://en.wikipedia.org/wiki/Zero-order_hold#/media/File:Zeroorderhold.signal.svg
 
+https://www.youtube.com/watch?v=oSCRZkSQ1CE
+
+Motion Synthesis Benchmarks
+https://paperswithcode.com/task/motion-synthesis
+
 ## Notes
 
 notes
