@@ -26,6 +26,8 @@ https://arxiv.org/pdf/2403.09611.pdf
 Simple and Scalable Strategies to Continually Pre-train Large Language Models
 https://arxiv.org/pdf/2403.08763.pdf
 
+https://arxiv.org/abs/2312.06742
+
 ## Notes
 
 notes
