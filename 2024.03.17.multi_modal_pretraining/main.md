@@ -38,6 +38,9 @@ https://www.researchgate.net/publication/333593451/figure/fig2/AS:76589026196684
 DFN 5B
 https://huggingface.co/apple/DFN5B-CLIP-ViT-H-14
 
+AXLearn
+https://github.com/apple/axlearn
+
 ## Notes
 
 notes
