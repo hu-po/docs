@@ -1,0 +1,14 @@
+SV3D
+https://arxiv.org/pdf/2403.12008.pdf
+
+SlimmeRF: Slimmable Radiance Fields
+https://arxiv.org/pdf/2312.10034.pdf
+
+Simple and Scalable Strategies to Continually Pre-train Large Language Models
+https://arxiv.org/pdf/2403.08763.pdf
+
+LLM Agents can Autonomously Hack Websites
+https://arxiv.org/pdf/2402.06664.pdf
+
+NON-NEGATIVE CONTRASTIVE LEARNING
+https://arxiv.org/pdf/2403.12459.pdf
