@@ -1,6 +1,3 @@
-SV3D
-https://arxiv.org/pdf/2403.12008.pdf
-
 SlimmeRF: Slimmable Radiance Fields
 https://arxiv.org/pdf/2312.10034.pdf
 
@@ -12,3 +9,35 @@ https://arxiv.org/pdf/2402.06664.pdf
 
 NON-NEGATIVE CONTRASTIVE LEARNING
 https://arxiv.org/pdf/2403.12459.pdf
+
+Vid2Robot: End-to-end Video-conditioned Policy Learning with Cross-Attention Transformers
+https://arxiv.org/pdf/2403.12943.pdf
+
+Evolutionary Optimization of Model Merging Recipes
+https://arxiv.org/pdf/2403.13187.pdf
+
+Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation
+https://arxiv.org/pdf/2403.12015.pdf
+
+MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data
+https://arxiv.org/pdf/2403.11207.pdf
+
+GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians
+https://arxiv.org/pdf/2402.10483v1.pdf
+
+Text-to-3D Stream
+
+VFusion3D: Learning Scalable 3D Generative Models from Video Diffusion Models
+https://arxiv.org/pdf/2403.12034.pdf
+
+SV3D
+https://arxiv.org/pdf/2403.12008.pdf
+
+GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation
+https://arxiv.org/pdf/2403.12365.pdf
+
+Generic 3D Diffusion Adapter Using Controlled Multi-View Editing
+https://arxiv.org/pdf/2403.12032.pdf
+
+Compress3D: a Compressed Latent Space for 3D Generation from a Single Image
+https://arxiv.org/pdf/2403.13524.pdf
