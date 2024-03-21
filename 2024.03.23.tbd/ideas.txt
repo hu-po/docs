@@ -22,10 +22,13 @@ https://arxiv.org/pdf/2403.12015.pdf
 MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data
 https://arxiv.org/pdf/2403.11207.pdf
 
+Neuralink
+https://neuralink.com/blog/understanding-preclinical-research-at-neuralink/
+
 GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians
 https://arxiv.org/pdf/2402.10483v1.pdf
 
-Text-to-3D Stream
+Generative 3D
 
 VFusion3D: Learning Scalable 3D Generative Models from Video Diffusion Models
 https://arxiv.org/pdf/2403.12034.pdf
@@ -41,3 +44,9 @@ https://arxiv.org/pdf/2403.12032.pdf
 
 Compress3D: a Compressed Latent Space for 3D Generation from a Single Image
 https://arxiv.org/pdf/2403.13524.pdf
+
+LN3Diff: Scalable Latent Neural Fields Diffusion for Speedy 3D Generation
+https://arxiv.org/pdf/2403.12019.pdf
+
+ComboVerse: Compositional 3D Assets Creation Using Spatially-Aware Diffusion Guidance
+https://arxiv.org/pdf/2403.12409.pdf
