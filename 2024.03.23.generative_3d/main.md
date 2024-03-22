@@ -41,6 +41,11 @@ https://arxiv.org/pdf/2403.12019.pdf
 ComboVerse: Compositional 3D Assets Creation Using Spatially-Aware Diffusion Guidance
 https://arxiv.org/pdf/2403.12409.pdf
 
+DreamReward: Text-to-3D Generation with Human Preference
+https://arxiv.org/pdf/2403.14613.pdf
+
+GRM: Large Gaussian Reconstruction Model for Efficient 3D Reconstruction and Generation
+https://arxiv.org/pdf/2403.14621.pdf
 
 ## Notes
 
