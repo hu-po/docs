@@ -32,6 +32,8 @@ https://afterimagia.pl/app/uploads/2020/09/022Korawzrokowaiinnestrukturykoroweza
 
 https://github.com/mlfoundations/open_clip
 
+https://github.com/facebookresearch/VICRegL
+
 ## Notes
 
 notes
