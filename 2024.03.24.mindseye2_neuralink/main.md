@@ -34,6 +34,8 @@ https://github.com/mlfoundations/open_clip
 
 https://github.com/facebookresearch/VICRegL
 
+https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
+
 ## Notes
 
 notes
