@@ -30,6 +30,8 @@ https://www.brainfacts.org/3d-brain#intro=false&focus=Brain-cerebral_hemisphere-
 
 https://afterimagia.pl/app/uploads/2020/09/022Korawzrokowaiinnestrukturykorowezaangazowanewwidzenie1_en-1024x883.jpg
 
+https://github.com/mlfoundations/open_clip
+
 ## Notes
 
 notes
