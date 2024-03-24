@@ -26,6 +26,10 @@ https://arxiv.org/pdf/2403.11207.pdf
 Neuralink
 https://neuralink.com/blog/understanding-preclinical-research-at-neuralink/
 
+https://www.brainfacts.org/3d-brain#intro=false&focus=Brain-cerebral_hemisphere-frontal_lobe-motor_cortex
+
+https://afterimagia.pl/app/uploads/2020/09/022Korawzrokowaiinnestrukturykorowezaangazowanewwidzenie1_en-1024x883.jpg
+
 ## Notes
 
 notes
