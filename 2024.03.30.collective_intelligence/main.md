@@ -30,6 +30,8 @@ https://arxiv.org/pdf/2306.06805.pdf
 
 https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/World_line2.svg/1000px-World_line2.svg.png
 
+https://en.wikipedia.org/wiki/Terence_McKenna
+
 ## Notes
 
 notes
