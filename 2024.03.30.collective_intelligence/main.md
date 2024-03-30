@@ -32,6 +32,8 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/World_line2.svg/1000px
 
 https://en.wikipedia.org/wiki/Terence_McKenna
 
+https://www.researchgate.net/publication/349703774/figure/fig3/AS:996748570931209@1614654786956/Tokyo-rail-network-formation-with-Physarum-polycephalum-84.ppm
+
 ## Notes
 
 notes
