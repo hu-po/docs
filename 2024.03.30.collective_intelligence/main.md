@@ -28,6 +28,8 @@ https://pbs.twimg.com/media/GJ2PdgvW4AAuz_5?format=jpg&name=900x900
 
 https://arxiv.org/pdf/2306.06805.pdf
 
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/World_line2.svg/1000px-World_line2.svg.png
+
 ## Notes
 
 notes
