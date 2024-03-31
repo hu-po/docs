@@ -36,6 +36,9 @@ Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Lang
 Mamba: Linear-Time Sequence Modeling with Selective State Spaces
 - https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf
 
+The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits
+https://arxiv.org/pdf/2402.17764.pdf
+
 ## Notes
 
 notes
