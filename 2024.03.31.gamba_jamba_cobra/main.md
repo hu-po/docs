@@ -39,6 +39,8 @@ Mamba: Linear-Time Sequence Modeling with Selective State Spaces
 The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits
 https://arxiv.org/pdf/2402.17764.pdf
 
+https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JGh_0y3ICNuA6IcnbdnvdA.gif
+
 ## Notes
 
 notes
