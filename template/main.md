@@ -21,17 +21,3 @@
 ### References
 
 references
-
-## Notes
-
-notes
-
-### Blog
-
-notes
-
-### Vertical Video
-
-title
-description
-hashtags
