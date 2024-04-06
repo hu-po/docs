@@ -38,3 +38,6 @@ Compute Graphs
 https://www.researchgate.net/publication/340457442/figure/fig4/AS:877300765712391@1586176210735/Comparison-between-a-a-static-computation-graph-in-TensorFlow-115-and-b-an.png
 https://huyenchip.com/assets/pics/compilers/13_graph_optimization.png
 https://huyenchip.com/assets/pics/compilers/8_irs.png
+
+Overfitting
+https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/Screenshot-2020-02-06-at-11.09.13.png
