@@ -34,3 +34,6 @@ https://twitter.com/gabrielpeyre/status/1334739210255835136
 
 Spherical Harmonics
 https://www.researchgate.net/profile/Jacob-Hollebon-2/publication/345372557/figure/fig1/AS:954811419725829@1604656190963/Real-part-of-a-set-of-spherical-harmonics-mapped-to-the-surface-of-a-sphere-The-colour.ppm
+
+COLMAP
+https://colmap.github.io/tutorial.html#structure-from-motion
