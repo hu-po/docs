@@ -40,3 +40,6 @@ https://colmap.github.io/tutorial.html#structure-from-motion
 
 CroCo
 https://arxiv.org/pdf/2210.10716.pdf
+
+Habitat Sim
+https://aihabitat.org/
