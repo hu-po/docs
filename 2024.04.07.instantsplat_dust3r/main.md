@@ -37,3 +37,6 @@ https://www.researchgate.net/profile/Jacob-Hollebon-2/publication/345372557/figu
 
 COLMAP
 https://colmap.github.io/tutorial.html#structure-from-motion
+
+CroCo
+https://arxiv.org/pdf/2210.10716.pdf
