@@ -28,3 +28,6 @@ https://arxiv.org/pdf/2404.07972.pdf
 
 WILBUR: Adaptive In-Context Learning for Robust and Accurate Web Agents
 https://arxiv.org/pdf/2404.05902.pdf
+
+ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models
+https://arxiv.org/abs/2404.07738
