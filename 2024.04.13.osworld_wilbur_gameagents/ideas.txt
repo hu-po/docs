@@ -1,0 +1,27 @@
+Does Transformer Interpretability Transfer to RNNs?
+https://arxiv.org/pdf/2404.05971.pdf
+
+The Origin of Information Handling
+https://arxiv.org/pdf/2404.04374.pdf
+
+LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders
+https://arxiv.org/pdf/2404.05961.pdf
+
+Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention
+https://arxiv.org/pdf/2404.07143.pdf
+
+Demonstration of logical qubits and repeated error correction with better-than-physical error rates
+https://arxiv.org/pdf/2404.02280.pdf
+
+A Survey on Large Language Model-Based Game Agents
+https://arxiv.org/pdf/2404.02039.pdf
+
+OSWORLD: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments
+https://arxiv.org/pdf/2404.07972.pdf
+
+Ferret-v2: An Improved Baseline for Referring and Grounding with Large Language Models
+https://arxiv.org/pdf/2404.07973.pdf
+
+From Words to Numbers: Your Large Language Model Is Secretly A Capable Regressor When Given In-Context Examples
+https://arxiv.org/pdf/2404.07544.pdf
+
