@@ -31,3 +31,8 @@ https://arxiv.org/pdf/2404.05902.pdf
 
 ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models
 https://arxiv.org/abs/2404.07738
+
+Autonomous Evaluation and Refinement of Digital Agents
+https://arxiv.org/abs/2404.06474
+
+https://news.ycombinator.com/item?id=40008109
