@@ -36,3 +36,6 @@ Autonomous Evaluation and Refinement of Digital Agents
 https://arxiv.org/abs/2404.06474
 
 https://news.ycombinator.com/item?id=40008109
+
+WE BAR E N A: A REALISTIC WEB ENVIRONMENT FOR BUILDING AUTONOMOUS AGENTS
+https://arxiv.org/pdf/2307.13854.pdf
