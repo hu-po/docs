@@ -42,4 +42,6 @@ https://arxiv.org/pdf/2307.13854.pdf
 
 https://x.ai/blog/grok-1.5v
 
+https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/
+
 https://en.wikipedia.org/wiki/Markov_decision_process
