@@ -25,3 +25,6 @@ https://arxiv.org/pdf/2404.12358.pdf
 
 Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing
 https://arxiv.org/pdf/2404.12253.pdf
+
+MCTS
+https://towardsdatascience.com/monte-carlo-tree-search-158a917a8baa
