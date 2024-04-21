@@ -40,3 +40,6 @@ https://en.wikipedia.org/wiki/Beam_search
 
 Let's Verify Step by Step
 https://cdn.openai.com/improving-mathematical-reasoning-with-process-supervision/Lets_Verify_Step_by_Step.pdf
+
+PAL: Program-aided Language Models
+https://arxiv.org/pdf/2211.10435.pdf
