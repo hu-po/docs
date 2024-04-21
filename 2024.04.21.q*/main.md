@@ -31,3 +31,6 @@ https://towardsdatascience.com/monte-carlo-tree-search-158a917a8baa
 
 Multi-Arm Bandit
 https://medium.com/udemy-engineering/building-a-multi-armed-bandit-system-from-the-ground-up-a-recommendations-and-ranking-case-study-b598f1f880e1
+
+Physical Intelligence
+https://physicalintelligence.company/
