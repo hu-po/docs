@@ -43,3 +43,7 @@ https://cdn.openai.com/improving-mathematical-reasoning-with-process-supervision
 
 PAL: Program-aided Language Models
 https://arxiv.org/pdf/2211.10435.pdf
+
+Yann LeCunn Tweets and Cherry
+https://twitter.com/ylecun/status/1728126868342145481?lang=en
+https://i0.wp.com/syncedreview.com/wp-content/uploads/2019/02/2019-02-20-%E4%B8%8A%E5%8D%881.51.14.png
