@@ -34,3 +34,6 @@ https://medium.com/udemy-engineering/building-a-multi-armed-bandit-system-from-t
 
 Physical Intelligence
 https://physicalintelligence.company/
+
+Beam search
+https://en.wikipedia.org/wiki/Beam_search
