@@ -53,3 +53,6 @@ https://miro.medium.com/v2/resize:fit:863/0*jKqypwGzmDv7KDUZ.png
 LoRA
 https://sebastianraschka.com/blog/2023/llm-finetuning-lora.html
 https://miro.medium.com/v2/resize:fit:523/1*F7uWJePoMc6Qc1O2WxmQqQ.png
+
+Dataset is Everything
+https://nonint.com/2023/06/10/the-it-in-ai-models-is-the-dataset/
