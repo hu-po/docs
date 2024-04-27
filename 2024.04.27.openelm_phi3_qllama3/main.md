@@ -46,3 +46,10 @@ https://miro.medium.com/v2/resize:fit:2000/1*i4tDdwgvGtXuTIyJpFUn8A.png
 
 datatypes
 https://www.microsoft.com/en-us/research/uploads/prod/2020/12/Brainwave_figure2.jpg
+
+decoder only
+https://miro.medium.com/v2/resize:fit:863/0*jKqypwGzmDv7KDUZ.png
+
+LoRA
+https://sebastianraschka.com/blog/2023/llm-finetuning-lora.html
+https://miro.medium.com/v2/resize:fit:523/1*F7uWJePoMc6Qc1O2WxmQqQ.png
