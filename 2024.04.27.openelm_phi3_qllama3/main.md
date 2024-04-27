@@ -28,3 +28,21 @@ https://arxiv.org/pdf/2404.14219
 
 How Good Are Low-bit Quantized LLAMA3 Models? An Empirical Study
 https://arxiv.org/pdf/2404.14047
+
+GQA
+https://paperswithcode.com/method/grouped-query-attention
+
+LayerNorm, RMS, Fused Ops
+https://static-assets.codecademy.com/Paths/data-science-career-path/MachineLearning/outlier.png
+https://tungmphung.com/wp-content/uploads/2021/01/Screenshot-from-2021-01-05-13-07-25-1024x274.png
+https://github.com/pytorch/pytorch/issues/72643
+https://github.com/tinygrad/tinygrad/issues/1146
+
+SwiGLU
+https://paperswithcode.com/method/silu
+
+FlashAttention
+https://miro.medium.com/v2/resize:fit:2000/1*i4tDdwgvGtXuTIyJpFUn8A.png
+
+datatypes
+https://www.microsoft.com/en-us/research/uploads/prod/2020/12/Brainwave_figure2.jpg
