@@ -22,3 +22,6 @@
 
 Why animals can outrun robots
 https://www.science.org/doi/10.1126/scirobotics.adi9754
+
+https://www.emergentmind.com/
+
