@@ -32,3 +32,6 @@ https://www.researchgate.net/profile/Pranav-Bhounsule/publication/273656485/figu
 MicroSumo
 https://64.media.tumblr.com/bc2bc89e78504f8d369ba66166ec7999/tumblr_orwh8s9uzm1tlb56zo1_500.gifv
 https://64.media.tumblr.com/d19bc82dbfddaca19aa378d8072a2378/tumblr_inline_orwqcvmOQg1rx3jxn_500.gifv
+
+Robot Ranking
+https://robotsguide.com/rankings
