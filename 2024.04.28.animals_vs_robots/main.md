@@ -23,5 +23,5 @@
 Why animals can outrun robots
 https://www.science.org/doi/10.1126/scirobotics.adi9754
 
-https://www.emergentmind.com/
-
+Lessons Learned in Quadruped Deployment in Livestock Farming
+https://arxiv.org/pdf/2404.16008
