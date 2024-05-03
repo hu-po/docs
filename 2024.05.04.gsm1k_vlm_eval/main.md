@@ -25,3 +25,8 @@ https://arxiv.org/pdf/2405.00332
 
 Visual Fact Checker: Enabling High-Fidelity Detailed Caption Generation
 https://arxiv.org/pdf/2404.19752
+
+https://twitter.com/DrJimFan/status/1786054643568517261
+
+https://twitter.com/AndrewYNg/status/1786057567178834328
+
