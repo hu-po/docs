@@ -22,3 +22,9 @@
 
 High-quality Surface Reconstruction using Gaussian Surfels
 https://arxiv.org/abs/2404.17774
+
+Chamfer Distance
+https://www.researchgate.net/profile/Lei-Chu-8/publication/358143188/figure/fig3/AS:1116880265850895@1643296414912/The-weak-rotation-awareness-of-Chamfer-Distance-The-figure-demonstrates-Chamfer.ppm
+
+Surfels
+https://www.cs.umd.edu/~zwicker/publications/Surfels-SIG00.pdf
