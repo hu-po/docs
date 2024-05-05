@@ -57,3 +57,6 @@ https://www.cs.jhu.edu/~misha/MyPapers/ToG13.pdf
 
 NeuS2
 https://vcai.mpi-inf.mpg.de/projects/NeuS2/
+
+Karpathy on CUDA/C++
+https://twitter.com/karpathy/status/1786537319576789425
