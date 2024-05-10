@@ -34,3 +34,6 @@ https://paperswithcode.com/method/elu
 
 Online normalizer calculation for softmax
 https://arxiv.org/pdf/1805.02867
+
+Causal Convolution
+https://pub.mdpi-res.com/applsci/applsci-10-02322/article_deploy/html/images/applsci-10-02322-g004.png?1586349766
