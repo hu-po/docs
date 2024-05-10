@@ -31,3 +31,6 @@ https://www.researchgate.net/profile/Zhenyu-Chen-20/publication/332662013/figure
 
 ELU
 https://paperswithcode.com/method/elu
+
+Online normalizer calculation for softmax
+https://arxiv.org/pdf/1805.02867
