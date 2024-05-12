@@ -40,3 +40,8 @@ https://ssl.robocup.org/
 
 Explicit state in Robocup
 https://github.com/RoboCup-SSL/ssl-vision/blob/master/src/shared/proto/messages_robocup_ssl_detection_tracked.proto
+
+IMU
+https://www.researchgate.net/publication/281535806/figure/fig8/AS:272652560498728@1442016844670/Inertial-measurement-unit-IMU-implemented-on-the-robot-body-The-IMU-is-referred-to-as.png
+
+https://slideplayer.com/slide/14589795/90/images/2/IMU+%28Inertial+Measurement+Unit%29.jpg
