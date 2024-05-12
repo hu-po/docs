@@ -34,3 +34,9 @@ https://twitter.com/ari_seff/status/1303741288911638530
 
 LSTM unroll length
 https://www.researchgate.net/profile/Zhenyu-Chen-20/publication/332662013/figure/fig3/AS:751758288637957@1556244551951/RNN-and-LSTM-comparison-chart.jpg
+
+Robocup
+https://ssl.robocup.org/
+
+Explicit state in Robocup
+https://github.com/RoboCup-SSL/ssl-vision/blob/master/src/shared/proto/messages_robocup_ssl_detection_tracked.proto
