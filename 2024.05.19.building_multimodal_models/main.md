@@ -31,3 +31,6 @@ https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf
 
 Scaling Autoregressive Multi-Modal Models: Pretraining and Instruction Tuning
 https://arxiv.org/pdf/2309.02591
+
+Chameleon: Mixed-Modal Early-Fusion Foundation Models
+https://arxiv.org/pdf/2405.09818
