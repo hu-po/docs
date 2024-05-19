@@ -46,3 +46,9 @@ https://www.researchgate.net/profile/Sri-Harsha-Dumpala/publication/319081627/fi
 
 Obelixs, Idefixs
 https://media.mutualart.com/Images/2021_11/09/02/021007431/480c4477-8b86-4c0e-a618-9d3e61cb1751.Jpeg?w=480
+
+GPT-4o Memory
+https://x.com/gdb/status/1790071008499544518
+
+LSTM
+https://classic.d2l.ai/_images/lstm-2.svg
