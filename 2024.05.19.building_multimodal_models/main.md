@@ -41,5 +41,8 @@ https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/http
 Average Pooling
 https://production-media.paperswithcode.com/methods/Screen_Shot_2020-05-24_at_1.51.40_PM.png
 
+Spectogram
+https://www.researchgate.net/profile/Sri-Harsha-Dumpala/publication/319081627/figure/fig1/AS:534034566004736@1504335170521/Spectrogram-of-a-speech-signal-with-breath-sound-marked-as-Breath-whose-bounds-are.png
+
 Obelixs, Idefixs
 https://media.mutualart.com/Images/2021_11/09/02/021007431/480c4477-8b86-4c0e-a618-9d3e61cb1751.Jpeg?w=480
