@@ -44,3 +44,7 @@ Learning Rate
 https://miro.medium.com/v2/resize:fit:1400/format:webp/1*EhTjC57v1-wOixGo3LYcig.png
 
 https://www.ti.com/about-ti/company/ti-at-a-glance/manufacturing.html
+
+https://gregorygundersen.com/blog/2022/02/27/positive-definite/
+
+https://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_definiteness.svg
