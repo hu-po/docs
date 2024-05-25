@@ -48,3 +48,9 @@ https://www.ti.com/about-ti/company/ti-at-a-glance/manufacturing.html
 https://gregorygundersen.com/blog/2022/02/27/positive-definite/
 
 https://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_definiteness.svg
+
+https://miro.medium.com/v2/resize:fit:1000/1*X9SaxFM6_sBOAMY9TaGsKw.png
+
+https://www.value-at-risk.net/functions/
+
+https://en.wikipedia.org/wiki/Boltzmann_distribution
