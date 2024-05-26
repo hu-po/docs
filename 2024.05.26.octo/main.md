@@ -32,3 +32,6 @@ https://expressive-humanoid.github.io/
 
 attention registers
 https://arxiv.org/pdf/2309.16588
+
+Natural Language Can Help Bridge the Sim2Real Gap
+https://arxiv.org/pdf/2405.10020
