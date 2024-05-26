@@ -35,3 +35,6 @@ https://arxiv.org/pdf/2309.16588
 
 Natural Language Can Help Bridge the Sim2Real Gap
 https://arxiv.org/pdf/2405.10020
+
+Perpetual Humanoid Control for Real-time Simulated Avatars
+https://arxiv.org/pdf/2305.06456
