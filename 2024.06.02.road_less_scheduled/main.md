@@ -47,4 +47,5 @@ https://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_definiteness.svg
 Momentum
 https://miro.medium.com/v2/resize:fit:1000/1*X9SaxFM6_sBOAMY9TaGsKw.png
 
-
+Optimizers Gif
+https://miro.medium.com/v2/resize:fit:1240/1*SjtKOauOXFVjWRR7iCtHiA.gif
