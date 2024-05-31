@@ -22,3 +22,9 @@
 
 The Road Less Scheduled
 https://arxiv.org/pdf/2405.15682
+
+Polyak Scheduling
+https://paperswithcode.com/method/polyak-averaging
+
+Nesterov Accelerated Gradient
+https://paperswithcode.com/method/nesterov-accelerated-gradient
