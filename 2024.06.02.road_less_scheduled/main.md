@@ -37,3 +37,14 @@ https://pytorch.org/docs/stable/generated/torch.optim.Adam.html
 
 PyTorch NAdam
 https://pytorch.org/docs/stable/generated/torch.optim.NAdam.html
+
+Loss Landscape
+https://losslandscape.com/explorer
+
+definite
+https://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_definiteness.svg
+
+Momentum
+https://miro.medium.com/v2/resize:fit:1000/1*X9SaxFM6_sBOAMY9TaGsKw.png
+
+
