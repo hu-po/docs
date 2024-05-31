@@ -33,3 +33,6 @@ https://miro.medium.com/v2/resize:fit:1400/1*KzsugPQU-BTjvDACXbu9qw.jpeg
 
 Dual Quaternion Skinning
 https://binh.graphics/papers/2016s-cor/CoR-RepImg.jpg
+
+Cycle Consistency Loss
+https://paperswithcode.com/method/cycle-consistency-loss
