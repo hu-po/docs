@@ -36,3 +36,18 @@ https://binh.graphics/papers/2016s-cor/CoR-RepImg.jpg
 
 Cycle Consistency Loss
 https://paperswithcode.com/method/cycle-consistency-loss
+
+Surfels
+https://www.cs.umd.edu/~zwicker/publications/Surfels-SIG00.pdf
+
+NeRF
+https://theaisummer.com/static/c8a7474955d2af53d28319f09723506e/56caf/nerf-training.png
+
+Mesh and Texture
+https://www.mdpi.com/applsci/applsci-08-02228/article_deploy/html/images/applsci-08-02228-g001.png https://i.stack.imgur.com/RT7OH.jpg
+
+GPU Rasterization
+http://15418.courses.cs.cmu.edu/spring2014/lecture/gpuarch/slide_018
+
+Splat example
+https://lumalabs.ai/capture/7f763b07-15bc-430e-84bf-9825f8e0c89e
