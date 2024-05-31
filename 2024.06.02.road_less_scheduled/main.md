@@ -28,3 +28,12 @@ https://paperswithcode.com/method/polyak-averaging
 
 Nesterov Accelerated Gradient
 https://paperswithcode.com/method/nesterov-accelerated-gradient
+
+Pareto Frontier
+https://fivethirtyeight.com/wp-content/uploads/2015/02/silver-feature-pareto-1.png
+
+PyTorch Adam
+https://pytorch.org/docs/stable/generated/torch.optim.Adam.html
+
+PyTorch NAdam
+https://pytorch.org/docs/stable/generated/torch.optim.NAdam.html
