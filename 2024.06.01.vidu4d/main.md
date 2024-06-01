@@ -51,3 +51,16 @@ http://15418.courses.cs.cmu.edu/spring2014/lecture/gpuarch/slide_018
 
 Splat example
 https://lumalabs.ai/capture/7f763b07-15bc-430e-84bf-9825f8e0c89e
+
+Sora
+https://openai.com/index/sora/
+
+Vidu: a Highly Consistent, Dynamic and Skilled Text-to-Video Generator with Diffusion Models
+https://arxiv.org/abs/2405.04233
+
+Surfel cube
+https://backend.orbit.dtu.dk/ws/portalfiles/portal/5831596/VA-TPCG10_final.pdf
+
+Surfel surface element
+https://www.ea.com/seed/news/siggraph21-global-illumination-surfels
+
