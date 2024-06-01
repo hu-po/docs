@@ -64,3 +64,10 @@ https://backend.orbit.dtu.dk/ws/portalfiles/portal/5831596/VA-TPCG10_final.pdf
 Surfel surface element
 https://www.ea.com/seed/news/siggraph21-global-illumination-surfels
 
+Skinning
+https://documentation.simplygon.com/SimplygonSDK_8.3.31500.0/articles/simplygonapi/apiuserguide/images/skinning.png
+
+https://help.autodesk.com/cloudhelp/2024/ENU/Maya-CharacterAnimation/images/GUID-5C542C32-6BFD-4E47-84C9-AFF8B33ABEA1.gif
+
+
+
