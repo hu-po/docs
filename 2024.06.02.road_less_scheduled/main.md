@@ -23,8 +23,16 @@
 The Road Less Scheduled
 https://arxiv.org/pdf/2405.15682
 
+Lipschitz Function
+https://mathworld.wolfram.com/LipschitzFunction.html
+
+https://en.wikipedia.org/wiki/Lipschitz_continuity
+
 Polyak Scheduling
 https://paperswithcode.com/method/polyak-averaging
+
+LR Schedules
+https://x.com/rasbt/status/1577429214755573761/photo/1
 
 Nesterov Accelerated Gradient
 https://paperswithcode.com/method/nesterov-accelerated-gradient
