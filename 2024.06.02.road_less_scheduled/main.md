@@ -34,6 +34,9 @@ https://paperswithcode.com/method/polyak-averaging
 LR Schedules
 https://x.com/rasbt/status/1577429214755573761/photo/1
 
+EMA
+https://towardsdatascience.com/intuitive-explanation-of-exponential-moving-average-2eb9693ea4dc
+
 Nesterov Accelerated Gradient
 https://paperswithcode.com/method/nesterov-accelerated-gradient
 
