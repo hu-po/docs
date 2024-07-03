@@ -4,7 +4,7 @@ This repo contains documentation for content creation: stream links, references,
 
 Each folder contains content for a single stream, format is `year.month.date`.
 
-2024 stream schedule is: _**9am to 11am Central Time on Saturdays and Sundays**_
+2024 stream schedule is: _**11am to 2pm Central Time on Friday**_
 
 ### Sources
 
