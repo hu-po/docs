@@ -32,6 +32,9 @@ https://arxiv.org/pdf/2406.16860
 Meta 3D Gen
 https://arxiv.org/abs/2407.02599
 
+Meta 3D AssetGen: Text-to-Mesh Generation with High-Quality Geometry, Texture, and PBR Materials
+https://arxiv.org/pdf/2407.02445
+
 Meshy
 https://app.meshy.ai/discover
 
@@ -40,3 +43,8 @@ https://app.runwayml.com/
 
 Udio
 https://www.udio.com/
+
+TripoAI
+https://www.tripo3d.ai/app
+
+https://cvpr.thecvf.com/Conferences/2024/News/Awards
