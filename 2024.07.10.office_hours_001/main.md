@@ -38,3 +38,6 @@ https://arxiv.org/pdf/2407.03168v1
 µ-BENCH: VISION-LANGUAGE BENCHMARK FOR MICROSCOPY
 UNDERSTANDING
 https://arxiv.org/pdf/2407.01791
+
+PaliGemma: A versatile 3B VLM for transfer
+https://arxiv.org/pdf/2407.07726
