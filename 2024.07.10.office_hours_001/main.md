@@ -47,3 +47,12 @@ https://www.together.ai/blog/flashattention-3
 
 Distilling System 2 into System 1
 https://arxiv.org/pdf/2407.06023
+
+Inference Performance Optimization for Large Language Models on CPUs
+https://arxiv.org/pdf/2407.07304
+
+AgentInstruct: Toward Generative Teaching with Agentic Flows
+https://arxiv.org/pdf/2407.03502
+
+VIDEO-STAR: SELF-TRAINING ENABLES VIDEO INSTRUCTION TUNING WITH ANY SUPERVISION
+https://arxiv.org/pdf/2407.06189
