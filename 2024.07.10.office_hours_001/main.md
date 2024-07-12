@@ -41,3 +41,9 @@ https://arxiv.org/pdf/2407.01791
 
 PaliGemma: A versatile 3B VLM for transfer
 https://arxiv.org/pdf/2407.07726
+
+FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision
+https://www.together.ai/blog/flashattention-3
+
+Distilling System 2 into System 1
+https://arxiv.org/pdf/2407.06023
