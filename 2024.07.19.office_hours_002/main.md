@@ -20,3 +20,5 @@
 
 ### References
 
+Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures
+https://arxiv.org/pdf/2407.09468
