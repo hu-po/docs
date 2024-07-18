@@ -29,8 +29,8 @@ https://arxiv.org/pdf/2407.09025
 RTMW: Real-Time Multi-Person 2D and 3D Whole-body Pose Estimation
 https://arxiv.org/pdf/2405.02246
 
-pg 86
-https://www.engon.de/protosimplex/downloads/02%20heim%20-%20mbb%201.2en.pdf
+pg 83
+https://heim-theory.com/wp-content/uploads/2016/03/I-v-Ludwiger-The-New-Worldview-of-the-Physicist-Burkhard-Heim-160321.pdf
 https://en.wikipedia.org/wiki/Burkhard_Heim
 https://qeios-uploads.s3.eu-west-1.amazonaws.com/editor/124KOAgUrx3m6dQbvsNimlNdnxPS79mal4Sac485.png
 https://d3i71xaburhd42.cloudfront.net/b4f8e5c092f9fbb208c971c6557ae6b3de449155/7-Figure2-1.png
@@ -44,3 +44,6 @@ https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
 
 Random Forest through graph
 https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d
+
+RTMDet: An Empirical Study of Designing Real-Time Object Detectors
+https://arxiv.org/pdf/2212.07784
