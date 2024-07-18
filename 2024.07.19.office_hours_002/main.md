@@ -35,3 +35,6 @@ https://youtu.be/ruvHsxsXufk?si=BZNCWsFDxE4FUFJd&t=1195
 
 hyperbolic spaces
 https://i.sstatic.net/6NfVC.png
+
+diffusion tensor imaging
+https://www.news-medical.net/health/Diffusion-Tensor-Imaging-%28DTI%29-Explained.aspx
