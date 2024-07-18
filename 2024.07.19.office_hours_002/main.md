@@ -41,3 +41,6 @@ https://www.news-medical.net/health/Diffusion-Tensor-Imaging-%28DTI%29-Explained
 
 Pearson Coefficient is just normalized covaraince
 https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+
+Random Forest through graph
+https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d
