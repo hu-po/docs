@@ -38,3 +38,6 @@ https://i.sstatic.net/6NfVC.png
 
 diffusion tensor imaging
 https://www.news-medical.net/health/Diffusion-Tensor-Imaging-%28DTI%29-Explained.aspx
+
+Pearson Coefficient is just normalized covaraince
+https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
