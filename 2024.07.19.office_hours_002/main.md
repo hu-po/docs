@@ -32,3 +32,6 @@ https://en.wikipedia.org/wiki/Burkhard_Heim
 https://qeios-uploads.s3.eu-west-1.amazonaws.com/editor/124KOAgUrx3m6dQbvsNimlNdnxPS79mal4Sac485.png
 https://d3i71xaburhd42.cloudfront.net/b4f8e5c092f9fbb208c971c6557ae6b3de449155/7-Figure2-1.png
 https://youtu.be/ruvHsxsXufk?si=BZNCWsFDxE4FUFJd&t=1195
+
+hyperbolic spaces
+https://i.sstatic.net/6NfVC.png
