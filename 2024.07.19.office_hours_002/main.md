@@ -50,3 +50,6 @@ https://arxiv.org/pdf/2212.07784
 
 SpaceByte: Towards Deleting Tokenization from Large Language Modeling
 https://arxiv.org/pdf/2404.14408
+
+Unsupervised Discovery of Steerable Factors When Graph Deep Generative Models Are Entangled
+https://openreview.net/pdf?id=wyU3Q4gahM
