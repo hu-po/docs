@@ -47,3 +47,6 @@ https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d
 
 RTMDet: An Empirical Study of Designing Real-Time Object Detectors
 https://arxiv.org/pdf/2212.07784
+
+SpaceByte: Towards Deleting Tokenization from Large Language Modeling
+https://arxiv.org/pdf/2404.14408
