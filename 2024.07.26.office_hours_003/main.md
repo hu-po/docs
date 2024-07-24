@@ -21,3 +21,9 @@
 ### References
 
 cat trailer, cat rave, cat rap song
+
+use moebius as the style, pick some of his pictures
+make it a music video so you just have to pick one song
+cat western in a desert
+city cyberpunk
+spaceshiop
