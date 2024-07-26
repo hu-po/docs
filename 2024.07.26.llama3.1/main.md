@@ -20,3 +20,6 @@
 
 ### References
 
+https://ai.meta.com/blog/meta-llama-3-1/
+
+https://ai.meta.com/research/publications/the-llama-3-herd-of-models/
