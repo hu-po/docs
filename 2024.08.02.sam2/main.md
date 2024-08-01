@@ -1,6 +1,6 @@
 ![thumbnail](thumbnail.png)
 
-# Office Hours 004
+# SAM 2
 
 ### Links
 
@@ -20,3 +20,5 @@
 
 ### References
 
+SAM 2: Segment Anything in Images and Videos
+https://ai.meta.com/research/publications/sam-2-segment-anything-in-images-and-videos/
