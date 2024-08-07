@@ -19,3 +19,9 @@
 **Reddit:**
 
 ### References
+
+Submission Video
+https://youtu.be/VrqfT0ajXbQ
+
+Repo
+https://github.com/hu-po/simon
