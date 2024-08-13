@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# AI Scientist
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/VgA02gmAgdA
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1djGXraAjPexZ
 
 **Twitch:**
 
@@ -20,4 +20,7 @@
 
 ### References
 
-references
+The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery
+https://arxiv.org/abs/2408.06292
+
+https://github.com/SakanaAI/AI-Scientist
