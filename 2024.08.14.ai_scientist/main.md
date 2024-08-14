@@ -34,3 +34,5 @@ https://arena.lmsys.org/
 
 https://github.com/hu-po/arenavolution/tree/main
 
+https://cosine.sh/genie
+
