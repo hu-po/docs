@@ -38,3 +38,6 @@ https://lilianweng.github.io/posts/2022-06-09-vlm/VC-GPT.png
 depth anything
 https://depth-anything.github.io/
 
+JPEG compression
+https://parametric.press/issue-01/unraveling-the-jpeg/
+
