@@ -35,3 +35,6 @@ https://paperswithcode.com/method/vq-vae
 vit patches
 https://lilianweng.github.io/posts/2022-06-09-vlm/VC-GPT.png
 
+depth anything
+https://depth-anything.github.io/
+
