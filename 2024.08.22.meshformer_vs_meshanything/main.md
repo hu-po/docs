@@ -41,3 +41,5 @@ https://depth-anything.github.io/
 JPEG compression
 https://parametric.press/issue-01/unraveling-the-jpeg/
 
+MJPEG and H.264
+https://www.technexion.com/resources/h-264-vs-mjpeg-in-embedded-vision-all-you-need-to-know/
