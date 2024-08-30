@@ -25,3 +25,9 @@ https://arxiv.org/pdf/2408.14837
 
 Genie: Generative Interactive Environments
 https://arxiv.org/abs/2402.15391
+
+World Models
+https://arxiv.org/abs/1803.10122
+
+Billboarding
+https://youtu.be/SBdDt4BUIW0
