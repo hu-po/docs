@@ -41,3 +41,6 @@ https://x.com/karpathy/status/1807497426816946333
 Diffusion
 https://media.licdn.com/dms/image/D5612AQEB79ydygAGQQ/article-cover_image-shrink_720_1280/0/1702188892689
 https://miro.medium.com/v2/resize:fit:1400/1*NpQ282NJdOfxUsYlwLJplA.png
+
+High-Resolution Image Synthesis with Latent Diffusion Models
+https://arxiv.org/pdf/2112.10752
