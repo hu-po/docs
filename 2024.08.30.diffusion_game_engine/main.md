@@ -44,3 +44,6 @@ https://miro.medium.com/v2/resize:fit:1400/1*NpQ282NJdOfxUsYlwLJplA.png
 
 High-Resolution Image Synthesis with Latent Diffusion Models
 https://arxiv.org/pdf/2112.10752
+
+SD1.4 training
+https://huggingface.co/CompVis/stable-diffusion-v1-4#training
