@@ -34,3 +34,6 @@ https://youtu.be/SBdDt4BUIW0
 
 Jim Fan on GameNGen
 https://x.com/DrJimFan/status/1828813716810539417
+
+Karpathy on GameNGen
+https://x.com/karpathy/status/1807497426816946333
