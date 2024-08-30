@@ -31,3 +31,6 @@ https://arxiv.org/abs/1803.10122
 
 Billboarding
 https://youtu.be/SBdDt4BUIW0
+
+Jim Fan on GameNGen
+https://x.com/DrJimFan/status/1828813716810539417
