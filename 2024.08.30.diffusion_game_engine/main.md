@@ -22,3 +22,6 @@
 
 DIFFUSION MODELS ARE REAL-TIME GAME ENGINES
 https://arxiv.org/pdf/2408.14837
+
+Genie: Generative Interactive Environments
+https://arxiv.org/abs/2402.15391
