@@ -42,3 +42,9 @@ https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
 
 Mel Spectogram
 https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53
+
+Fourier
+https://upload.wikimedia.org/wikipedia/commons/1/1a/Fourier_series_square_wave_circles_animation.gif
+
+RVQ
+https://drscotthawley.github.io/blog/posts/2023-06-12-RVQ.html
