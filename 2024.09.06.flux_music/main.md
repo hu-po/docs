@@ -39,3 +39,6 @@ https://huggingface.co/papers/2408.16532
 
 Rectified Flow
 https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
+
+Mel Spectogram
+https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53
