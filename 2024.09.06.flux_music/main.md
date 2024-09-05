@@ -36,3 +36,6 @@ WAVTOKENIZER: AN EFFICIENT ACOUSTIC DISCRETE
 CODEC TOKENIZER FOR AUDIO LANGUAGE MODELING
 https://arxiv.org/pdf/2408.16532v1
 https://huggingface.co/papers/2408.16532
+
+Rectified Flow
+https://www.cs.utexas.edu/~lqiang/rectflow/html/intro.html
