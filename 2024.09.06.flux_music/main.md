@@ -51,3 +51,8 @@ https://drscotthawley.github.io/blog/posts/2023-06-12-RVQ.html
 
 Black Forest Labs
 https://blackforestlabs.ai/announcements/
+
+Wav2Vec
+https://huggingface.co/facebook/wav2vec2-base-960h
+https://ai.meta.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/
+
