@@ -48,3 +48,6 @@ https://upload.wikimedia.org/wikipedia/commons/1/1a/Fourier_series_square_wave_c
 
 RVQ
 https://drscotthawley.github.io/blog/posts/2023-06-12-RVQ.html
+
+Black Forest Labs
+https://blackforestlabs.ai/announcements/
