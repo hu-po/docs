@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Strawberry
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/oQqOiwUhJkA
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1yoKMyYdLkYKQ
 
 **Twitch:**
 
@@ -20,4 +20,11 @@
 
 ### References
 
-references
+Building Math Agents with Multi-Turn Iterative Preference Learning
+https://arxiv.org/pdf/2409.02392
+
+Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+https://arxiv.org/pdf/2408.03314
+
+STRATEGIST: LEARNING STRATEGIC SKILLS BY LLMS VIA BI-LEVEL TREE SEARCH
+https://www.arxiv.org/pdf/2408.10635
