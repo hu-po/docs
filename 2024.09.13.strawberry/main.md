@@ -42,3 +42,5 @@ https://x.com/_jasonwei/status/1834278706522849788
 
 https://x.com/AiBreakfast/status/1834283499358146714
 
+https://x.com/karpathy/status/1821277264996352246
+
