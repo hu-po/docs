@@ -34,6 +34,8 @@ https://vgarciasc.github.io/mcts-viz/
 
 https://openai.com/index/learning-to-reason-with-llms/
 
+https://x.com/DrJimFan/status/1834279865933332752
+
 https://x.com/polynoamial/status/1834280155730043108
 
 https://x.com/_jasonwei/status/1834278706522849788
