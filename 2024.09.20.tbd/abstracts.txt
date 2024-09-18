@@ -1,0 +1,287 @@
+Title: Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos
+Authors: Yuheng Jiang, Zhehao Shen, Yu Hong, Chengcheng Guo, Yize Wu, Yingliang Zhang, Jingyi Yu, Lan Xu
+Published Date: 2024-09-12 18:33:13+00:00
+Last Updated: 2024-09-12 18:33:13+00:00
+DOI: N/A
+Primary Category: cs.GR
+arXiv URL: http://arxiv.org/abs/2409.08353v1
+PDF URL: http://arxiv.org/pdf/2409.08353v1
+Abstract: Volumetric video represents a transformative advancement in visual media,
+enabling users to freely navigate immersive virtual experiences and narrowing
+the gap between digital and real worlds. However, the need for extensive manual
+intervention to stabilize mesh sequences and the generation of excessively
+large assets in existing workflows impedes broader adoption. In this paper, we
+present a novel Gaussian-based approach, dubbed \textit{DualGS}, for real-time
+and high-fidelity playback of complex human performance with excellent
+compression ratios. Our key idea in DualGS is to separately represent motion
+and appearance using the corresponding skin and joint Gaussians. Such an
+explicit disentanglement can significantly reduce motion redundancy and enhance
+temporal coherence. We begin by initializing the DualGS and anchoring skin
+Gaussians to joint Gaussians at the first frame. Subsequently, we employ a
+coarse-to-fine training strategy for frame-by-frame human performance modeling.
+It includes a coarse alignment phase for overall motion prediction as well as a
+fine-grained optimization for robust tracking and high-fidelity rendering. To
+integrate volumetric video seamlessly into VR environments, we efficiently
+compress motion using entropy encoding and appearance using codec compression
+coupled with a persistent codebook. Our approach achieves a compression ratio
+of up to 120 times, only requiring approximately 350KB of storage per frame. We
+demonstrate the efficacy of our representation through photo-realistic,
+free-view experiences on VR headsets, enabling users to immersively watch
+musicians in performance and feel the rhythm of the notes at the performers'
+fingertips.
+
+--------------------------------------------------------------------------------
+
+Title: SplatSim: Zero-Shot Sim2Real Transfer of RGB Manipulation Policies Using Gaussian Splatting
+Authors: Mohammad Nomaan Qureshi, Sparsh Garg, Francisco Yandun, David Held, George Kantor, Abhishesh Silwal
+Published Date: 2024-09-16 10:52:16+00:00
+Last Updated: 2024-09-16 10:52:16+00:00
+DOI: N/A
+Primary Category: cs.RO
+arXiv URL: http://arxiv.org/abs/2409.10161v1
+PDF URL: http://arxiv.org/pdf/2409.10161v1
+Abstract: Sim2Real transfer, particularly for manipulation policies relying on RGB
+images, remains a critical challenge in robotics due to the significant domain
+shift between synthetic and real-world visual data. In this paper, we propose
+SplatSim, a novel framework that leverages Gaussian Splatting as the primary
+rendering primitive to reduce the Sim2Real gap for RGB-based manipulation
+policies. By replacing traditional mesh representations with Gaussian Splats in
+simulators, SplatSim produces highly photorealistic synthetic data while
+maintaining the scalability and cost-efficiency of simulation. We demonstrate
+the effectiveness of our framework by training manipulation policies within
+SplatSim}and deploying them in the real world in a zero-shot manner, achieving
+an average success rate of 86.25%, compared to 97.5% for policies trained on
+real-world data.
+
+--------------------------------------------------------------------------------
+
+Title: AdR-Gaussian: Accelerating Gaussian Splatting with Adaptive Radius
+Authors: Xinzhe Wang, Ran Yi, Lizhuang Ma
+Published Date: 2024-09-13 09:32:38+00:00
+Last Updated: 2024-09-13 09:32:38+00:00
+DOI: 10.1145/3680528.3687675
+Primary Category: cs.CV
+arXiv URL: http://arxiv.org/abs/2409.08669v1
+PDF URL: http://arxiv.org/pdf/2409.08669v1
+Abstract: 3D Gaussian Splatting (3DGS) is a recent explicit 3D representation that has
+achieved high-quality reconstruction and real-time rendering of complex scenes.
+However, the rasterization pipeline still suffers from unnecessary overhead
+resulting from avoidable serial Gaussian culling, and uneven load due to the
+distinct number of Gaussian to be rendered across pixels, which hinders wider
+promotion and application of 3DGS. In order to accelerate Gaussian splatting,
+we propose AdR-Gaussian, which moves part of serial culling in Render stage
+into the earlier Preprocess stage to enable parallel culling, employing
+adaptive radius to narrow the rendering pixel range for each Gaussian, and
+introduces a load balancing method to minimize thread waiting time during the
+pixel-parallel rendering. Our contributions are threefold, achieving a
+rendering speed of 310% while maintaining equivalent or even better quality
+than the state-of-the-art. Firstly, we propose to early cull Gaussian-Tile
+pairs of low splatting opacity based on an adaptive radius in the
+Gaussian-parallel Preprocess stage, which reduces the number of affected tile
+through the Gaussian bounding circle, thus reducing unnecessary overhead and
+achieving faster rendering speed. Secondly, we further propose early culling
+based on axis-aligned bounding box for Gaussian splatting, which achieves a
+more significant reduction in ineffective expenses by accurately calculating
+the Gaussian size in the 2D directions. Thirdly, we propose a balancing
+algorithm for pixel thread load, which compresses the information of heavy-load
+pixels to reduce thread waiting time, and enhance information of light-load
+pixels to hedge against rendering quality loss. Experiments on three datasets
+demonstrate that our algorithm can significantly improve the Gaussian Splatting
+rendering speed.
+
+--------------------------------------------------------------------------------
+
+Title: SwinGS: Sliding Window Gaussian Splatting for Volumetric Video Streaming with Arbitrary Length
+Authors: Bangya Liu, Suman Banerjee
+Published Date: 2024-09-12 05:33:15+00:00
+Last Updated: 2024-09-12 05:33:15+00:00
+DOI: N/A
+Primary Category: cs.MM
+arXiv URL: http://arxiv.org/abs/2409.07759v1
+PDF URL: http://arxiv.org/pdf/2409.07759v1
+Abstract: Recent advances in 3D Gaussian Splatting (3DGS) have garnered significant
+attention in computer vision and computer graphics due to its high rendering
+speed and remarkable quality. While extant research has endeavored to extend
+the application of 3DGS from static to dynamic scenes, such efforts have been
+consistently impeded by excessive model sizes, constraints on video duration,
+and content deviation. These limitations significantly compromise the
+streamability of dynamic 3D Gaussian models, thereby restricting their utility
+in downstream applications, including volumetric video, autonomous vehicle, and
+immersive technologies such as virtual, augmented, and mixed reality.
+  This paper introduces SwinGS, a novel framework for training, delivering, and
+rendering volumetric video in a real-time streaming fashion. To address the
+aforementioned challenges and enhance streamability, SwinGS integrates
+spacetime Gaussian with Markov Chain Monte Carlo (MCMC) to adapt the model to
+fit various 3D scenes across frames, in the meantime employing a sliding window
+captures Gaussian snapshots for each frame in an accumulative way. We implement
+a prototype of SwinGS and demonstrate its streamability across various datasets
+and scenes. Additionally, we develop an interactive WebGL viewer enabling
+real-time volumetric video playback on most devices with modern browsers,
+including smartphones and tablets. Experimental results show that SwinGS
+reduces transmission costs by 83.6% compared to previous work with ignorable
+compromise in PSNR. Moreover, SwinGS easily scales to long video sequences
+without compromising quality.
+
+--------------------------------------------------------------------------------
+
+Title: Gaussian Garments: Reconstructing Simulation-Ready Clothing with Photorealistic Appearance from Multi-View Video
+Authors: Boxiang Rong, Artur Grigorev, Wenbo Wang, Michael J. Black, Bernhard Thomaszewski, Christina Tsalicoglou, Otmar Hilliges
+Published Date: 2024-09-12 16:26:47+00:00
+Last Updated: 2024-09-12 16:26:47+00:00
+DOI: N/A
+Primary Category: cs.CV
+arXiv URL: http://arxiv.org/abs/2409.08189v1
+PDF URL: http://arxiv.org/pdf/2409.08189v1
+Abstract: We introduce Gaussian Garments, a novel approach for reconstructing realistic
+simulation-ready garment assets from multi-view videos. Our method represents
+garments with a combination of a 3D mesh and a Gaussian texture that encodes
+both the color and high-frequency surface details. This representation enables
+accurate registration of garment geometries to multi-view videos and helps
+disentangle albedo textures from lighting effects. Furthermore, we demonstrate
+how a pre-trained graph neural network (GNN) can be fine-tuned to replicate the
+real behavior of each garment. The reconstructed Gaussian Garments can be
+automatically combined into multi-garment outfits and animated with the
+fine-tuned GNN.
+
+--------------------------------------------------------------------------------
+
+Title: Self-Evolving Depth-Supervised 3D Gaussian Splatting from Rendered Stereo Pairs
+Authors: Sadra Safadoust, Fabio Tosi, Fatma Güney, Matteo Poggi
+Published Date: 2024-09-11 17:59:58+00:00
+Last Updated: 2024-09-11 17:59:58+00:00
+DOI: N/A
+Primary Category: cs.CV
+arXiv URL: http://arxiv.org/abs/2409.07456v1
+PDF URL: http://arxiv.org/pdf/2409.07456v1
+Abstract: 3D Gaussian Splatting (GS) significantly struggles to accurately represent
+the underlying 3D scene geometry, resulting in inaccuracies and floating
+artifacts when rendering depth maps. In this paper, we address this limitation,
+undertaking a comprehensive analysis of the integration of depth priors
+throughout the optimization process of Gaussian primitives, and present a novel
+strategy for this purpose. This latter dynamically exploits depth cues from a
+readily available stereo network, processing virtual stereo pairs rendered by
+the GS model itself during training and achieving consistent self-improvement
+of the scene representation. Experimental results on three popular datasets,
+breaking ground as the first to assess depth accuracy for these models,
+validate our findings.
+
+--------------------------------------------------------------------------------
+
+Title: Instant Facial Gaussians Translator for Relightable and Interactable Facial Rendering
+Authors: Dafei Qin, Hongyang Lin, Qixuan Zhang, Kaichun Qiao, Longwen Zhang, Zijun Zhao, Jun Saito, Jingyi Yu, Lan Xu, Taku Komura
+Published Date: 2024-09-11 17:40:21+00:00
+Last Updated: 2024-09-11 17:40:21+00:00
+DOI: N/A
+Primary Category: cs.GR
+arXiv URL: http://arxiv.org/abs/2409.07441v1
+PDF URL: http://arxiv.org/pdf/2409.07441v1
+Abstract: We propose GauFace, a novel Gaussian Splatting representation, tailored for
+efficient animation and rendering of physically-based facial assets. Leveraging
+strong geometric priors and constrained optimization, GauFace ensures a neat
+and structured Gaussian representation, delivering high fidelity and real-time
+facial interaction of 30fps@1440p on a Snapdragon 8 Gen 2 mobile platform.
+  Then, we introduce TransGS, a diffusion transformer that instantly translates
+physically-based facial assets into the corresponding GauFace representations.
+Specifically, we adopt a patch-based pipeline to handle the vast number of
+Gaussians effectively. We also introduce a novel pixel-aligned sampling scheme
+with UV positional encoding to ensure the throughput and rendering quality of
+GauFace assets generated by our TransGS. Once trained, TransGS can instantly
+translate facial assets with lighting conditions to GauFace representation,
+With the rich conditioning modalities, it also enables editing and animation
+capabilities reminiscent of traditional CG pipelines.
+  We conduct extensive evaluations and user studies, compared to traditional
+offline and online renderers, as well as recent neural rendering methods, which
+demonstrate the superior performance of our approach for facial asset
+rendering. We also showcase diverse immersive applications of facial assets
+using our TransGS approach and GauFace representation, across various platforms
+like PCs, phones and even VR headsets.
+
+--------------------------------------------------------------------------------
+
+Title: Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye Cameras
+Authors: Zimu Liao, Siyan Chen, Rong Fu, Yi Wang, Zhongling Su, Hao Luo, Li Ma, Linning Xu, Bo Dai, Hengjie Li, Zhilin Pei, Xingcheng Zhang
+Published Date: 2024-09-07 07:53:40+00:00
+Last Updated: 2024-09-11 07:04:58+00:00
+DOI: N/A
+Primary Category: cs.CV
+arXiv URL: http://arxiv.org/abs/2409.04751v2
+PDF URL: http://arxiv.org/pdf/2409.04751v2
+Abstract: Recently, 3D Gaussian Splatting (3DGS) has garnered attention for its high
+fidelity and real-time rendering. However, adapting 3DGS to different camera
+models, particularly fisheye lenses, poses challenges due to the unique 3D to
+2D projection calculation. Additionally, there are inefficiencies in the
+tile-based splatting, especially for the extreme curvature and wide field of
+view of fisheye lenses, which are crucial for its broader real-life
+applications. To tackle these challenges, we introduce Fisheye-GS.This
+innovative method recalculates the projection transformation and its gradients
+for fisheye cameras. Our approach can be seamlessly integrated as a module into
+other efficient 3D rendering methods, emphasizing its extensibility,
+lightweight nature, and modular design. Since we only modified the projection
+component, it can also be easily adapted for use with different camera models.
+Compared to methods that train after undistortion, our approach demonstrates a
+clear improvement in visual quality.
+
+--------------------------------------------------------------------------------
+
+Title: Dynamic Gaussian Marbles for Novel View Synthesis of Casual Monocular Videos
+Authors: Colton Stearns, Adam Harley, Mikaela Uy, Florian Dubost, Federico Tombari, Gordon Wetzstein, Leonidas Guibas
+Published Date: 2024-06-26 19:37:07+00:00
+Last Updated: 2024-09-10 21:30:31+00:00
+DOI: 10.1145/3680528.3687681
+Primary Category: cs.CV
+arXiv URL: http://arxiv.org/abs/2406.18717v2
+PDF URL: http://arxiv.org/pdf/2406.18717v2
+Abstract: Gaussian splatting has become a popular representation for novel-view
+synthesis, exhibiting clear strengths in efficiency, photometric quality, and
+compositional edibility. Following its success, many works have extended
+Gaussians to 4D, showing that dynamic Gaussians maintain these benefits while
+also tracking scene geometry far better than alternative representations. Yet,
+these methods assume dense multi-view videos as supervision. In this work, we
+are interested in extending the capability of Gaussian scene representations to
+casually captured monocular videos. We show that existing 4D Gaussian methods
+dramatically fail in this setup because the monocular setting is
+underconstrained. Building off this finding, we propose a method we call
+Dynamic Gaussian Marbles, which consist of three core modifications that target
+the difficulties of the monocular setting. First, we use isotropic Gaussian
+"marbles'', reducing the degrees of freedom of each Gaussian. Second, we employ
+a hierarchical divide and-conquer learning strategy to efficiently guide the
+optimization towards solutions with globally coherent motion. Finally, we add
+image-level and geometry-level priors into the optimization, including a
+tracking loss that takes advantage of recent progress in point tracking. By
+constraining the optimization, Dynamic Gaussian Marbles learns Gaussian
+trajectories that enable novel-view rendering and accurately capture the 3D
+motion of the scene elements. We evaluate on the Nvidia Dynamic Scenes dataset
+and the DyCheck iPhone dataset, and show that Gaussian Marbles significantly
+outperforms other Gaussian baselines in quality, and is on-par with
+non-Gaussian representations, all while maintaining the efficiency,
+compositionality, editability, and tracking benefits of Gaussians. Our project
+page can be found here
+https://geometry.stanford.edu/projects/dynamic-gaussian-marbles.github.io/.
+
+--------------------------------------------------------------------------------
+
+Title: BEINGS: Bayesian Embodied Image-goal Navigation with Gaussian Splatting
+Authors: Wugang Meng, Tianfu Wu, Huan Yin, Fumin Zhang
+Published Date: 2024-09-16 12:07:02+00:00
+Last Updated: 2024-09-16 12:07:02+00:00
+DOI: N/A
+Primary Category: cs.RO
+arXiv URL: http://arxiv.org/abs/2409.10216v1
+PDF URL: http://arxiv.org/pdf/2409.10216v1
+Abstract: Image-goal navigation enables a robot to reach the location where a target
+image was captured, using visual cues for guidance. However, current methods
+either rely heavily on data and computationally expensive learning-based
+approaches or lack efficiency in complex environments due to insufficient
+exploration strategies. To address these limitations, we propose Bayesian
+Embodied Image-goal Navigation Using Gaussian Splatting, a novel method that
+formulates ImageNav as an optimal control problem within a model predictive
+control framework. BEINGS leverages 3D Gaussian Splatting as a scene prior to
+predict future observations, enabling efficient, real-time navigation decisions
+grounded in the robot's sensory experiences. By integrating Bayesian updates,
+our method dynamically refines the robot's strategy without requiring extensive
+prior experience or data. Our algorithm is validated through extensive
+simulations and physical experiments, showcasing its potential for embodied
+robot systems in visually complex scenarios.
+
+--------------------------------------------------------------------------------
+
