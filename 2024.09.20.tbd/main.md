@@ -49,3 +49,6 @@ https://arxiv.org/pdf/2406.18717
 
 BEINGS: Bayesian Embodied Image-goal Navigation with Gaussian Splatting
 https://arxiv.org/pdf/2409.10216
+
+gsplat
+https://github.com/nerfstudio-project/gsplat
