@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Gaussian Robots
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/_jqhy-dr7Q4
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1ZkKzRvoLZrKv
 
 **Twitch:**
 
