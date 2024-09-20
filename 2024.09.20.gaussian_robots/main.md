@@ -52,3 +52,6 @@ https://arxiv.org/pdf/2409.10216
 
 gsplat
 https://github.com/nerfstudio-project/gsplat
+
+3D Gaussian Splatting as Markov Chain Monte Carlo
+https://arxiv.org/abs/2404.09591
