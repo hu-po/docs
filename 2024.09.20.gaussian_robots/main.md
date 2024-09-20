@@ -58,3 +58,6 @@ https://arxiv.org/abs/2404.09591
 
 View Dependent Podcast
 https://x.com/ViewDependent
+
+Langevin Dynamics
+https://henripal.github.io/blog/langevin
