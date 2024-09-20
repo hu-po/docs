@@ -55,3 +55,6 @@ https://github.com/nerfstudio-project/gsplat
 
 3D Gaussian Splatting as Markov Chain Monte Carlo
 https://arxiv.org/abs/2404.09591
+
+View Dependent Podcast
+https://x.com/ViewDependent
