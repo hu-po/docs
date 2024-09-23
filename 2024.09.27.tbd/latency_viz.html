@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latency Comparison</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: none;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .latency-block {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Latency Comparison</h2>
+
+<div class="container">
+    <div class="latency-block">
+        <label for="latencyInput1">Latency 1 (ms):</label><br>
+        <input type="number" id="latencyInput1" value="100"><br>
+        <button onclick="flashSquare('square1', 'latencyInput1')">Start</button>
+        <div id="square1" class="square"></div>
+    </div>
+    <div class="latency-block">
+        <label for="latencyInput2">Latency 2 (ms):</label><br>
+        <input type="number" id="latencyInput2" value="500"><br>
+        <button onclick="flashSquare('square2', 'latencyInput2')">Start</button>
+        <div id="square2" class="square"></div>
+    </div>
+    <div class="latency-block">
+        <label for="latencyInput3">Latency 3 (ms):</label><br>
+        <input type="number" id="latencyInput3" value="1000"><br>
+        <button onclick="flashSquare('square3', 'latencyInput3')">Start</button>
+        <div id="square3" class="square"></div>
+    </div>
+</div>
+
+<script>
+    function flashSquare(squareId, latencyInputId) {
+        var latency = parseInt(document.getElementById(latencyInputId).value);
+        var square = document.getElementById(squareId);
+        square.style.display = 'none';
+        setTimeout(function() {
+            square.style.display = 'block';
+        }, latency);
+    }
+</script>
+
+</body>
+</html>
