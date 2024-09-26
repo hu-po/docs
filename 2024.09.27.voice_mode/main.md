@@ -1,12 +1,12 @@
 ![thumbnail](thumbnail.png)
 
-# Title
+# Voice Mode
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/x3fX7v7xjUA
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1ynJODzrQqVxR
 
 **Twitch:**
 
@@ -29,3 +29,5 @@ https://web3.arxiv.org/abs/2409.06666
 torch.cuda.Event
 https://pytorch.org/docs/stable/generated/torch.cuda.Event.html
 https://github.com/kyutai-labs/moshi/blob/main/scripts/moshi_benchmark.py
+
+voice mode system prompt
