@@ -30,4 +30,7 @@ torch.cuda.Event
 https://pytorch.org/docs/stable/generated/torch.cuda.Event.html
 https://github.com/kyutai-labs/moshi/blob/main/scripts/moshi_benchmark.py
 
+moshi chat
+https://moshi.chat/
+
 voice mode system prompt
