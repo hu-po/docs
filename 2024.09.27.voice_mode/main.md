@@ -41,3 +41,6 @@ https://huggingface.co/openai/whisper-large-v3
 
 WavLM
 https://huggingface.co/docs/transformers/en/model_doc/wavlm
+
+RQ-Transformer
+https://github.com/lucidrains/RQ-Transformer
