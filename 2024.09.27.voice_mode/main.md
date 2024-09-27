@@ -38,3 +38,6 @@ https://x.com/elder_plinius/status/1838982899120431330
 
 whisper large
 https://huggingface.co/openai/whisper-large-v3
+
+WavLM
+https://huggingface.co/docs/transformers/en/model_doc/wavlm
