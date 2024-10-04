@@ -47,3 +47,6 @@ https://en.wikipedia.org/wiki/Euclidean_group
 
 AlphaFold Meets Flow Matching for Generating Protein Ensembles
 https://www.mlsb.io/papers_2023/AlphaFold_Meets_Flow_Matching_for_Generating_Protein_Ensembles.pdf
+
+Hyena Hierarchy: Towards Larger Convolutional Language Models
+https://arxiv.org/pdf/2302.10866
