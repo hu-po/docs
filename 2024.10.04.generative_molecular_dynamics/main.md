@@ -44,3 +44,6 @@ https://en.wikipedia.org/wiki/Orchestrated_objective_reduction
 Lie Groups, SE(3)
 https://en.wikipedia.org/wiki/Lie_group
 https://en.wikipedia.org/wiki/Euclidean_group
+
+AlphaFold Meets Flow Matching for Generating Protein Ensembles
+https://www.mlsb.io/papers_2023/AlphaFold_Meets_Flow_Matching_for_Generating_Protein_Ensembles.pdf
