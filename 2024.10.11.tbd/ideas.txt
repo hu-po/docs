@@ -1,0 +1,10 @@
+DIFFUSION MODELS ARE EVOLUTIONARY ALGORITHMS
+https://arxiv.org/pdf/2410.02543
+https://github.com/Zhangyanbo/diffusion-evolution
+
+D E P T H P R O : S H A R P M O N O C U L A R M E T R I C D E P T H I N LE S S T H A N A S E C O N D
+https://github.com/apple/ml-depth-pro/blob/main/src/depth_pro/depth_pro.py
+
+CAX: CELLULAR AUTOMATA ACCELERATED IN JAX
+https://arxiv.org/pdf/2410.02651
+https://github.com/maxencefaldor/cax
