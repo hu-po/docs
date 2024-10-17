@@ -34,3 +34,10 @@ stream todos:
 - iterate on mutation prompts
 - read through technical guide and papers
 - add claude api as agent
+
+https://x.com/Hesamation/status/1846924454309323257
+
+https://arxiv.org/abs/1803.03635
+
+https://x.com/rohanpaul_ai/status/1846242281973486063
+
