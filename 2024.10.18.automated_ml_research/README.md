@@ -34,6 +34,8 @@ stream todos:
 - iterate on mutation prompts
 - read through technical guide and papers
 - add claude api as agent
+- use voice mode with tripod as stream buddy
+- custom batch sizes and aug multipliers by machine
 
 https://x.com/Hesamation/status/1846924454309323257
 
