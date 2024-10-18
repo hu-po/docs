@@ -45,3 +45,6 @@ https://x.com/rohanpaul_ai/status/1846242281973486063
 
 fuzzy search over not fuzzy programs 
 https://x.com/fchollet/status/1846269999960543652
+
+agent guided diffusion in code space
+
