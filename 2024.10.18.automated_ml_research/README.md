@@ -1,4 +1,4 @@
-![thumbnail](thumbnail.png)
+to![thumbnail](thumbnail.png)
 
 # Automated ML Research
 
@@ -48,3 +48,4 @@ https://x.com/fchollet/status/1846269999960543652
 
 agent guided diffusion in code space
 
+https://replicate.com/lucataco/ollama-nemotron-70b
