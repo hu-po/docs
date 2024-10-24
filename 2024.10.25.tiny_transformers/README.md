@@ -36,3 +36,7 @@ https://arxiv.org/pdf/2410.17247
 https://transformer-circuits.pub/2021/framework/index.html#analyzing-a-two-layer-model
 
 https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing
+
+https://www.mobilephonemuseum.com/phone-detail/nokia-3310
+
+https://en.wikipedia.org/wiki/GeForce_30_series
