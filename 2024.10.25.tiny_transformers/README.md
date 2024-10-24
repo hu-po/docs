@@ -32,3 +32,7 @@ PYRAMIDDROP: ACCELERATING YOUR LARGE
 VISION-LANGUAGE MODELS VIA PYRAMID VISUAL
 REDUNDANCY REDUCTION
 https://arxiv.org/pdf/2410.17247
+
+https://transformer-circuits.pub/2021/framework/index.html#analyzing-a-two-layer-model
+
+https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing
