@@ -4,7 +4,19 @@ This repo contains documentation for content creation: stream links, references,
 
 Each folder contains content for a single stream, format is `year.month.date`.
 
-2024 stream schedule is: _**11am to 2pm Central Time on Friday**_
+## Stream Times:
+
+I stream on Friday mornings:
+```
+- CT (Austin): 10am-12pm
+- ET (New York): 11am-1pm
+- BST/WEST (London): 4-6pm
+- CEST (Berlin): 5-7pm
+- EEST (Athens): 6-8pm
+- IST (Mumbai): 8:30-10:30pm
+- CST (Beijing): 11pm-1am (Fri to Sat)
+- JST (Tokyo): Midnight-2am (Sat)
+```
 
 ### Sources
 
