@@ -40,3 +40,11 @@ https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing
 https://www.mobilephonemuseum.com/phone-detail/nokia-3310
 
 https://en.wikipedia.org/wiki/GeForce_30_series
+
+https://ai.meta.com/blog/meta-llama-quantized-lightweight-models/
+
+https://siboehm.com/articles/22/Fast-MMM-on-CPU
+
+https://bbycroft.net/llm
+
+https://cdn.prod.website-files.com/64f4e81394e25710d22d042e/6515ab82c9ae3de21049c8be_spatten_heatmap_bert.jpeg
