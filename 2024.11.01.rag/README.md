@@ -37,3 +37,5 @@ https://arxiv.org/pdf/2410.21242
 
 Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines
 https://arxiv.org/pdf/2410.21220
+
+https://en.wikipedia.org/wiki/Von_Neumann_architecture#stored-program-computer
