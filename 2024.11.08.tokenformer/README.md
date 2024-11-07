@@ -4,9 +4,9 @@
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/yOT9WIL_2Kg
 
-**X:**
+**X:** https://twitter.com/i/broadcasts/1vOxwrNwoBWJB
 
 **Twitch:**
 
