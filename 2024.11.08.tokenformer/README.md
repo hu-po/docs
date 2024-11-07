@@ -31,3 +31,12 @@ https://arxiv.org/pdf/2406.07550
 
 DIFFERENTIAL TRANSFORMER
 https://arxiv.org/pdf/2410.05258
+
+Value Vector in Attention
+https://youtu.be/eMlx5fFNoYc?si=trMnc4Dlf1clirte&t=922
+
+Majority of params are MLP
+https://youtu.be/9-Jl0dxWQs8?si=r066OC6wfnIeYNOv&t=1001
+
+Orthogonality grows exponentially with the dimmensionality of the space
+https://youtu.be/9-Jl0dxWQs8?si=CVUDv1vw0cmkcTbs&t=1208
