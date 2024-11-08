@@ -40,3 +40,6 @@ https://youtu.be/9-Jl0dxWQs8?si=r066OC6wfnIeYNOv&t=1001
 
 Orthogonality grows exponentially with the dimmensionality of the space
 https://youtu.be/9-Jl0dxWQs8?si=CVUDv1vw0cmkcTbs&t=1208
+
+Karpathy Attention
+https://youtu.be/kCc8FmEb1nY?t=3858
