@@ -43,3 +43,6 @@ https://youtu.be/9-Jl0dxWQs8?si=CVUDv1vw0cmkcTbs&t=1208
 
 Karpathy Attention
 https://youtu.be/kCc8FmEb1nY?t=3858
+
+Language is indexing and retrieval in brains
+https://youtu.be/JTU8Ha4Jyfc?t=7890
