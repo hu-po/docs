@@ -46,3 +46,11 @@ https://youtu.be/kCc8FmEb1nY?t=3858
 
 Language is indexing and retrieval in brains
 https://youtu.be/JTU8Ha4Jyfc?t=7890
+
+Method of Locci
+https://cognitivebias.io/uploads/ybias/image-6495c516a0377.png
+
+Memories as a Sequence of visual querries
+https://source.colostate.edu/an-elephant-never-forgets/
+
+https://onlinelibrary.wiley.com/doi/10.1002/evan.21924
