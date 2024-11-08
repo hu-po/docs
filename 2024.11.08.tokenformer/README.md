@@ -51,3 +51,6 @@ Memories as a Sequence of visual querries
 https://source.colostate.edu/an-elephant-never-forgets/
 
 https://onlinelibrary.wiley.com/doi/10.1002/evan.21924
+
+anamorphic sculptures
+https://leonacreo.com/wp-content/uploads/2022/02/matthieu-robert-ortis-sculptures-anamorphose-illusion-5.jpg
