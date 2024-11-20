@@ -1,0 +1,23 @@
+LLaVA-o1: Let Vision Language Models Reason Step-by-Step
+https://arxiv.org/pdf/2411.10440
+
+Large Language Models Can Self-Improve in Long-context Reasoning
+https://arxiv.org/pdf/2411.08147
+
+INFERENCE OPTIMAL VLMS NEED ONLY ONE VISUAL TOKEN BUT LARGER MODELS
+https://arxiv.org/pdf/2411.03312v1
+
+BlueLM-V-3B: Algorithm and System Co-Design for Multimodal Large Language Models on Mobile Devices
+https://arxiv.org/pdf/2411.10640
+
+GENERATIVE WORLD EXPLORER
+https://arxiv.org/pdf/2411.11844
+
+BELLMAN DIFFUSION: GENERATIVE MODELING AS LEARNING A LINEAR OPERATOR IN THE DISTRIBUTION SPACE
+https://arxiv.org/pdf/2410.01796
+
+Convolutional Differentiable Logic Gate Networks
+https://arxiv.org/pdf/2411.04732
+
+The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer Use
+https://arxiv.org/pdf/2411.10323
