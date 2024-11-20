@@ -1,3 +1,25 @@
+![thumbnail](thumbnail.png)
+
+# Visual Reasoning
+
+### Links
+
+**YouTube:**
+
+**X:**
+
+**Twitch:**
+
+**Substack:**
+
+**ResearchHub:**
+
+**TikTok:**
+
+**Reddit:**
+
+### References
+
 LLaVA-o1: Let Vision Language Models Reason Step-by-Step
 https://arxiv.org/pdf/2411.10440
 
@@ -13,11 +35,8 @@ https://arxiv.org/pdf/2411.10640
 GENERATIVE WORLD EXPLORER
 https://arxiv.org/pdf/2411.11844
 
-BELLMAN DIFFUSION: GENERATIVE MODELING AS LEARNING A LINEAR OPERATOR IN THE DISTRIBUTION SPACE
-https://arxiv.org/pdf/2410.01796
-
-Convolutional Differentiable Logic Gate Networks
-https://arxiv.org/pdf/2411.04732
-
 The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer Use
 https://arxiv.org/pdf/2411.10323
+
+DeepSeek-R1-Lite-Preview
+https://x.com/deepseek_ai/status/1859200141355536422
