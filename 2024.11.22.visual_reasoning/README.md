@@ -47,5 +47,7 @@ The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer Use
 DeepSeek-R1-Lite-Preview
 https://x.com/deepseek_ai/status/1859200141355536422
 
+https://unsloth.ai/blog/vision
+
 Multi-Paper Illuminate
 https://illuminate.google.com/library?play=P6lrND1_WjBU
