@@ -20,8 +20,6 @@
 
 ### References
 
-https://illuminate.google.com/library?play=P6lrND1_WjBU
-
 LLaVA-o1: Let Vision Language Models Reason Step-by-Step
 - https://arxiv.org/pdf/2411.10440
 - https://illuminate.google.com/library?play=n7aF5j_LSK5N
@@ -48,3 +46,6 @@ The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer Use
 
 DeepSeek-R1-Lite-Preview
 https://x.com/deepseek_ai/status/1859200141355536422
+
+Multi-Paper Illuminate
+https://illuminate.google.com/library?play=P6lrND1_WjBU
