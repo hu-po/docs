@@ -54,3 +54,5 @@ https://illuminate.google.com/library?play=P6lrND1_WjBU
 
 Multimodal Autoregressive Pre-training of Large Vision Encoders
 https://arxiv.org/pdf/2411.14402
+
+https://en.wikipedia.org/wiki/KISS_principle
