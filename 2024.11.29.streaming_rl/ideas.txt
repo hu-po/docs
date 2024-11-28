@@ -1,0 +1,35 @@
+CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+https://arxiv.org/pdf/2411.18613
+
+Pathways on the Image Manifold: Image Editing via Video Generation
+https://arxiv.org/pdf/2411.16819
+
+SAR3D: Autoregressive 3D Object Generation and Understanding via Multi-scale 3D VQVAE
+https://arxiv.org/pdf/2411.16856
+
+Material Anything: Generating Materials for Any 3D Object via Diffusion
+https://arxiv.org/pdf/2411.15138
+
+ROICtrl: Boosting Instance Control for Visual Generation
+https://arxiv.org/pdf/2411.17949
+
+Boltz-1 Democratizing Biomolecular Interaction Modeling
+https://gcorso.github.io/assets/boltz1.pdf
+
+Streaming Deep Reinforcement Learning Finally Works
+https://arxiv.org/pdf/2410.14606
+
+Hymba Hybrid-Head Architecture Boosts Small Language Model Performance
+https://developer.nvidia.com/blog/hymba-hybrid-head-architecture-boosts-small-language-model-performance/
+
+TEXGen: a Generative Diffusion Model for Mesh Textures
+https://arxiv.org/pdf/2411.14740
+
+Generative Agent Simulations of 1,000 People
+https://arxiv.org/pdf/2411.10109
+
+SAMURAI: Adapting Segment Anything Model for Zero-Shot Visual Tracking with Motion-Aware Memory
+https://arxiv.org/pdf/2411.11922
+
+SCALING IN-THE-WILD TRAINING FOR DIFFUSIONBASED ILLUMINATION HARMONIZATION AND EDITING BY IMPOSING CONSISTENT LIGHT TRANSPORT
+https://openreview.net/pdf?id=u1cQYxRI1H
