@@ -27,3 +27,12 @@ Streaming Deep Reinforcement Learning Finally Works
 
 Hymba Hybrid-Head Architecture Boosts Small Language Model Performance
 https://developer.nvidia.com/blog/hymba-hybrid-head-architecture-boosts-small-language-model-performance/
+
+Optimizer Visualizations
+https://github.com/j-w-yun/optimizer-visualization
+
+Alberta Canada
+https://c8.alamy.com/comp/2N04WRB/canada-administrative-divisions-political-map-the-ten-provinces-and-three-territories-of-canada-with-their-borders-and-capitals-2N04WRB.jpg
+
+Bitter Lesson
+http://www.incompleteideas.net/IncIdeas/BitterLesson.html
