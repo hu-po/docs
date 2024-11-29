@@ -42,3 +42,6 @@ https://www.marktechpost.com/wp-content/uploads/2021/02/image4.gif
 
 DM Control
 https://www.marktechpost.com/wp-content/uploads/2021/02/image4.gif
+
+Deep RL kinda sucks
+https://www.alexirpan.com/2018/02/14/rl-hard.html
