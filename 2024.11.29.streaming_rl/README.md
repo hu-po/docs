@@ -36,3 +36,9 @@ https://c8.alamy.com/comp/2N04WRB/canada-administrative-divisions-political-map-
 
 Bitter Lesson
 http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+
+Atari
+https://www.marktechpost.com/wp-content/uploads/2021/02/image4.gif
+
+DM Control
+https://www.marktechpost.com/wp-content/uploads/2021/02/image4.gif
