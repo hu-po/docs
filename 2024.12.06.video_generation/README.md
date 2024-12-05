@@ -31,3 +31,7 @@ https://github.com/Tencent/HunyuanVideo/blob/main/assets/hunyuanvideo.pdf
 
 X-Prompt: Towards Universal In-Context Image Generation in Auto-Regressive Vision Language Foundation Models
 https://arxiv.org/pdf/2412.01824
+
+- https://huggingface.co/tencent/HunyuanVideo
+- https://huggingface.co/tencent/HunyuanVideo-PromptRewrite
+- https://replicate.com/tencent/hunyuan-video
