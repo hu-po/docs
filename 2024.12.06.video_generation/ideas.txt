@@ -1,0 +1,36 @@
+PaliGemma 2: A Family of Versatile VLMs for Transfer
+https://arxiv.org/pdf/2412.03555
+
+ChatRex: Taming Multimodal LLM for Joint Perception and Understanding
+https://arxiv.org/pdf/2411.18363
+
+Training and Evaluating Language Models with Template-based Data Generation
+https://arxiv.org/pdf/2411.18104
+
+3D Convex Splatting: Radiance Field Rendering with 3D Smooth Convexes
+https://arxiv.org/pdf/2411.14974
+
+JETFORMER: AN AUTOREGRESSIVE GENERATIVE MODEL OF RAW IMAGES AND TEXT
+https://arxiv.org/pdf/2411.19722
+
+Efficient Track Anything
+https://arxiv.org/pdf/2411.18933
+
+Reverse Thinking Makes LLMs Stronger Reasoners
+https://arxiv.org/pdf/2411.19865
+
+X-Prompt: Towards Universal In-Context Image Generation in Auto-Regressive Vision Language Foundation Models
+https://arxiv.org/pdf/2412.01824
+
+Open-Sora Plan: Open-Source Large Video Generation Model
+https://arxiv.org/pdf/2412.00131
+
+VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation
+https://arxiv.org/pdf/2412.02259
+
+HunyuanVideo: A Systematic Framework For Large Video Generation Model Training
+https://github.com/Tencent/HunyuanVideo/blob/main/assets/hunyuanvideo.pdf
+
+Critical Tokens Matter: Token-Level Contrastive Estimation Enhances LLM’s Reasoning Capability
+https://arxiv.org/pdf/2411.19943
+
