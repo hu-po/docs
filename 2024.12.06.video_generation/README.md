@@ -35,3 +35,6 @@ https://arxiv.org/pdf/2412.01824
 - https://huggingface.co/tencent/HunyuanVideo
 - https://huggingface.co/tencent/HunyuanVideo-PromptRewrite
 - https://replicate.com/tencent/hunyuan-video
+- https://cloud.google.com/blog/products/ai-machine-learning/introducing-veo-and-imagen-3-on-vertex-ai
+- https://flux-ai.io/flux-video-ai/
+- https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/
