@@ -25,3 +25,6 @@ https://arxiv.org/pdf/2404.02905
 
 VQ-VAE
 https://raw.githubusercontent.com/lucidrains/vector-quantize-pytorch/master/images/vq.png
+
+convnet
+https://8f430952.rocketcdn.me/wp-content/uploads/2018/01/conv-full-layer.gif
