@@ -28,3 +28,6 @@ https://raw.githubusercontent.com/lucidrains/vector-quantize-pytorch/master/imag
 
 convnet
 https://8f430952.rocketcdn.me/wp-content/uploads/2018/01/conv-full-layer.gif
+
+raster scan
+https://miro.medium.com/v2/resize:fit:1400/1*uJObiQZsEMclcmoS4gv7zw.png
