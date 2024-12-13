@@ -37,3 +37,6 @@ https://miro.medium.com/v2/resize:fit:1400/1*uJObiQZsEMclcmoS4gv7zw.png
 
 Tian Lawsuit
 https://www.shine.cn/news/nation/2412047516/
+
+Pyramidal Neurons
+https://neuwritesd.org/wp-content/uploads/2015/10/visual_stream_small.png
