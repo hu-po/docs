@@ -52,3 +52,5 @@ https://genesis-embodied-ai.github.io/
 Representing Long Volumetric Video with Temporal Gaussian Hierarchy
 https://arxiv.org/pdf/2412.09608
 
+MetaMorph: Multimodal Understanding and Generation via Instruction Tuning
+https://arxiv.org/pdf/2412.14164
