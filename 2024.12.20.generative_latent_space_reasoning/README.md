@@ -20,3 +20,59 @@
 
 ### References
 
+Byte Latent Transformer: Patches Scale Better Than Tokens
+https://arxiv.org/pdf/2412.09871
+
+Large Concept Models: Language Modeling in a Sentence Representation Space
+https://arxiv.org/pdf/2412.08821v2
+
+Training Large Language Models to Reason in a Continuous Latent Space
+https://arxiv.org/pdf/2412.06769
+
+Superhuman performance of a large language model on the reasoning tasks of a physician
+https://www.arxiv.org/pdf/2412.10849
+
+Memory Layers at Scale
+https://arxiv.org/pdf/2412.09764
+
+ALIGNMENT FAKING IN LARGE LANGUAGE MODELS
+https://assets.anthropic.com/m/983c85a201a962f/original/Alignment-Faking-in-Large-Language-Models-full-paper.pdf
+
+Genesis: A Generative and Universal Physics Engine for Robotics and Beyond
+https://genesis-embodied-ai.github.io/
+
+Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models
+https://arxiv.org/pdf/2412.09645
+
+Wonderland: Navigating 3D Scenes from a Single Image
+https://arxiv.org/pdf/2412.12091
+
+SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models
+https://arxiv.org/pdf/2412.11605
+
+GenEx: Generating an Explorable World
+https://arxiv.org/pdf/2412.09624
+
+Lyra: An Efficient and Speech-Centric Framework for Omni-Cognition
+https://arxiv.org/pdf/2412.09501
+
+Are Your LLMs Capable of Stable Reasoning?
+https://arxiv.org/pdf/2412.13147
+
+AnySat: An Earth Observation Model for Any Resolutions, Scales, and Modalities
+https://arxiv.org/pdf/2412.14123
+
+Emergence of Abstractions: Concept Encoding and Decoding Mechanism for In-Context Learning in Transformers
+https://arxiv.org/pdf/2412.12276
+
+FLAME : Factuality-Aware Alignment for Large Language Models
+https://ai.meta.com/research/publications/flame-factuality-aware-alignment-for-large-language-models/
+
+Genesis: A Generative and Universal Physics Engine for Robotics and Beyond
+https://genesis-embodied-ai.github.io/
+
+Representing Long Volumetric Video with Temporal Gaussian Hierarchy
+https://arxiv.org/pdf/2412.09608
+
+MetaMorph: Multimodal Understanding and Generation via Instruction Tuning
+https://arxiv.org/pdf/2412.14164
