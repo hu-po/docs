@@ -8,16 +8,6 @@
 
 **X:**
 
-**Twitch:**
-
-**Substack:**
-
-**ResearchHub:**
-
-**TikTok:**
-
-**Reddit:**
+**Slides:**
 
 ### References
-
-references

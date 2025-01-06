@@ -1,12 +1,11 @@
 # docs
 
-This repo contains documentation for content creation: stream links, references, notes, thumbnails, etc.
+This repo contains documentation for content creation: stream links, references, scripts, notes, thumbnails, etc.
 
-Each folder contains content for a single stream, format is `year.month.date`.
-
-## Stream Times:
+Each folder contains content for a single stream, format is `year.month.date.title`
 
 I stream on Friday mornings:
+
 ```
 - CT (Austin): 10am-12pm
 - ET (New York): 11am-1pm
@@ -17,8 +16,6 @@ I stream on Friday mornings:
 - CST (Beijing): 11pm-1am (Fri to Sat)
 - JST (Tokyo): Midnight-2am (Sat)
 ```
-
-### Sources
 
 I source my papers from the following places:
 
@@ -33,9 +30,9 @@ I source my papers from the following places:
 ### Citation
 
 ```
-@misc{hu-po-stream-2024,
-  title={hu-po livestreams 2024},
+@misc{hu-po-stream,
+  title={hu-po livestreams},
   author={Hugo Ponte},
-  year={2024},
-  url={https://github.com/hu-po/streamdocs}
+  year={2025},
+  url={https://github.com/hu-po/docs}
 }

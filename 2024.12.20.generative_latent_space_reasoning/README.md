@@ -8,6 +8,8 @@
 
 **X:** https://twitter.com/i/broadcasts/1OyKAZgmyYbGb
 
+**Slides:** https://docs.google.com/presentation/d/1uYwiKjwCrP7E1_YFWqybg0MlV3s1180E1Rupzbd0vCQ/edit?usp=sharing
+
 **Twitch:**
 
 **Substack:**
