@@ -33,3 +33,11 @@ https://aws.amazon.com/bedrock/agents/
 https://rivet.ironcladapp.com/docs/user-guide/adding-connecting-nodes
 
 https://www.vellum.ai/
+
+https://www.kaggle.com/whitepaper-agents
+
+https://dspy.ai/#__tabbed_2_5
+
+https://github.com/coinbase/cdp-agentkit
+
+https://github.com/fetchai/agents-aea
