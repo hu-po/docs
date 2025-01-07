@@ -12,6 +12,8 @@
 
 ### References
 
+https://github.com/hu-po/agents-test
+
 https://www.anthropic.com/research/building-effective-agents
 
 https://huggingface.co/docs/smolagents/index
@@ -41,3 +43,5 @@ https://dspy.ai/#__tabbed_2_5
 https://github.com/coinbase/cdp-agentkit
 
 https://github.com/fetchai/agents-aea
+
+https://github.com/microsoft/playwright?tab=readme-ov-file
