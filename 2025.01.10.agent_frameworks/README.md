@@ -24,7 +24,7 @@ https://github.com/browser-use/browser-use
 
 https://ai.pydantic.dev/
 
-https://star-history.com/#browser-use/browser-use&pydantic/pydantic-ai&huggingface/smolagents&Date
+https://star-history.com/#browser-use/browser-use&pydantic/pydantic-ai&huggingface/smolagents&stanfordnlp/dspy&elizaOS/eliza&Date
 
 https://dagster.io/blog/fake-stars
 
@@ -45,3 +45,5 @@ https://github.com/coinbase/cdp-agentkit
 https://github.com/fetchai/agents-aea
 
 https://github.com/microsoft/playwright?tab=readme-ov-file
+
+https://github.com/elizaOS/eliza
