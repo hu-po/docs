@@ -47,3 +47,7 @@ https://github.com/fetchai/agents-aea
 https://github.com/microsoft/playwright?tab=readme-ov-file
 
 https://github.com/elizaOS/eliza
+
+https://arxiv.org/pdf/2412.13459
+
+https://arxiv.org/pdf/2501.01149
