@@ -51,3 +51,7 @@ https://github.com/elizaOS/eliza
 https://arxiv.org/pdf/2412.13459
 
 https://arxiv.org/pdf/2501.01149
+
+https://github.com/pydantic/pydantic-ai/blob/b10ab78694db5408bcd664a18439d822d66a184c/examples/pydantic_ai_examples/flight_booking.py#L188
+
+https://github.com/langchain-ai/langgraph/blob/f4bd02da72cfb81b60214ed6159db4d614380d02/docs/docs/tutorials/introduction.ipynb#L284
