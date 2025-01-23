@@ -12,6 +12,8 @@
 
 ### References
 
+https://arxiv.org/pdf/2409.09232
+
 https://jax.readthedocs.io/en/latest/_autosummary/jax.scipy.special.kl_div.html
 
 https://pytorch.org/docs/stable/generated/torch.nn.KLDivLoss.html
@@ -39,3 +41,11 @@ https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2Faoms%2F1177729
 https://www.tensorflow.org/api_docs/python/tf/keras/metrics/KLDivergence
 
 https://gregorygundersen.com/blog/2020/02/09/log-sum-exp/
+
+https://lichess.org/@/CheckRaiseMate/blog/entropy-in-the-opening/sBebftmy
+
+https://medium.com/swlh/a-deep-conceptual-guide-to-mutual-information-a5021031fad0
+
+https://writings.stephenwolfram.com/2023/02/computational-foundations-for-the-second-law-of-thermodynamics/
+
+https://arxiv.org/pdf/1909.12830v1
