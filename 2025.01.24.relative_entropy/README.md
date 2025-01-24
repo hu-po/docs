@@ -49,3 +49,7 @@ https://medium.com/swlh/a-deep-conceptual-guide-to-mutual-information-a5021031fa
 https://writings.stephenwolfram.com/2023/02/computational-foundations-for-the-second-law-of-thermodynamics/
 
 https://arxiv.org/pdf/1909.12830v1
+
+https://docs.nvidia.com/cuda/cuda-math-api/cuda_math_api/group__CUDA__MATH__DOUBLE.html#group__cuda__math__double_1ga28ce8e15ef5149c271eba95663becba2
+
+https://en.cppreference.com/w/cpp/numeric/math/log
