@@ -16,6 +16,8 @@ https://x.com/hashtag/ICLR2025
 
 https://arxiv.org/pdf/2502.01536
 
+https://arxiv.org/pdf/2502.01143
+
 https://github.com/LeCAR-Lab/ASAP
 
 https://github.com/ou524u/MotionCritic
