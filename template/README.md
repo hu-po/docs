@@ -8,6 +8,4 @@
 
 **X:**
 
-**Slides:**
-
 ### References
