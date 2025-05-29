@@ -1,4 +1,4 @@
-![thumbnail](thumbnail.png)
+![thumbnail](thumbnail.jpg)
 
 # Cursor vs Codex
 
