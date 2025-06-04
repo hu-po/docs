@@ -4,17 +4,17 @@ This repo contains documentation for content creation: stream links, references,
 
 Each folder contains content for a single stream, format is `year.month.date.title`
 
-I stream on Friday mornings:
+I stream on Fridays:
 
 ```
-- CT (Austin): 10am-12pm
-- ET (New York): 11am-1pm
-- BST/WEST (London): 4-6pm
-- CEST (Berlin): 5-7pm
-- EEST (Athens): 6-8pm
-- IST (Mumbai): 8:30-10:30pm
-- CST (Beijing): 11pm-1am (Fri to Sat)
-- JST (Tokyo): Midnight-2am (Sat)
+- CT (Austin): 9am-11am
+- ET (New York): 10am-12pm
+- BST/WEST (London): 3-5pm
+- CEST (Berlin): 4-6pm
+- EEST (Athens): 5-7pm
+- IST (Mumbai): 7:30-9:30pm
+- CST (Beijing): 10pm-12am
+- JST (Tokyo): 11pm-1am
 ```
 
 I source my papers from the following places:
