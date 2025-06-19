@@ -18,6 +18,9 @@ https://youtu.be/eeOANluSqAE
 
 https://youtube.com/shorts/7CHr0qwTcJw
 
+Brockman "MCP is really taking off"
+https://youtu.be/E6hCFDfkijU
+
 Ideas:
 - gradio frontend for tatbot MCP
 - git pull on all machines
