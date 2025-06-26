@@ -18,6 +18,8 @@ https://www.roboticsproceedings.org/rss21/p020.pdf
 Building Rome with Convex Optimization
 https://www.roboticsproceedings.org/rss21/p032.pdf
 
+https://github.com/ComputationalRobotics/XM-code
+
 Solving Multi-Agent Safe Optimal Control with Distributed Epigraph Form MARL
 https://www.roboticsproceedings.org/rss21/p027.pdf
 
