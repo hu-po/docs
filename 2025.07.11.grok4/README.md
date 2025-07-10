@@ -27,5 +27,8 @@ Riddles
 
 Technical
 - requires pdf upload
+- extrinsic/intrinsic camera calculation
 - local affine heat method for mapping numpy strokes to a mesh surface
-- extrinsic camera calculation
+
+Creative writing
+- rewrite the tatbot paper history section, get updated bibliography
