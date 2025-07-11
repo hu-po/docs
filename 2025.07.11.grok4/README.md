@@ -159,10 +159,15 @@ deepseek3 - Binary
 
 ## Winner:
 
-according to llama3-70b-instruct, the winner is:
+So who won the challenge?
 
 ```
-grok4
+llama3-70b-instruct - grok4
+grok4 - grok4
+gemini2.5pro - o3-pro
+o3-pro - o3‑pro
+sonnet4 - tie between Gemini 2.5 Pro and o3-pro
+deepseek3 - deepseekv3 & o3-pro (Tie)
 ```
 
 Technical
