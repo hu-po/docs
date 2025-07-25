@@ -26,3 +26,5 @@ https://deepmind.google/models/gemini-diffusion/
 
 AlphaGo Moment for Model Architecture Discovery
 https://arxiv.org/pdf/2507.18074
+
+https://youtu.be/iv-5mZ_9CPY
