@@ -23,3 +23,6 @@ Training Compute-Optimal Large Language Models
 https://arxiv.org/pdf/2203.15556
 
 https://deepmind.google/models/gemini-diffusion/
+
+AlphaGo Moment for Model Architecture Discovery
+https://arxiv.org/pdf/2507.18074
