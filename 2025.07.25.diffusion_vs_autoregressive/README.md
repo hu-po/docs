@@ -28,3 +28,7 @@ AlphaGo Moment for Model Architecture Discovery
 https://arxiv.org/pdf/2507.18074
 
 https://youtu.be/iv-5mZ_9CPY
+
+Distillation Scaling Laws
+https://arxiv.org/pdf/2502.08606
+
