@@ -15,6 +15,7 @@ Group Sequence Policy Optimization
 
 Flow Matching Policy Gradients
 - https://arxiv.org/pdf/2507.21053
+- https://flowreinforce.github.io/
 
 Agentic Reinforced Policy Optimization
 - https://arxiv.org/pdf/2507.19849
