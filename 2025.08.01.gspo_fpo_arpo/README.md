@@ -29,4 +29,5 @@ TRL implementation
 - https://github.com/huggingface/trl/releases/tag/v0.20.0
 - https://huggingface.co/papers/2507.18071#6884b011785e717baffee972
 
-  https://poloclub.github.io/transformer-explainer/
+- https://poloclub.github.io/transformer-explainer/
+- https://losslandscape.com/explorer
