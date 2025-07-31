@@ -20,6 +20,9 @@ Flow Matching Policy Gradients
 Agentic Reinforced Policy Optimization
 - https://arxiv.org/pdf/2507.19849
 
+GEPA: REFLECTIVE PROMPT EVOLUTION CAN OUTPERFORM REINFORCEMENT LEARNING
+- https://arxiv.org/pdf/2507.19457
+
 Spicy AI takes
 - https://grok.com/share/bGVnYWN5_c048fc33-aca0-4c59-8152-b1c46ee0df54
 - https://chatgpt.com/s/t_688a7f2cd5508191b0f6ccb8d13f0db6
@@ -31,3 +34,5 @@ TRL implementation
 
 - https://poloclub.github.io/transformer-explainer/
 - https://losslandscape.com/explorer
+- https://benjaminwhiteside.com/wp-content/uploads/2020/10/bayestheorem1.png
+- 
