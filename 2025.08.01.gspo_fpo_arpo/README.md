@@ -4,9 +4,9 @@
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/3rNRfVD30Mk
 
-**X:**
+**X:** https://x.com/i/broadcasts/1ypKdZppBzNJW
 
 ### References
 
