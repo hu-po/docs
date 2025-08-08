@@ -10,7 +10,8 @@
 
 ### References
 
-
+- https://arcprize.org/leaderboard
+- https://pbs.twimg.com/media/Gxw9EpRbsAMqC_q.jpg
 - https://github.com/anthropics/claude-code
 - https://github.com/sst/opencode
 - https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf
