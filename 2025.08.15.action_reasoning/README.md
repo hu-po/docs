@@ -12,6 +12,7 @@
 
 MolmoAct: Action Reasoning Models that can Reason in Space
 - https://huggingface.co/allenai/MolmoAct-7B-D-0812/blob/main/MolmoAct_Technical_Report.pdf
+- https://huggingface.co/allenai/MolmoAct-7B-D-0812
 
 Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors
 - https://arxiv.org/pdf/2508.08896
