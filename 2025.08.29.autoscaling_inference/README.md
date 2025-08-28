@@ -24,3 +24,9 @@ Taming the Titans: A Survey of Efficient LLM Inference Serving
 
 ThunderServe: High-Performance and Cost-Efficient LLM Serving in Cloud Environments
 - https://arxiv.org/pdf/2502.09334z
+
+
+- https://replicate.com/playground
+- https://huggingface.co/blog/not-lain/kv-caching
+- https://upload.wikimedia.org/wikipedia/commons/3/33/PID_Compensation_Animated.gif
+- https://miro.medium.com/v2/resize:fit:1400/1*dUO_NoEM0Dsa8nVlsLcMWg.png
