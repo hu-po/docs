@@ -31,3 +31,4 @@ ThunderServe: High-Performance and Cost-Efficient LLM Serving in Cloud Environme
 - https://upload.wikimedia.org/wikipedia/commons/3/33/PID_Compensation_Animated.gif
 - https://miro.medium.com/v2/resize:fit:1400/1*dUO_NoEM0Dsa8nVlsLcMWg.png
 - https://www.chinatalk.media/p/ban-the-h20-competing-in-the-inference
+- https://bbycroft.net/llm
