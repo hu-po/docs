@@ -15,3 +15,4 @@
 - https://github.com/hu-po/lerobot
 - https://github.com/hu-po/openpi
 - https://wandb.ai/hug/openpi-lora-3090
+- https://maps.app.goo.gl/aqwwAcbNr9BH4DRt9
