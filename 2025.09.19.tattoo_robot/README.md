@@ -16,3 +16,5 @@
 - https://github.com/hu-po/openpi
 - https://wandb.ai/hug/openpi-lora-3090
 - https://maps.app.goo.gl/aqwwAcbNr9BH4DRt9
+- https://www.datacenters.com/atnorth-fin03-finland
+- https://x.com/IliaLarchenko/status/1967950086748652014
