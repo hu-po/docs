@@ -19,3 +19,4 @@
 - https://www.datacenters.com/atnorth-fin03-finland
 - https://x.com/IliaLarchenko/status/1967950086748652014
 - https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/
+- https://www.physicalintelligence.company/blog/pi05
