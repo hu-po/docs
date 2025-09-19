@@ -20,3 +20,5 @@
 - https://x.com/IliaLarchenko/status/1967950086748652014
 - https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/
 - https://www.physicalintelligence.company/blog/pi05
+- https://cdn.mos.cms.futurecdn.net/sNJk4y7i2ZqmfVgdmfUa5X.jpg
+- https://x.com/Figure_robot/status/1968702836717273099
