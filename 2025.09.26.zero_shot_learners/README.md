@@ -19,6 +19,9 @@ OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion Transformer
 Qwen3-Omni Technical Report
 - https://arxiv.org/pdf/2509.17765
 
+Lynx: Towards High-Fidelity Personalized Video Generation
+- https://arxiv.org/pdf/2509.15496
+
 CWM: An Open-Weights LLM for Research on Code Generation with World Models
 - https://ai.meta.com/research/publications/cwm-an-open-weights-llm-for-research-on-code-generation-with-world-models/
 
