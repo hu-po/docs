@@ -14,3 +14,5 @@
 - https://docs.unsloth.ai/new/gpt-oss-reinforcement-learning
 - https://wandb.ai/hug/kernel_rl
 - https://www.aleksagordic.com/blog/matmul
+- https://modal.com/gpu-glossary/readme
+- https://arthurchiao.art/blog/practical-storage-hierarchy
