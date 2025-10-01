@@ -16,3 +16,4 @@
 - https://www.aleksagordic.com/blog/matmul
 - https://modal.com/gpu-glossary/readme
 - https://arthurchiao.art/blog/practical-storage-hierarchy
+- https://docs.google.com/presentation/d/1HTZ300NN-naARYFM_vBkXE3U7lwLnlw-W0fRxJfIffg/edit?usp=sharing
