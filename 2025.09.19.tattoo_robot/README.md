@@ -8,6 +8,11 @@
 
 **X:** https://x.com/i/broadcasts/1zqJVdgzWXLKB
 
+### Free Compute Credits
+
+use code 🏷️**hu-po-100**🏷️ on https://datacrunch.io/ for 100€ of free compute.
+https://docs.datacrunch.io/resources/obtaining-free-credits/how-to-redeem-credits
+
 ### References
 
 - https://github.com/hu-po/tatbot
