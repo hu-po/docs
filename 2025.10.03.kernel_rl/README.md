@@ -24,3 +24,4 @@ https://docs.datacrunch.io/resources/obtaining-free-credits/how-to-redeem-credit
 - https://docs.google.com/presentation/d/1HTZ300NN-naARYFM_vBkXE3U7lwLnlw-W0fRxJfIffg/edit?usp=sharing
 - https://arxiv.org/pdf/1912.06680
 - https://arxiv.org/abs/2510.01180
+- https://arxiv.org/pdf/2509.22622
