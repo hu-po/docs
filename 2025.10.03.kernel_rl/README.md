@@ -17,6 +17,7 @@ https://docs.datacrunch.io/resources/obtaining-free-credits/how-to-redeem-credit
 
 - https://github.com/hu-po/kernel_rl
 - https://docs.unsloth.ai/new/gpt-oss-reinforcement-learning
+- https://tinker-docs.thinkingmachines.ai/
 - https://wandb.ai/hug/kernel_rl
 - https://www.aleksagordic.com/blog/matmul
 - https://modal.com/gpu-glossary/readme
