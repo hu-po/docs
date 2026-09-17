@@ -27,6 +27,8 @@ PAPERS = {
     "2602.23413": ("EvoX", "Liu", "2026-02-26", "EvoX: Meta-Evolution for Automated Discovery"),
     "2607.02807": ("SwarmResearch", "Virk", "2026-07-02", "SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery"),
     "2603.28052": ("Meta-Harness", "Lee", "2026-03-30", "Meta-Harness: End-to-End Optimization of Model Harnesses"),
+    "2604.19341": ("SimpleTES", "Ye", "2026-04-21", "Structured Scaling of AI Discovery Across Diverse Scientific Domains"),
+    "2511.23473": ("ThetaEvolve", "Wang", "2025-11-28", "ThetaEvolve: Test-time Learning on Open Problems"),
     "2601.16175": ("TTT-Discover", "Yuksekgonul", "2026-01-22", "Learning to Discover at Test Time"),
     "1803.10122": ("World Models", "Ha", "2018-03-27", "World Models"),
     "1912.01603": ("Dreamer", "Hafner", "2019-12-03", "Dream to Control: Learning Behaviors by Latent Imagination"),
@@ -52,12 +54,14 @@ SECTIONS = [
          blurb="Recursive means the thing being improved is the improver. That idea is older than the transformer, and each era has meant something different by it.",
          slides=[
             dict(fig="cs0309048_S2-F1", ctx="A Gödel machine's storage before any self-improvement: the initial solver, a proof searcher, and the axioms describing its own hardware and utility. The machine may rewrite any part of itself once the proof searcher proves the rewrite is useful."),
+            dict(fig="2310.02304_S0-F1", ctx="STOP: a language model is given a seed improver, a program that improves programs, and applies it to itself. The self-improvement strategies shown were proposed and implemented by GPT-4 during that process: genetic algorithm, decomposing and improving parts, multi-armed prompt bandit, varying temperature, simulated annealing, and beam or tree search."),
             dict(fig="2505.22954_S1-F1", ctx="The Darwin Gödel Machine drops the proofs and keeps the self-modification: a growing archive of coding agents, each produced by an existing agent editing its own code, then evaluated on downstream coding tasks. Parents are chosen from the archive open-endedly, not greedily."),
             dict(fig="2603.19461_S3-F1", ctx="Hyperagents extend the DGM one level up. Agents improve not only the code that does the task but the code that does the improving, and the run can span multiple task domains at once."),
          ]),
     dict(title="Anatomy of a discovery loop",
          blurb="Between AlphaEvolve and today the loop got a lot of engineering. The exploration strategy stayed hand-written and fixed.",
          slides=[
+            dict(fig="2604.19341_S0-F1a", ctx="SimpleTES, the baseline Dream-RSI reports its Lasso and math results against. Top: the research community's propose-evaluate-refine cycle. Bottom: the same loop with an LLM as the researcher. The evaluator-query budget N = C × L × K is split across global width C (independent lines in parallel), refinement depth L (rounds carrying the best line forward) and generation batch size K."),
             dict(fig="2601.10657_S1-F1", ctx="PACEvolve's workflow, from the same Google group as Dream-RSI. Idea generation is decoupled from idea selection, with a hierarchical idea memory and progress-aware context management. The exploration strategy itself is designed by hand."),
             dict(fig="2602.02919_S1-F1", ctx="DeltaEvolve stores semantic deltas between programs rather than whole programs, and reuses them as momentum. History is used as context for the next proposal."),
          ]),
@@ -94,6 +98,7 @@ SECTIONS = [
          blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Two papers this month say RSI and mean different things.",
          slides=[
             dict(fig="2005.01643_S1-F1", ctx="Online, off-policy and offline reinforcement learning. In the offline setting (c) data is collected once with some policy and the learner never interacts with the environment again. Evaluating a new exploration policy on a recorded discovery tree is this setting."),
+            dict(fig="2511.23473_S1-F1", ctx="Three loops side by side. Top: AlphaEvolve, where a frozen LLM ensemble (snowflake) proposes edits to programs sampled from a program database. Middle: standard RL, where a single LLM is trained (flame) on prompts from a static dataset. Bottom: ThetaEvolve, a single LLM sampling from a program database, with optional RL training on the verifier's scores."),
             dict(fig="2609.08183_S1-F2", ctx="NeoHorse-1, published the same week. Diverse tasks generate experience through a routing harness backed by a pool of models; that experience becomes a training mixture and the model weights are updated. Here the thing that changes is the model."),
             dict(fig="2608.19880_S1-F2", ctx="EnvHarness applies the agent-harness idea to the other side of the interface: the base environment stays frozen and plug-in components change what the agent experiences. The environment is the part Dream-RSI holds fixed."),
          ]),
