@@ -27,11 +27,10 @@
 - https://arxiv.org/abs/2601.10657
 - https://arxiv.org/abs/2605.20086
 - https://arxiv.org/abs/2510.15047
+- https://arxiv.org/abs/2607.02807
 - https://arxiv.org/abs/2602.23413
 - https://arxiv.org/abs/2605.07039
 - https://arxiv.org/abs/2604.23472
-- https://arxiv.org/abs/2607.02807
-- https://arxiv.org/abs/2603.28052
 - https://arxiv.org/abs/1803.10122
 - https://arxiv.org/abs/1912.01603
 - https://arxiv.org/abs/2509.24527
