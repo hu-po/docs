@@ -16,6 +16,7 @@
 - https://arxiv.org/abs/2608.23691
 - https://arxiv.org/abs/cs/0309048
 - https://arxiv.org/abs/2310.02304
+- https://arxiv.org/abs/2410.04444
 - https://arxiv.org/abs/2505.22954
 - https://arxiv.org/abs/2603.19461
 - https://arxiv.org/abs/2607.07663
@@ -35,6 +36,7 @@
 - https://arxiv.org/abs/1912.01603
 - https://arxiv.org/abs/2509.24527
 - https://arxiv.org/abs/2404.16077
+- https://arxiv.org/abs/1911.08265
 - https://arxiv.org/abs/2602.19128
 - https://arxiv.org/abs/2609.14858
 - https://arxiv.org/abs/2005.01643
