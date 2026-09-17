@@ -44,6 +44,9 @@ PAPERS = {
     "2609.13406": ("Generalized Agent Iteration", "Tang", "2026-09-11", "Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement"),
     "2604.23472": ("Escher-Loop", "Liu", "2026-04-25", "Escher-Loop: Mutual Evolution by Closed-Loop Self-Referential Optimization"),
     "2609.17523": ("ScienceBuddy", "Xue", "2026-09-15", "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents"),
+    "2608.23691": ("The Station", "Chung", "2026-08-24", "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment"),
+    "2404.16077": ("CompilerDream", "Deng", "2024-04-24", "CompilerDream: Learning a Compiler World Model for General Code Optimization"),
+    "2606.05558": ("ADWM", "Liu", "2026-06-04", "Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents"),
 }
 
 # Each slide: dict(fig="<file stem in figures/>", ctx="one or two factual sentences")  (cite line is derived)
@@ -54,6 +57,7 @@ SECTIONS = [
             dict(fig="2506.13131_S2-F2", ctx="AlphaEvolve's discovery process. The user supplies an initial program with the parts to evolve marked, plus evaluation code. A program database samples prompts, an LLM ensemble proposes diffs, evaluators score the result, and the database is updated."),
             dict(fig="2506.13131_S3-F5", ctx="Constructions discovered by AlphaEvolve that beat the previous state of the art: autocorrelation and uncertainty inequalities in analysis, packing problems in geometry, and combinatorial bounds."),
             dict(fig="2511.02864_S3-F1", ctx="Same problem, more parallel threads: running AlphaEvolve with more threads finds good constructions sooner in wall-clock time, but at a greater total compute cost. Averages over 100 experiments."),
+            dict(fig="2608.23691_S2-F1", ctx="The Station, evaluated on 12 of the AlphaEvolve construction problems with no central coordinator or scripted pipeline. (a) Rooms in the environment; at every tick each agent picks a room and an action. (b) Agents from several model families choose their own direction, run experiments and submit papers; a reviewer agent accepts or rejects, and accepted papers stay in the Archive Room for later agents to read, extend and cite."),
          ]),
     dict(title="The old dream",
          blurb="Recursive means the thing being improved is the improver. That idea is older than the transformer, and each era has meant something different by it.",
@@ -87,6 +91,7 @@ SECTIONS = [
             dict(fig="1803.10122_S1-F1", ctx="Ha and Schmidhuber open World Models with a panel from Understanding Comics. An agent never acts on the world directly, only on a compressed internal model of it built from limited sensory input."),
             dict(fig="1912.01603_S1-F1", ctx="Dreamer learns a world model from past experience and learns behaviors in its latent space by backpropagating value estimates through imagined trajectories. The word dreaming enters the vocabulary here."),
             dict(fig="2509.24527_S0-F1", ctx="Dreamer 4 learns to solve control tasks by reinforcement learning entirely inside its world model. The imagined training sequences are decoded for visualization; the model has learned to simulate a wide range of Minecraft situations."),
+            dict(fig="2404.16077_S4-F5", ctx="CompilerDream: a Dreamer-style world model of a compiler. Top: the real environment, starting from the cBench stringsearch2 program and applying the passes -sroa, -early-cse, -simplifycfg. Bottom: the world model's imagined trajectory under the same passes, predicting the IR features and the reward at each step; mean squared error between the two is shown at each step."),
             dict(fig="2602.19128_S3-F1", ctx="K-Search: a world model for kernel search. The search state is a tree of closed nodes with attached programs and a frontier of open proposals with predicted values. An LLM reasoner updates, inserts and prunes the tree after each execution."),
          ]),
     dict(title="Dream-RSI",
@@ -107,6 +112,7 @@ SECTIONS = [
          blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Is a learned scheduler recursive?",
          slides=[
             dict(fig="2005.01643_S1-F1", ctx="Online, off-policy and offline reinforcement learning. In the offline setting (c) data is collected once with some policy and the learner never interacts with the environment again. Evaluating a new exploration policy on a recorded discovery tree is this setting."),
+            dict(fig="2606.05558_S1-F1", ctx="Three ways to evaluate an LLM agent policy. Left: on-policy, run the agent in the real environment. Middle: off-policy, train a simulator on offline data and roll the new policy out in it, which suffers distribution shift between the behavior and target policies and compounding error over multi-step rollouts. Right: ADWM, a diffusion world model with the evaluated policy injected into every denoising step."),
             dict(fig="2609.13406_S3-F2", ctx="Generalized agent iteration as a cycle of policy, critic and modifier. The critic evaluates the policy and the modifier against a base (the environment and goal) and returns feedback; the modifier produces improvements, including, in gray dashed, rewrites of the critic and of itself. The dash-dot border marks the modifier as part of the agent: with the modifier fixed outside the agent the cycle reduces to generalized policy iteration; with it inside, it is recursive self-improvement."),
          ]),
     dict(title="What's next",

@@ -21,9 +21,11 @@ Sections are provisional — rounds may rename, reorder, merge or split them; lo
   the improver that Dream-RSI's replay replaces. Closes with EvoTrace/EvoReplay (logged runs as objects) as the set-up for 05.
 - Section 03 (anatomy) kept: opens with SimpleTES (the baseline for Dream-RSI's headline numbers, C × L × K budget), closes on EvoTrace F4 (what edits are).
 - "Old dream" is Gödel (2003) → STOP (2023) → DGM (2025) → Hyperagents (2026) → survey taxonomy (2607.07663 F1). Survey F3 (persistence ladder) pulled, unused.
-- Queued, pulled and inspected: 2606.09312 F2 (compiler world model — Dreamer-style latent z_t over schedule actions, TVM not LLM) for 05 between Dreamer 4 and K-Search if 05 needs a 5th slide.
-- Section sizes: 3 / 5 / 4 / 5 / 4 / 2 / 4 / 2 / 6. 06 is 2 by design (the two Dream-RSI figures). 09 is the largest; do not add to it again without removing.
-- Dream-RSI repo (2026-09-16 round 3 re-check): still paper + assets; "Discovered programs / Full codebase / Reproduction scripts: being prepared". dream-rsi.com unchanged.
+- 05 got its 5th slide in round 4: CompilerDream F5 (2404.16077, real vs imagined compiler trajectory) — literally Dreamer over a compiler, so it beats the queued 2606.09312 F2 (still pulled, now unused).
+- 08 "The catch" now has an off-policy-evaluation slide (ADWM F1, 2606.05558) between Levine and GAI: on-policy / learned-simulator OPE with its two failure modes / their fix. Dream-RSI replays a logged tree rather than a learned simulator; the distribution-shift issue is the same one as "can't credit branches nobody opened".
+- 01 got a 4th slide: the Station (2608.23691) — same 12 AlphaEvolve problems, no scripted loop, agents publish into a shared archive. The one non-tree discovery loop in the deck.
+- Section sizes: 4 / 5 / 4 / 5 / 5 / 2 / 4 / 3 / 6. 06 is 2 by design (the two Dream-RSI figures). 09 is the largest; do not add to it again without removing. 02 and 04 at 5 are full too.
+- Dream-RSI repo (2026-09-17 round 4 re-check): still paper + assets; "Discovered programs / Full codebase / Reproduction scripts: being prepared". dream-rsi.com unchanged.
 - Thumbnail made 2026-09-15 with Google Flow (Nano Banana Pro, 16:9, 1376x768): white bengal cat at a lab bench dreaming a fractal tree of itself — the replay-simulator hinge. Flow project "Sep 15 - 12:37" has the prompt + a second variant.
 
 ## Round 1 — 2026-09-16 20:45
@@ -67,3 +69,19 @@ Rejected: 2609.15364 RSIAgent — still not pulled; 09 is full.
 Dream-RSI repo / dream-rsi.com: unchanged.
 Seed question: By Generalized Agent Iteration's dial, RSI means the modifier lives inside the agent. In Dream-RSI the modifier is the LLM that rewrites exploration-policy code and it is the same frozen model that does the exploring. Is that inside or outside — and does ScienceBuddy, which trains the weights under the evolved harness, count as more recursive or just more expensive?
 Slides: 46 · Sections: 9 · Papers: 27
+
+## Round 4 — 2026-09-17 01:55
++ 2608.23691 F1 (01 machines): the Station — open-world multi-agent environment run on 12 of the AlphaEvolve construction problems, no coordinator or scripted pipeline; (a) rooms, (b) agents from GPT/Claude/Gemini publish into a shared Archive Room. Five of twelve problems gave results novel relative to the literature. The one discovery loop in the deck that is not a tree.
++ 2404.16077 F5 (05 dream): CompilerDream — real compiler trajectory vs the world model's imagined one under the same three passes, with per-step MSE. A Dreamer-style world model of a code-optimization process, sitting between Dreamer 4 and K-Search. Supersedes the queued 2606.09312 F2.
++ 2606.05558 F1 (08 catch): ADWM — on-policy vs learned-simulator off-policy evaluation (distribution shift, compounding error) vs their diffusion world model with policy guidance. Gives 08 the OPE vocabulary between Levine's three settings and GAI's dial.
+Story: unchanged arc; 08 now reads Levine (settings) → ADWM (failure modes of evaluating a policy you never ran) → GAI (is it recursive). No section changes.
+Rejected: 2404.16077 F1 (pipeline with BLAS/TensorFlow/Linux logos, too product-y) and F2 (full design overview, two-row wall).
+Rejected: 2608.23691 F2 (bar charts of paper types / finding types — counts, not a loop); F10–F14 (kissing configurations, Ramsey coverage — need the math).
+Rejected: 2606.05558 F2 (ADWM architecture — soft tokens, projector, reward head; needs the paper).
+Rejected: 2608.16884 (Dupont, 2026-08-17, ω < 2.371177 via AlphaEvolve) — a note, pull_figures found 0 figures.
+Rejected: 2609.00069 Auditing Harness Tampering (Wang, 2026-08-30) — two-axis taxonomy of tampered harness edits; relevant to "the catch" but not pulled; 08 wanted the OPE beat more.
+Rejected: 2608.13951 HELIX model-harness co-evolution (Fan, 2026-08-14), 2609.06396 MetaRSI/RSI² (Tan, 2026-09-06), 2608.12851 Skill Misevolution (Mao, 2026-08-13) — 09 is full; titles only.
+Rejected: 2605.15221 Vesper harness engineering (Ishibashi, 2026-05-13), 2605.22817 Vector Policy Optimization (Bahlous-Boldi, 2026-05-21), 2405.15383 Code World Models + MCTS (Dainese, 2024-05-24) — abs read, not pulled; possible 03/04/05 candidates if a slot opens.
+Dream-RSI repo / dream-rsi.com: unchanged (paper + assets; code, programs, scripts still "being prepared").
+Seed question: ADWM says a simulator learned from offline data fails in two ways: the new policy visits states the old one never did, and errors compound over steps. Dream-RSI's simulator is not learned, it is the literal logged tree. Which of the two failure modes does that avoid, and which does it make worse?
+Slides: 49 · Sections: 9 · Papers: 30
