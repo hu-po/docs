@@ -42,6 +42,7 @@
 - https://arxiv.org/abs/2005.01643
 - https://arxiv.org/abs/1003.5956
 - https://arxiv.org/abs/2606.05558
+- https://arxiv.org/abs/2609.12459
 - https://arxiv.org/abs/2609.17817
 - https://arxiv.org/abs/2609.13406
 - https://arxiv.org/abs/2511.23473
@@ -49,3 +50,4 @@
 - https://arxiv.org/abs/2609.14857
 - https://arxiv.org/abs/2609.17523
 - https://arxiv.org/abs/2608.19880
+- https://arxiv.org/abs/2609.11873
