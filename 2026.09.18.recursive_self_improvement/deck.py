@@ -39,6 +39,8 @@ PAPERS = {
     "2607.05297": ("MetaSkill-Evolve", "Wang", "2026-07-06", "MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution"),
     "2608.19880": ("EnvHarness", "Huang", "2026-08-20", "EnvHarness: Awakening Static Worlds for Agent Learning"),
     "2508.05004": ("R-Zero", "Huang", "2025-08-07", "R-Zero: Self-Evolving Reasoning LLM from Zero Data"),
+    "2605.20086": ("EvoTrace", "Pelleriti", "2026-05-19", "What Do Evolutionary Coding Agents Evolve?"),
+    "2609.14857": ("ModularRSI", "Wu", "2026-09-14", "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement"),
 }
 
 # Each slide: dict(fig="<file stem in figures/>", ctx="one or two factual sentences")  (cite line is derived)
@@ -57,6 +59,7 @@ SECTIONS = [
             dict(fig="2310.02304_S0-F1", ctx="STOP: a language model is given a seed improver, a program that improves programs, and applies it to itself. The self-improvement strategies shown were proposed and implemented by GPT-4 during that process: genetic algorithm, decomposing and improving parts, multi-armed prompt bandit, varying temperature, simulated annealing, and beam or tree search."),
             dict(fig="2505.22954_S1-F1", ctx="The Darwin Gödel Machine drops the proofs and keeps the self-modification: a growing archive of coding agents, each produced by an existing agent editing its own code, then evaluated on downstream coding tasks. Parents are chosen from the archive open-endedly, not greedily."),
             dict(fig="2603.19461_S3-F1", ctx="Hyperagents extend the DGM one level up. Agents improve not only the code that does the task but the code that does the improving, and the run can span multiple task domains at once."),
+            dict(fig="2607.07663_S0-F1", ctx="The two-axis taxonomy from a 1,250-paper survey of self-improvement. Columns: what changes, whether deployment-time behavior, policy weights, the evaluation machinery, or the research process itself. Rows: who validates the improvement, from a person reviewing each change to a closed loop that generates, validates and applies changes on its own. Representative systems in each cell."),
          ]),
     dict(title="Anatomy of a discovery loop",
          blurb="Between AlphaEvolve and today the loop got a lot of engineering. The exploration strategy stayed hand-written and fixed.",
@@ -64,6 +67,7 @@ SECTIONS = [
             dict(fig="2604.19341_S0-F1a", ctx="SimpleTES, the baseline Dream-RSI reports its Lasso and math results against. Top: the research community's propose-evaluate-refine cycle. Bottom: the same loop with an LLM as the researcher. The evaluator-query budget N = C × L × K is split across global width C (independent lines in parallel), refinement depth L (rounds carrying the best line forward) and generation batch size K."),
             dict(fig="2601.10657_S1-F1", ctx="PACEvolve's workflow, from the same Google group as Dream-RSI. Idea generation is decoupled from idea selection, with a hierarchical idea memory and progress-aware context management. The exploration strategy itself is designed by hand."),
             dict(fig="2602.02919_S1-F1", ctx="DeltaEvolve stores semantic deltas between programs rather than whole programs, and reuses them as momentum. History is used as context for the next proposal."),
+            dict(fig="2605.20086_S5-F4", ctx="What the edits in evolutionary coding runs actually are, across EvoTrace, a dataset of runs from four frameworks and 16 math and algorithm-design tasks. (a) Share of all edits with each label: hyperparameter tuning dominates. (b) Odds ratio that an edit of each type improves the score: external dependency, efficiency and architectural change help most per edit; hyperparameter tuning and pruning fall below 1."),
          ]),
     dict(title="Exploration is the bottleneck",
          blurb="Which branch, how many in parallel, when to stop. Improve that policy online and you only find out if it was good after a long, expensive rollout.",
@@ -71,6 +75,7 @@ SECTIONS = [
             dict(fig="2602.23413_S0-F1", ctx="EvoX has two coupled loops: an inner loop that evolves solutions, and an outer loop that evolves the search strategy governing generation. The right panel shows how the choice of search strategy changes outcomes on the same task."),
             dict(fig="2607.02807_S0-F1", ctx="A SwarmResearch run designing speculative-decoding implementations. Nodes are spawned search agents and their solutions, edges mean the lower node builds on the one above, and the top number is spawn order."),
             dict(fig="2603.28052_S1-F2", ctx="The Meta-Harness search loop. An agent reads a filesystem holding every prior candidate's source, execution traces and scores, proposes a new harness, and the harness is evaluated on the task set. The harness, not the model, is what evolves."),
+            dict(fig="2605.20086_S1-F2", ctx="EvoTrace records each evolutionary run as a structured object: programs, the parent-child graph, prompts and context, scores and evaluator metadata. EvoReplay reconstructs local search states from those traces and reruns controlled interventions on them, including same-prompt replay, retuning, ablation, repair, context replay and model substitution."),
          ]),
     dict(title="Dream about it",
          blurb="Last week: a world model is a compressed picture of the environment you can run forward. What if the environment is the search?",
@@ -95,11 +100,12 @@ SECTIONS = [
             dict(fig="2609.14858_S5-F6", ctx="How the learned exploration policy behaves across recursive rounds on ConvDiv. Top: round-best performance. Bottom: evaluated attempts per round, which drops from 110 to 50 while performance climbs, then rises again once progress plateaus."),
          ]),
     dict(title="The catch, and what's next",
-         blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Two papers this month say RSI and mean different things.",
+         blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Three papers in one week say RSI and mean three different things.",
          slides=[
             dict(fig="2005.01643_S1-F1", ctx="Online, off-policy and offline reinforcement learning. In the offline setting (c) data is collected once with some policy and the learner never interacts with the environment again. Evaluating a new exploration policy on a recorded discovery tree is this setting."),
             dict(fig="2511.23473_S1-F1", ctx="Three loops side by side. Top: AlphaEvolve, where a frozen LLM ensemble (snowflake) proposes edits to programs sampled from a program database. Middle: standard RL, where a single LLM is trained (flame) on prompts from a static dataset. Bottom: ThetaEvolve, a single LLM sampling from a program database, with optional RL training on the verifier's scores."),
             dict(fig="2609.08183_S1-F2", ctx="NeoHorse-1, published the same week. Diverse tasks generate experience through a routing harness backed by a pool of models; that experience becomes a training mixture and the model weights are updated. Here the thing that changes is the model."),
+            dict(fig="2609.14857_S2-F1", ctx="ModularRSI, posted the same day as Dream-RSI. Top: rollouts on a task are sorted into positive, negative and contrastive pairs (same task, reward 1 versus 0) and analyzed for recurring failures. Bottom left: a code-modify agent edits one harness module at a time, from observation management to task completion. Bottom right: each modification must pass execution, program-verification and diff-review gates or is rolled back. Here the thing that changes is the harness."),
             dict(fig="2608.19880_S1-F2", ctx="EnvHarness applies the agent-harness idea to the other side of the interface: the base environment stays frozen and plug-in components change what the agent experiences. The environment is the part Dream-RSI holds fixed."),
          ]),
 ]
