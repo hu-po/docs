@@ -14,4 +14,4 @@ Sections are provisional — rounds may rename, reorder, merge or split them; lo
 - Tension for the close: only the scheduler learns; replay = offline evaluation on logged trees; NeoHorse-1 as foil.
 - Open: is section 03 (anatomy) pulling its weight, or should it fold into 01/04?
 - Open: does the "old dream" section want STOP / the RSI survey taxonomy, or is Gödel→DGM→Hyperagents enough?
-- Thumbnail not made yet (Hugo does these: white bengal cat, bold title, no extra text).
+- Thumbnail made 2026-09-15 with Google Flow (Nano Banana Pro, 16:9, 1376x768): white bengal cat at a lab bench dreaming a fractal tree of itself — the replay-simulator hinge. Flow project "Sep 15 - 12:37" has the prompt + a second variant.
