@@ -11,16 +11,19 @@ Sections are provisional — rounds may rename, reorder, merge or split them; lo
 
 ## Story status
 - Hinge: Dream-RSI = Dreamer where the environment is the discovery tree (callback to 2026.09.11 WAM stream).
-- Tension for the close: only the scheduler learns; replay = offline evaluation on logged trees; NeoHorse-1 as foil.
-  Section 08 now runs frozen → trained-in-the-loop → post-trained: Offline RL → ThetaEvolve (snowflake/flame) → NeoHorse-1 → EnvHarness.
-- Section 03 (anatomy) kept: it now opens with SimpleTES, the baseline Dream-RSI's headline numbers (162×, 50×) are measured against,
-  and its C × L × K budget split is literally the set of knobs an exploration policy turns. 3 slides; fine at that size.
-- "Old dream" is now Gödel (2003) → STOP (2023) → DGM (2025) → Hyperagents (2026) → survey taxonomy (2607.07663 F1: what changes × who validates),
-  which gives the deck its vocabulary for the close. Survey F3 (what persists: output / session / harness+skills) pulled, unused — candidate for 08 if a "persistence" beat is wanted.
-- Section 08 close is now "three RSI papers in one week": Dream-RSI (scheduler, Sep 14) / NeoHorse-1 (weights, Sep 8) / ModularRSI (harness modules, Sep 14). Blurb updated.
-- EvoTrace (2605.20086) is the empirical cousin of the replay simulator: logged runs as structured objects, EvoReplay reruns interventions on them. F2 closes 04; F4 (hyperparameter tuning dominates edits, helps least) sits in 03.
+- Close is now two sections (split in round 3 because the old 08 blurb carried two beats and the second one grew to 6 slides):
+  08 "The catch" = replay is offline evaluation on logged trees (Levine F1) + is a learned scheduler recursive at all (Generalized Agent Iteration F2:
+  the modifier inside the agent = RSI, outside = plain GPI). 09 "What's next" = frozen → trained-in-the-loop → post-trained → harness → both nested →
+  environment: ThetaEvolve → NeoHorse-1 → ModularRSI → ScienceBuddy (F2b mechanism, F8a dynamics) → EnvHarness. NeoHorse-1 stays the foil.
+- "Four papers in one week say RSI": Dream-RSI (scheduler, Sep 14) / NeoHorse-1 (weights, Sep 8) / ModularRSI (harness, Sep 14) / ScienceBuddy (harness inner, weights outer, Sep 15).
+  Generalized Agent Iteration (Sep 11) is the fifth same-week paper and is the lens, not a mechanism. RSIAgent (Sep 14, frozen memory) still unused.
+- Section 04 now has Escher-Loop after EvoX: optimizers scored by the win/loss of the task agents they produce — the online, expensive way to evaluate
+  the improver that Dream-RSI's replay replaces. Closes with EvoTrace/EvoReplay (logged runs as objects) as the set-up for 05.
+- Section 03 (anatomy) kept: opens with SimpleTES (the baseline for Dream-RSI's headline numbers, C × L × K budget), closes on EvoTrace F4 (what edits are).
+- "Old dream" is Gödel (2003) → STOP (2023) → DGM (2025) → Hyperagents (2026) → survey taxonomy (2607.07663 F1). Survey F3 (persistence ladder) pulled, unused.
 - Queued, pulled and inspected: 2606.09312 F2 (compiler world model — Dreamer-style latent z_t over schedule actions, TVM not LLM) for 05 between Dreamer 4 and K-Search if 05 needs a 5th slide.
-- Dream-RSI repo (2026-09-16 late, round 2 re-check): still paper + assets only; code / programs / scripts "being prepared". dream-rsi.com unchanged.
+- Section sizes: 3 / 5 / 4 / 5 / 4 / 2 / 4 / 2 / 6. 06 is 2 by design (the two Dream-RSI figures). 09 is the largest; do not add to it again without removing.
+- Dream-RSI repo (2026-09-16 round 3 re-check): still paper + assets; "Discovered programs / Full codebase / Reproduction scripts: being prepared". dream-rsi.com unchanged.
 - Thumbnail made 2026-09-15 with Google Flow (Nano Banana Pro, 16:9, 1376x768): white bengal cat at a lab bench dreaming a fractal tree of itself — the replay-simulator hinge. Flow project "Sep 15 - 12:37" has the prompt + a second variant.
 
 ## Round 1 — 2026-09-16 20:45
@@ -49,3 +52,18 @@ Rejected: 2609.17523 ScienceBuddy, 2609.11873 "The Last AI Built by Humans" — 
 Dream-RSI repo / dream-rsi.com: unchanged (paper + assets; code, programs, scripts still "being prepared").
 Seed question: EvoTrace says ~45% of edits in evolutionary coding runs are hyperparameter tweaks and those are the least likely to help. Dream-RSI's policy only decides which node to expand, not what edit to make. Is scheduling the right lever, or is the waste inside the node?
 Slides: 41 · Sections: 8 · Papers: 24
+
+## Round 3 — 2026-09-16 22:45
++ 2609.13406 F2 (08 catch): Generalized Agent Iteration's policy / critic / modifier cycle — modifier inside the agent is RSI, outside it is GPI. Answers round 2's "check the PDF by hand": the figure is a vector TikZ drawing pull_figures misses; manual crop p6 `68,50,545,222` (first pass caught the caption line; tightened).
++ 2604.23472 F1 (04 exploration): Escher-Loop — task-agent and optimizer-agent populations; optimizers scored by relative win/loss of the agents they produce and rewrite themselves. The online way to score the improver, right after EvoX.
++ 2609.17523 F2 panel B (09 next): ScienceBuddy recursive-in-recursive — inner recursion evolves the harness with the model fixed, outer recursion GRPO-trains the model under the selected harness. Saved as `2609.17523_S0-F2b.jpg` (PIL crop of the HTML fig, y 1044–1690); full F2 is a product wall. Caption taken from PDF p2 (HTML has none for Fig 2).
++ 2609.17523 F8 panel (a) (09 next): three cycles of ten harness steps then twenty RL updates, colored by cycle; the only curve in the deck that shows two loops alternating. Saved as `2609.17523_S4-F8a.jpg` (left column of F8).
+Story: 08 split into 08 "The catch" (Levine F1, GAI F2) and 09 "What's next" (ThetaEvolve → NeoHorse-1 → ModularRSI → ScienceBuddy ×2 → EnvHarness). Reason: the old 08 blurb carried two separate beats and the second grew to 6 slides. Blurb: four papers in one week. 9 sections, at the max.
+Rejected: 2609.17523 F1 — three-panel product graphic with icons (224 tools, robot); the F2 panel B says the same thing without marketing.
+Rejected: 2604.23472 F2/F3 (Escher-Loop best-so-far vs cumulative tokens on kissing number / circle packing / Heilbronn) — decent curves but one Escher-Loop slide is enough for 04.
+Rejected: 2607.21461 AREX (Lu, 2026-07-23, "recursively self-improving" deep-research agent) — inner research loop + outer answer-refinement loop; "RSI" = iterative answer verification, not a discovery loop. Not pulled.
+Rejected: 2606.09032 Text World Models survey (Li, 2026-06-08) — survey of transition models over textual states; 05 already has K-Search as the bridge and the compiler world model queued. Not pulled.
+Rejected: 2609.15364 RSIAgent — still not pulled; 09 is full.
+Dream-RSI repo / dream-rsi.com: unchanged.
+Seed question: By Generalized Agent Iteration's dial, RSI means the modifier lives inside the agent. In Dream-RSI the modifier is the LLM that rewrites exploration-policy code and it is the same frozen model that does the exploring. Is that inside or outside — and does ScienceBuddy, which trains the weights under the evolved harness, count as more recursive or just more expensive?
+Slides: 46 · Sections: 9 · Papers: 27

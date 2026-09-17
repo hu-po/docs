@@ -22,6 +22,7 @@
 - https://arxiv.org/abs/2602.02919
 - https://arxiv.org/abs/2605.20086
 - https://arxiv.org/abs/2602.23413
+- https://arxiv.org/abs/2604.23472
 - https://arxiv.org/abs/2607.02807
 - https://arxiv.org/abs/2603.28052
 - https://arxiv.org/abs/1803.10122
@@ -30,7 +31,9 @@
 - https://arxiv.org/abs/2602.19128
 - https://arxiv.org/abs/2609.14858
 - https://arxiv.org/abs/2005.01643
+- https://arxiv.org/abs/2609.13406
 - https://arxiv.org/abs/2511.23473
 - https://arxiv.org/abs/2609.08183
 - https://arxiv.org/abs/2609.14857
+- https://arxiv.org/abs/2609.17523
 - https://arxiv.org/abs/2608.19880

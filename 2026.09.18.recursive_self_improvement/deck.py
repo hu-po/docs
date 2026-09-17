@@ -41,6 +41,9 @@ PAPERS = {
     "2508.05004": ("R-Zero", "Huang", "2025-08-07", "R-Zero: Self-Evolving Reasoning LLM from Zero Data"),
     "2605.20086": ("EvoTrace", "Pelleriti", "2026-05-19", "What Do Evolutionary Coding Agents Evolve?"),
     "2609.14857": ("ModularRSI", "Wu", "2026-09-14", "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement"),
+    "2609.13406": ("Generalized Agent Iteration", "Tang", "2026-09-11", "Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement"),
+    "2604.23472": ("Escher-Loop", "Liu", "2026-04-25", "Escher-Loop: Mutual Evolution by Closed-Loop Self-Referential Optimization"),
+    "2609.17523": ("ScienceBuddy", "Xue", "2026-09-15", "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents"),
 }
 
 # Each slide: dict(fig="<file stem in figures/>", ctx="one or two factual sentences")  (cite line is derived)
@@ -73,6 +76,7 @@ SECTIONS = [
          blurb="Which branch, how many in parallel, when to stop. Improve that policy online and you only find out if it was good after a long, expensive rollout.",
          slides=[
             dict(fig="2602.23413_S0-F1", ctx="EvoX has two coupled loops: an inner loop that evolves solutions, and an outer loop that evolves the search strategy governing generation. The right panel shows how the choice of search strategy changes outcomes on the same task."),
+            dict(fig="2604.23472_S2-F1", ctx="Escher-Loop keeps two populations. Optimizer agents generate new task agents; the task agents are executed for absolute scores, and those same scores are reused as relative win-loss signals to score the optimizers, which also rewrite themselves. Optimizers are judged by the agents they produce, with no separate benchmark."),
             dict(fig="2607.02807_S0-F1", ctx="A SwarmResearch run designing speculative-decoding implementations. Nodes are spawned search agents and their solutions, edges mean the lower node builds on the one above, and the top number is spawn order."),
             dict(fig="2603.28052_S1-F2", ctx="The Meta-Harness search loop. An agent reads a filesystem holding every prior candidate's source, execution traces and scores, proposes a new harness, and the harness is evaluated on the task set. The harness, not the model, is what evolves."),
             dict(fig="2605.20086_S1-F2", ctx="EvoTrace records each evolutionary run as a structured object: programs, the parent-child graph, prompts and context, scores and evaluator metadata. EvoReplay reconstructs local search states from those traces and reruns controlled interventions on them, including same-prompt replay, retuning, ablation, repair, context replay and model substitution."),
@@ -99,13 +103,20 @@ SECTIONS = [
             dict(fig="2609.14858_S5-F5", ctx="ConvDiv, four conditions. Adding explicit prompt-level guidance distilled from history (dashed) underperforms the unguided version of the same method, for both fixed exploration and Dream-RSI. Using history as an interactive simulator beats using it as advice."),
             dict(fig="2609.14858_S5-F6", ctx="How the learned exploration policy behaves across recursive rounds on ConvDiv. Top: round-best performance. Bottom: evaluated attempts per round, which drops from 110 to 50 while performance climbs, then rises again once progress plateaus."),
          ]),
-    dict(title="The catch, and what's next",
-         blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Three papers in one week say RSI and mean three different things.",
+    dict(title="The catch",
+         blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Is a learned scheduler recursive?",
          slides=[
             dict(fig="2005.01643_S1-F1", ctx="Online, off-policy and offline reinforcement learning. In the offline setting (c) data is collected once with some policy and the learner never interacts with the environment again. Evaluating a new exploration policy on a recorded discovery tree is this setting."),
+            dict(fig="2609.13406_S3-F2", ctx="Generalized agent iteration as a cycle of policy, critic and modifier. The critic evaluates the policy and the modifier against a base (the environment and goal) and returns feedback; the modifier produces improvements, including, in gray dashed, rewrites of the critic and of itself. The dash-dot border marks the modifier as part of the agent: with the modifier fixed outside the agent the cycle reduces to generalized policy iteration; with it inside, it is recursive self-improvement."),
+         ]),
+    dict(title="What's next",
+         blurb="Four papers in one week say RSI. One trains the weights, one rewrites the harness, one nests both, one learns the scheduler. The environment is frozen in all of them.",
+         slides=[
             dict(fig="2511.23473_S1-F1", ctx="Three loops side by side. Top: AlphaEvolve, where a frozen LLM ensemble (snowflake) proposes edits to programs sampled from a program database. Middle: standard RL, where a single LLM is trained (flame) on prompts from a static dataset. Bottom: ThetaEvolve, a single LLM sampling from a program database, with optional RL training on the verifier's scores."),
             dict(fig="2609.08183_S1-F2", ctx="NeoHorse-1, published the same week. Diverse tasks generate experience through a routing harness backed by a pool of models; that experience becomes a training mixture and the model weights are updated. Here the thing that changes is the model."),
             dict(fig="2609.14857_S2-F1", ctx="ModularRSI, posted the same day as Dream-RSI. Top: rollouts on a task are sorted into positive, negative and contrastive pairs (same task, reward 1 versus 0) and analyzed for recurring failures. Bottom left: a code-modify agent edits one harness module at a time, from observation management to task completion. Bottom right: each modification must pass execution, program-verification and diff-review gates or is rolled back. Here the thing that changes is the harness."),
+            dict(fig="2609.17523_S0-F2b", ctx="ScienceBuddy's recursive-in-recursive loop, posted the day after Dream-RSI. Inner recursion, task model fixed: a fixed auxiliary model diagnoses failures and revises harness procedures, and a candidate harness is accepted only if it beats its parent in paired evaluation. Outer recursion, harness fixed: fresh rollouts under the selected harness, rubric rewards, GRPO updates to the model, then model and harness are redeployed together for the next cycle."),
+            dict(fig="2609.17523_S4-F8a", ctx="ScienceBuddy learning dynamics over three cycles; colors mark the cycle. Top: validation accuracy over harness-evolution steps, where circles are measured candidates including rejected ones and stars are new bests. Bottom: training reward over the twenty RL updates that follow each block of ten harness steps."),
             dict(fig="2608.19880_S1-F2", ctx="EnvHarness applies the agent-harness idea to the other side of the interface: the base environment stays frozen and plug-in components change what the agent experiences. The environment is the part Dream-RSI holds fixed."),
          ]),
 ]
