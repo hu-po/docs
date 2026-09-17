@@ -47,6 +47,9 @@ PAPERS = {
     "2608.23691": ("The Station", "Chung", "2026-08-24", "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment"),
     "2404.16077": ("CompilerDream", "Deng", "2024-04-24", "CompilerDream: Learning a Compiler World Model for General Code Optimization"),
     "2606.05558": ("ADWM", "Liu", "2026-06-04", "Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents"),
+    "2605.19633": ("optimize_anything", "Agrawal", "2026-05-19", "optimize_anything: A Universal API for Optimizing any Text Parameter"),
+    "2510.15047": ("Exploration Collapse", "Chen", "2025-10-16", "Why Do LLM Agents Fail in Exploring New Environments? A World-Modeling Perspective"),
+    "2609.17817": ("Trusting Trust, Revisited", "Roesner", "2026-09-15", "Reflections on Trusting Trust, Revisited: Contaminating Self-Modifying AI Coding Agents with Poisoned Benchmarks"),
 }
 
 # Each slide: dict(fig="<file stem in figures/>", ctx="one or two factual sentences")  (cite line is derived)
@@ -56,6 +59,7 @@ SECTIONS = [
          slides=[
             dict(fig="2506.13131_S2-F2", ctx="AlphaEvolve's discovery process. The user supplies an initial program with the parts to evolve marked, plus evaluation code. A program database samples prompts, an LLM ensemble proposes diffs, evaluators score the result, and the database is updated."),
             dict(fig="2506.13131_S3-F5", ctx="Constructions discovered by AlphaEvolve that beat the previous state of the art: autocorrelation and uncertainty inequalities in analysis, packing problems in geometry, and combinatorial bounds."),
+            dict(fig="2605.19633_S5-F7", ctx="Circle packing with 26 circles, one of the AlphaEvolve construction problems, run through optimize_anything (a general text-optimization loop from the GEPA project). Left: best score against number of evaluator calls, with the strategy behind each jump labeled, from force-based optimization to large-neighborhood SLP with dual-informed refinement. Right: the same plot magnified near the top, with ShinkaEvolve, OpenEvolve and the AlphaEvolve result for comparison."),
             dict(fig="2511.02864_S3-F1", ctx="Same problem, more parallel threads: running AlphaEvolve with more threads finds good constructions sooner in wall-clock time, but at a greater total compute cost. Averages over 100 experiments."),
             dict(fig="2608.23691_S2-F1", ctx="The Station, evaluated on 12 of the AlphaEvolve construction problems with no central coordinator or scripted pipeline. (a) Rooms in the environment; at every tick each agent picks a room and an action. (b) Agents from several model families choose their own direction, run experiments and submit papers; a reviewer agent accepts or rejects, and accepted papers stay in the Archive Room for later agents to read, extend and cite."),
          ]),
@@ -79,6 +83,7 @@ SECTIONS = [
     dict(title="Exploration is the bottleneck",
          blurb="Which branch, how many in parallel, when to stop. Improve that policy online and you only find out if it was good after a long, expensive rollout.",
          slides=[
+            dict(fig="2510.15047_S1-F2", ctx="Exploration collapse. Validation performance of an LLM agent on Sokoban and FrozenLake over RL training steps. Left: Pass@k, whether any of k = 8 sampled trajectories succeeds. Right: Pass@1. Red is vanilla RL, where Pass@k falls as Pass@1 rises; yellow adds state estimation; blue (SPA) first fine-tunes the agent to predict world states from its own interaction data, then runs the same RL."),
             dict(fig="2602.23413_S0-F1", ctx="EvoX has two coupled loops: an inner loop that evolves solutions, and an outer loop that evolves the search strategy governing generation. The right panel shows how the choice of search strategy changes outcomes on the same task."),
             dict(fig="2604.23472_S2-F1", ctx="Escher-Loop keeps two populations. Optimizer agents generate new task agents; the task agents are executed for absolute scores, and those same scores are reused as relative win-loss signals to score the optimizers, which also rewrite themselves. Optimizers are judged by the agents they produce, with no separate benchmark."),
             dict(fig="2607.02807_S0-F1", ctx="A SwarmResearch run designing speculative-decoding implementations. Nodes are spawned search agents and their solutions, edges mean the lower node builds on the one above, and the top number is spawn order."),
@@ -109,10 +114,11 @@ SECTIONS = [
             dict(fig="2609.14858_S5-F6", ctx="How the learned exploration policy behaves across recursive rounds on ConvDiv. Top: round-best performance. Bottom: evaluated attempts per round, which drops from 110 to 50 while performance climbs, then rises again once progress plateaus."),
          ]),
     dict(title="The catch",
-         blurb="Replay can only reveal branches somebody already opened. Only the scheduler learns. Is a learned scheduler recursive?",
+         blurb="Replay can only reveal branches somebody already opened. The evaluator is frozen and trusted. Only the scheduler learns. Is a learned scheduler recursive?",
          slides=[
             dict(fig="2005.01643_S1-F1", ctx="Online, off-policy and offline reinforcement learning. In the offline setting (c) data is collected once with some policy and the learner never interacts with the environment again. Evaluating a new exploration policy on a recorded discovery tree is this setting."),
             dict(fig="2606.05558_S1-F1", ctx="Three ways to evaluate an LLM agent policy. Left: on-policy, run the agent in the real environment. Middle: off-policy, train a simulator on offline data and roll the new policy out in it, which suffers distribution shift between the behavior and target policies and compounding error over multi-step rollouts. Right: ADWM, a diffusion world model with the evaluated policy injected into every denoising step."),
+            dict(fig="2609.17817_S3-F2", ctx="Poisoning a self-improving agent through its benchmark, drawn for three systems: (a) Darwin Gödel Machine, (b) Self-Improving Coding Agent, (c) Hyperagents. The agent evaluates itself on a benchmark seeded with tasks that reward vulnerable code; the scored transcript feeds the diagnosis and self-improvement prompts, and the proposed modification is applied to the coding agent or its harness. Devils mark where the contamination travels; the attack succeeds if an evolved agent writes vulnerable code on a neutral task."),
             dict(fig="2609.13406_S3-F2", ctx="Generalized agent iteration as a cycle of policy, critic and modifier. The critic evaluates the policy and the modifier against a base (the environment and goal) and returns feedback; the modifier produces improvements, including, in gray dashed, rewrites of the critic and of itself. The dash-dot border marks the modifier as part of the agent: with the modifier fixed outside the agent the cycle reduces to generalized policy iteration; with it inside, it is recursive self-improvement."),
          ]),
     dict(title="What's next",
