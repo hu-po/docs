@@ -8,6 +8,8 @@
 
 **X:**
 
+**Slides:** [slides.html](slides.html)
+
 ### References
 
 - https://arxiv.org/abs/2506.13131
