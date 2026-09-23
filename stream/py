@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Run a stream tool in the shared uv env:   stream/py sweep.py <stream-dir> ...
+HERE="$(cd "$(dirname "$0")" && pwd)"
+tool="$1"; shift
+exec uv run --quiet --project "$HERE" python "$HERE/$tool" "$@"

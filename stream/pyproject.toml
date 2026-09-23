@@ -1,0 +1,9 @@
+[project]
+name = "hu-po-stream"
+version = "0.1.0"
+description = "Tooling for the weekly hu-po stream: sweep, analysis, review page, figures, deck."
+requires-python = ">=3.11"
+dependencies = ["requests", "beautifulsoup4", "lxml", "pymupdf", "pillow"]
+
+[tool.uv]
+package = false

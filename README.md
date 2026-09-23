@@ -19,13 +19,14 @@ I stream on Fridays:
 
 I source my papers from the following places:
 
-- [X.com](https://x.com/i/lists/1653485531546767361)
-- [PapersWithCode](https://paperswithcode.com/)
-- [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week)
-- [EmergentMind](https://www.emergentmind.com/)
 - [HuggingFace](https://huggingface.co/papers)
 - [ML-Papers-of-the-Week](https://github.com/dair-ai/ML-Papers-of-the-Week)
-- [ArxivSanity](http://www.arxiv-sanity.com/)
+- [EmergentMind](https://www.emergentmind.com/)
+- [alphaXiv](https://www.alphaxiv.org/)
+- [Semantic Scholar](https://www.semanticscholar.org/) (older papers this week's papers keep citing)
+- [X.com](https://x.com/i/lists/1653485531546767361) and [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week), by hand
+
+Stream prep is agent-assisted: see [`stream/`](stream/FORMAT.md) (sweep → analysis → review → deck).
 
 ### Citation
 

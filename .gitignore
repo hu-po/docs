@@ -1,3 +1,14 @@
 figures/
 .venv/
 autoresearch.log
+review.html
+picks.json
+run.log
+*.stderr.log
+__pycache__/
+.deck-running
+# per-stream working files that stay local (agent logs, spend, personal inbox, review choices)
+log.md
+usage.jsonl
+inbox.md
+sweep.json
