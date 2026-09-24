@@ -1,0 +1,58 @@
+{
+  "title": "Figure Review 001: World Harnesses",
+  "date": "2026.09.25",
+  "names": {
+    "2609.22966": "Robo Dawn",
+    "2609.24682": "THAW-VLA"
+  },
+  "sections": [
+    {
+      "title": "World models with memory and geometry",
+      "blurb": "Four video world models this week add 3D-aware memory, geometry-native latents, a shared predictive interface or real-time keyboard-and-text control to stay consistent over long horizons.",
+      "slides": [
+        {"fig": "2609.24984_S0-F1", "ctx": "WorldCrafter: camera-controlled exploration of static (a) and dynamic (b) scenes with reconstructed point clouds, subjects re-entering view (c), and scenes generated from text alone (d)."},
+        {"fig": "web_wcrafter-classroom", "ctx": "WorldCrafter-generated video that explores a classroom and revisits previously observed viewpoints under WASD and arrow-key camera control.",
+         "cite": "WorldCrafter project page", "url": "https://drexubery.github.io/WorldCrafter/", "paper": "2609.24984"},
+        {"fig": "2609.17909_S3-F3", "ctx": "Zing-0.5 data construction: image/video-text pairs, gameplay, real-world and synthetic videos, with segment-level captions and per-key action strengths aligned to frames."},
+        {"fig": "2609.17909_S1-F2", "ctx": "Six frames from one interactive Zing-0.5 session: key symbols show movement inputs, pink labels show text instructions (cheer, open an umbrella), with recording timestamps."},
+        {"fig": "2609.24981_S3-F2", "ctx": "GAE: Stage 1 compresses frozen geometry-foundation features into a diffusable latent with a separate RGB head; Stage 2 flow-matches generated-view latents conditioned on reference latents, camera rays and text."},
+        {"fig": "web_gae-progressive", "ctx": "GAE image-to-video generation on RealEstate10K, shown as progressive RGB and geometry output.",
+         "cite": "GAE project page", "url": "https://jiah-cloud.github.io/GAE.github.io/", "paper": "2609.24981"},
+        {"fig": "2609.20800_S3-F2", "ctx": "JEPA-Anything scenario atlas: domain contexts and outputs across terminal readout, latent world dynamics and scientific analysis, all through one factorized predictive-state interface."},
+        {"fig": "2609.20800_S3-F5", "ctx": "(a) Relative MSE reduction of JEPA-Anything vs standard JEPA on nine prediction tasks (five-seed means). (b) CausalWorld closed-loop control return, mean ± SD over five seeds."}
+      ]
+    },
+    {
+      "title": "Grounding robot policies",
+      "blurb": "Four robot papers put explicit structure under the policy: 3D object grounding, a command interface for an off-the-shelf VLM, an action tokenizer, and features distilled from a world model.",
+      "slides": [
+        {"fig": "2609.23863_S1-F1", "ctx": "Grounded Action Model: language, 2D point or box prompts go through a pretrained 3D grounding model into image and detection tokens for action prediction, evaluated in and out of domain."},
+        {"fig": "web_gam-sort-ood", "ctx": "GAM rollout on a Franka arm: sort objects into bowls, out-of-distribution scene.",
+         "cite": "Grounded Action Model project page", "url": "https://grounded-action-model.github.io/", "paper": "2609.23863"},
+        {"fig": "2609.22966_S1-F1", "ctx": "Robo Dawn transfers a general-purpose VLM to robot control through a human-intuitive action interface and in-context demonstrations."},
+        {"fig": "2609.22966_S3-F2", "ctx": "Robo Dawn loop: the VLM sees multi-view observations, state, feedback and memory, reasons, and emits semantic commands that are grounded into planned motions; outcomes return as feedback."},
+        {"fig": "2609.18487_S4-F1", "ctx": "ActionPiece tokenizer: each eight-step action chunk becomes 16 discrete tokens; anchor, near and far chunks by physical action distance train a rank-preservation loss alongside reconstruction."},
+        {"fig": "web_actionpiece-prc", "ctx": "Within-cohort success rank vs (a) reconstruction-fidelity rank and (b) physical-rank-consistency rank over 55 evaluations; (c) LIBERO-Plus success of matched tokenizers.",
+         "cite": "ActionPiece project page", "url": "https://deepcybo-physai.github.io/ActionPiece/", "paper": "2609.18487"},
+        {"fig": "2609.24682_S1-F1", "ctx": "THAW-VLA (0.8B): (a) LIBERO four-suite mean success vs parameter count for VLAs and world-model policies; (b) peak VRAM and latency of one inference against a 32 GB RTX 5090."},
+        {"fig": "web_thaw-rollouts", "ctx": "Real-robot rollouts of THAW-VLA (0.8B): single-arm fruit and egg pick-and-place on an AgileX Nero and bimanual fruit handover on TRIP-Bag, inference on one RTX 5090.",
+         "cite": "THAW-VLA project page", "url": "https://thaw-vla.trung-dt.com/", "paper": "2609.24682"}
+      ]
+    },
+    {
+      "title": "Harness self-improvement",
+      "blurb": "The prompts, tools, memory and control flow around a frozen model are searched, regularized and distilled like weights. One week after the 09.18 recursive self-improvement stream.",
+      "slides": [
+        {"fig": "2609.20519_S0-F1", "ctx": "SoL-Pi: a research AI inspects execution traces, proposes harness changes and filters them through capability and cost gates; (b) held-out EdgeBench score and API cost vs Codex, Claude Code and Pi."},
+        {"fig": "web_solpi_teaser", "ctx": "SoL-Pi teaser: propose, auto-research, scale-and-prune and merge stages of the harness search loop.",
+         "cite": "SoL-Pi project page", "url": "https://nvlabs.github.io/SoL-Pi/", "paper": "2609.20519"},
+        {"fig": "2609.24972_S3-F2", "ctx": "RRSI overview: proposal-side constraints control how search capacity is used; selection-side constraints control which measured improvements become permanent harness state."},
+        {"fig": "2609.24972_S1-F1", "ctx": "(a) Gain on the evolve split vs gain out of distribution for prior harness-evolution methods and RRSI. (b–d) OOD held-out score for the initial harness H₀, the prior-method average and RRSI."},
+        {"fig": "2609.24974_S3-F1", "ctx": "Harness-Zero: evolve a private reference harness, let a harnessing agent review and correct the student's turns under the fixed target harness, then SFT the student on the reviewed trajectories and deploy it under the target harness alone."},
+        {"fig": "2609.15779_Sx1-F1", "ctx": "EvoOntology: a data agent exploring heterogeneous sources directly (a) vs through an ontology layer revised by a diagnose–attribute–patch–evaluate loop (b)."},
+        {"fig": "web_evoontology_content_layer", "ctx": "EvoOntology explorer, content layer of one ontology version: terms, mappings, constraints and evidence nodes with semantic and structural edges.",
+         "cite": "EvoOntology GitHub README", "url": "https://github.com/ruc-datalab/EvoOntology", "paper": "2609.15779"}
+      ]
+    }
+  ]
+}
