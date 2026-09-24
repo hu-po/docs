@@ -1,6 +1,6 @@
 ![thumbnail](thumbnail.jpg)
 
-# Figure Review 001: World Harnesses
+# World Harnesses
 
 ### Links
 

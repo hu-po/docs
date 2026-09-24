@@ -1,5 +1,5 @@
 {
-  "title": "Figure Review 001: World Harnesses",
+  "title": "World Harnesses",
   "date": "2026.09.25",
   "names": {
     "2609.22966": "Robo Dawn",
@@ -48,7 +48,7 @@
          "cite": "SoL-Pi project page", "url": "https://nvlabs.github.io/SoL-Pi/", "paper": "2609.20519"},
         {"fig": "2609.24972_S3-F2", "ctx": "RRSI overview: proposal-side constraints control how search capacity is used; selection-side constraints control which measured improvements become permanent harness state."},
         {"fig": "2609.24972_S1-F1", "ctx": "(a) Gain on the evolve split vs gain out of distribution for prior harness-evolution methods and RRSI. (b–d) OOD held-out score for the initial harness H₀, the prior-method average and RRSI."},
-        {"fig": "2609.24974_S3-F1", "ctx": "Harness-Zero: evolve a private reference harness, let a harnessing agent review and correct the student's turns under the fixed target harness, then SFT the student on the reviewed trajectories and deploy it under the target harness alone."},
+        {"fig": "2609.24974_S3-F1", "ctx": "Harness-Zero: (1) evolve a private harness, (2) a harnessing agent passes or replaces each student proposal under the fixed target harness, (3) SFT the student on the reviewed trajectories and deploy it under the target harness alone."},
         {"fig": "2609.15779_Sx1-F1", "ctx": "EvoOntology: a data agent exploring heterogeneous sources directly (a) vs through an ontology layer revised by a diagnose–attribute–patch–evaluate loop (b)."},
         {"fig": "web_evoontology_content_layer", "ctx": "EvoOntology explorer, content layer of one ontology version: terms, mappings, constraints and evidence nodes with semantic and structural edges.",
          "cite": "EvoOntology GitHub README", "url": "https://github.com/ruc-datalab/EvoOntology", "paper": "2609.15779"}
