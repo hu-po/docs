@@ -68,5 +68,6 @@ Each round, pick the 2–4 highest-value changes:
 
 After round {{MAX_ROUNDS}}, or once the deck is inside the size range with no weak slides left, do a
 **polish round**. It adds nothing: reorder for flow, tighten lines, fix any flagged crop, and run
-`figures.py qa` on every stem in the deck. Then append `DECK DONE` as the last line of `log.md` and
+`figures.py qa` on every stem in the deck, and `figures.py pdfs {{DIR}}` so every paper link on the slides
+opens a local PDF during the stream. Then append `DECK DONE` as the last line of `log.md` and
 exit. If that line is already there, exit immediately.

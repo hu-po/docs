@@ -30,6 +30,22 @@ VIDEO_JS = """<script>(function(){var v=[].slice.call(document.querySelectorAll(
 function sync(){v.forEach(function(x){var on=x.closest('.slide').classList.contains('on');if(on&&x.paused){x.currentTime=0;x.play().catch(function(){});}if(!on&&!x.paused)x.pause();});}
 new MutationObserver(sync).observe(document.getElementById('deck'),{attributes:true,subtree:true,attributeFilter:['class']});sync();})();</script>
 """
+# Cite lines and references link to the paper. A link opens in a new tab instead of advancing the slide, and
+# switches to the local PDF (figures.py pdfs) when the deck is served next to one, so a click never waits on arXiv.
+LINK_CSS = "<style>.cite a,.ref a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}.cite a:hover,.ref a:hover{color:var(--live)}</style>\n"
+LINK_JS = """<script>(function(){[].slice.call(document.querySelectorAll('.slide a')).forEach(function(a){
+a.addEventListener('click',function(e){e.stopPropagation();});
+var l=a.getAttribute('data-local');if(l&&location.protocol.indexOf('http')===0)fetch(l,{method:'HEAD'}).then(function(r){if(r.ok)a.href=l;}).catch(function(){});});})();</script>
+"""
+
+
+def pdf_link(aid, text):
+    return (f'<a href="https://arxiv.org/pdf/{aid}" data-local="figures/.{aid.replace("/", "")}.pdf" '
+            f'target="_blank" rel="noopener">{text}</a>')
+
+
+def web_link(url, text):
+    return f'<a href="{html.escape(url)}" target="_blank" rel="noopener">{text}</a>' if url else text
 
 
 def esc(s): return html.escape(s, quote=False)
@@ -90,13 +106,14 @@ def main():
             if not s.get("ctx"): errors.append(f"no ctx line: {s['fig']}")
             if s["fig"].startswith("web_"):
                 if not s.get("cite"): errors.append(f"web figure needs a cite: {s['fig']}")
-                cite = esc(s.get("cite", "")); label = s.get("cite", s["fig"]).split("·")[0].strip()
+                cite = web_link(s.get("url"), esc(s.get("cite", ""))); label = s.get("cite", s["fig"]).split("·")[0].strip()
+                if aid in meta: cite += " &middot; " + pdf_link(aid, f"arXiv:{aid}")
                 if s.get("url") and s["url"] not in [w[0] for w in web]: web.append((s["url"], s.get("cite", "")))
             else:
                 if aid not in meta: continue
                 loc = s["fig"].split("_", 1)[1]; fn = re.search(r"F(\d+)", loc).group(1)
                 kind = "Table" if loc.startswith("T") else "Fig."
-                cite = f"{esc(meta[aid]['first_author'])} et al. &middot; {esc(short(aid))} &middot; {kind} {fn} &middot; arXiv:{aid}"
+                cite = pdf_link(aid, f"{esc(meta[aid]['first_author'])} et al. &middot; {esc(short(aid))} &middot; {kind} {fn} &middot; arXiv:{aid}")
                 label = f"{short(aid)} F{fn}"
             if aid and aid not in used: used.append(aid)
             dark = " dark" if s.get("dark") else ""
@@ -109,9 +126,9 @@ def main():
             slides.append(f'<section class="slide fig"><div class="frame{dark}">{media}</div>'
                           f'<p class="ctx">{s.get("ctx", "")}</p><p class="cite">{cite}</p></section>')
             ov.append((thumb, label))
-    refs = [f'<div class="ref"><code>{a}</code><div class="t"><b>{esc(short(a))}</b>'
+    refs = [f'<div class="ref"><code>{a}</code><div class="t"><b>{pdf_link(a, esc(short(a)))}</b>'
             f'<span>{esc(meta[a]["first_author"])} et al. &middot; {meta[a]["published"]}</span></div></div>' for a in used if a in meta]
-    refs += [f'<div class="ref"><code>web</code><div class="t"><b>{esc(c.split("·")[0].strip() or u)}</b>'
+    refs += [f'<div class="ref"><code>web</code><div class="t"><b>{web_link(u, esc(c.split("·")[0].strip() or u))}</b>'
              f'<span>{esc(re.sub(r"^https?://", "", u)[:48])}</span></div></div>' for u, c in web]
     for i in range(0, len(refs), 45):
         slides.append('<section class="slide refs"><div class="reflist">' + "".join(refs[i:i + 45]) + '</div></section>')
@@ -124,7 +141,7 @@ def main():
     ovh = '<div id="overview"><div class="ovgrid">' + "".join(
         f'<button class="ov" data-i="{i}">{img}<em>{i + 1}. {esc(lab)}</em></button>' for i, (img, lab) in enumerate(ov)) + '</div>'
     out = HEAD.replace("{TITLE}", esc(title)).replace("{DATE}", date) + "".join(slides) + TAIL_PRE + ovh + TAIL_POST
-    (d / "slides.html").write_text(out.replace("</body>", VIDEO_JS + "</body>"))
+    (d / "slides.html").write_text(out.replace("</head>", LINK_CSS + "</head>").replace("</body>", VIDEO_JS + LINK_JS + "</body>"))
     # README: title + references in sync with the deck
     rd = d / "README.md"
     if rd.exists():
