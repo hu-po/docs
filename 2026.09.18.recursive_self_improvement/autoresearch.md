@@ -7,7 +7,7 @@ log it, commit, exit. The next invocation reads your log and continues.
 
 ## Where things are
 
-Working directory: `/home/ook/docs-2026.09.18.recursive_self_improvement/2026.09.18.recursive_self_improvement/`
+Working directory: this folder, `2026.09.18.recursive_self_improvement/`
 (a git worktree on branch `2026.09.18.recursive_self_improvement`; never push, never touch `~/docs`).
 
 | file | role |
@@ -17,7 +17,7 @@ Working directory: `/home/ook/docs-2026.09.18.recursive_self_improvement/2026.09
 | `deck.py` | `PAPERS` + `SECTIONS` lists drive everything. `python3 deck.py` rebuilds `slides.html` and the README refs. Do not edit the chrome (HEAD/TAIL strings). |
 | `pull_figures.py` | `.venv/bin/python pull_figures.py <arxiv-id> …` → `figures/<id>_S<sec>-F<n>.jpg` + `figures/captions.json`. `--only id:F3,F4` for specific figures. `--crop id:S5-F6:<page>:<x0,y0,x1,y1>` (PDF points) when a PDF crop grabbed stray text. |
 | `figures/` | 370+ figures already pulled (gitignored). Check `captions.json` before pulling again. |
-| `slides.html` | The deliverable. Served on `localhost:8765`; Hugo may be looking at it — never leave it broken. |
+| `slides.html` | The deliverable. Served locally; Hugo may be looking at it — never leave it broken. |
 | `thumbnail.jpg` | Title slide. Made by Hugo. Don't regenerate. |
 
 ## The deck's rules (Hugo's, from last week — non-negotiable)

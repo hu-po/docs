@@ -3,7 +3,7 @@
 Build: `python3 deck.py` in this folder (SECTIONS/PAPERS in deck.py drive slides.html + README refs).
 Figures: `.venv/bin/python pull_figures.py <arxiv-id> ...` (captions land in figures/captions.json).
 Manual PDF crop: `.venv/bin/python pull_figures.py --crop <id>:<S-F>:<page>:<x0,y0,x1,y1>`.
-Serve: `python3 -m http.server 8765 --bind 127.0.0.1` (running; nzxt tunnels 8765).
+Serve: `python3 -m http.server <port> --bind 127.0.0.1`.
 
 ## Seed — 2026-09-15 (Mon)
 34 slides: title, 8 section dividers, 24 figure slides, refs. 18 papers. Story arc per research.md.
