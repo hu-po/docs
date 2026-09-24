@@ -67,10 +67,12 @@ function vote(obj,key,el){const cur=(obj[key]||{}).vote||0;const w=$("span",{cla
  const mk=(v,cls,label)=>$("button",{class:cls+(cur===v?" on":""),title:v>0?"star":"veto",on:{click:()=>{obj[key]=obj[key]||{};obj[key].vote=obj[key].vote===v?0:v;mark();render();}}},label);
  w.append(mk(1,"s","★"),mk(-1,"x","✕"));return w;}
 function fig(stem){const c=D.captions[stem]||{};return c;}
-function media(stem,cls){const f=D.files[stem];if(!f)return $("div",{class:"pmeta"},"missing "+stem);
- return /\.(mp4|webm|mov)$/.test(f)?$("video",{src:"figures/"+f,muted:"",loop:"",autoplay:"",playsinline:""}):$("img",{src:"figures/"+f,loading:"lazy",alt:stem});}
-function lightbox(stem){const lb=document.getElementById("lb");lb.innerHTML="";lb.append(media(stem),$("p",{},stem+" — "+(fig(stem).caption||"")));lb.classList.add("on");}
-document.getElementById("lb").onclick=()=>document.getElementById("lb").classList.remove("on");
+function media(stem,big){const f=D.files[stem];if(!f)return $("div",{class:"pmeta"},"missing "+stem);
+ if(!/\.(mp4|webm|mov)$/.test(f))return $("img",{src:"figures/"+f,loading:"lazy",alt:stem});
+ // the muted attribute does not mute a script-created video; only the property does
+ const v=$("video",{src:"figures/"+f,loop:"",autoplay:"",playsinline:"",preload:"metadata"});v.muted=true;if(big)v.controls=true;return v;}
+function lightbox(stem){const lb=document.getElementById("lb");lb.innerHTML="";lb.append(media(stem,true),$("p",{},stem+" — "+(fig(stem).caption||"")));lb.classList.add("on");}
+document.getElementById("lb").onclick=e=>{if(e.target.tagName==="VIDEO")return;const lb=e.currentTarget;lb.classList.remove("on");lb.innerHTML="";};
 function badges(r){const s=r.signals||{},b=[];
  if(s.hf_upvotes)b.push($("span",{class:"b"+(s.hf_upvotes>=100?" hot":"")},"HF ▲"+s.hf_upvotes));
  if(s.dair)b.push($("span",{class:"b hot"},"dair "+s.dair.split(" ").slice(0,3).join(" ")));
