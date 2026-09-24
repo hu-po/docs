@@ -2,7 +2,7 @@
 """The review gate: a local page where Hugo stars / vetoes before any deck is built.
 
   stream/py review.py build <stream-dir>              # writes <stream>/review.html (gitignored)
-  stream/py review.py serve <stream-dir> [--port 8767] # serves the folder on 127.0.0.1, saves picks.json
+  stream/py review.py serve <stream-dir> [--port N]    # serves the folder on 127.0.0.1 (a free port if no --port), saves picks.json
 
 Reads ledger.jsonl + analysis.json + figures/captions.json (+ picks.json to restore earlier choices).
 The Save button POSTs to /picks, which writes <stream>/picks.json (gitignored); "Save & start deck" also starts
@@ -188,10 +188,10 @@ if __name__ == "__main__":
     cmd, d = sys.argv[1], stream_dir(sys.argv[2])
     if cmd == "build": build(d)
     elif cmd == "serve":
-        port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8767
+        port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 0
         build(d)
         srv = ThreadingHTTPServer(("127.0.0.1", port), Handler)
         srv.stream = d
-        print(f"review: http://localhost:{port}/review.html")
+        print(f"review: http://localhost:{srv.server_address[1]}/review.html")
         srv.serve_forever()
     else: raise SystemExit(__doc__)
