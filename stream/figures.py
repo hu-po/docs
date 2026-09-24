@@ -7,6 +7,7 @@
   stream/py figures.py page  <stream-dir> https://project.page/          # list media on a page (no download)
   stream/py figures.py get   <stream-dir> <media-url> <stem> [--caption "..."] [--from <page-url>]
   stream/py figures.py qa    <stream-dir> [stems...]                     # flag crops worth a second look
+  stream/py figures.py restore <stream-dir> [stems...]                   # rebuild missing files from captions.json
 
 Files land in <stream>/figures/ (gitignored). arXiv figures are named <id>_S<sec>-F<n>.jpg (same as past
 streams); web media are named web_<stem>.<ext>. Captions + provenance go to figures/captions.json.
@@ -227,6 +228,42 @@ def get_media(url, stem, caption="", page=""):
     return name
 
 
+# ---------- restore (figures/ is never committed; captions.json records how to rebuild each file) ----------
+
+def restore(stems=None):
+    """Re-create missing figure files from their recorded provenance (HTML/PDF pull, manual crop box, web URL).
+    Default: every stem used by analysis.json and deck.json."""
+    caps = load_caps(); d = FIG.parent
+    if not stems:
+        stems = set()
+        if (d / "analysis.json").exists():
+            a = json.loads((d / "analysis.json").read_text())
+            stems |= {s for t in a.get("themes", []) for p in t.get("papers", []) for s in p.get("figs", []) + p.get("media", [])}
+        if (d / "deck.json").exists():
+            stems |= {s["fig"] for sec in json.loads((d / "deck.json").read_text())["sections"] for s in sec["slides"]}
+    missing = sorted(s for s in stems if not any(FIG.glob(s + ".*")))
+    print(f"restore: {len(stems)} stems, {len(missing)} missing")
+    failed = []
+    for s in missing:
+        src = str(caps.get(s, {}).get("src", ""))
+        m = re.match(r"pdf p(\d+) manual \[([^\]]+)\]", src)
+        try:
+            if s.startswith("web_"):
+                get_media(src, s[4:], caps[s].get("caption", ""), caps[s].get("page", ""))
+            elif m:
+                aid, stem = s.split("_", 1)
+                manual_crop(aid, stem, int(m[1]), [float(v) for v in m[2].split(",")])
+            else:
+                aid, loc = s.split("_", 1)
+                pull(aid, {int(re.search(r"F(\d+)", loc)[1])})
+        except Exception as e:
+            print(f"  {s}: {e}")
+        if not any(FIG.glob(s + ".*")): failed.append(s)
+    save_caps({**caps, **load_caps()})
+    print(f"restore: {len(missing) - len(failed)} rebuilt, {len(failed)} failed" + (": " + " ".join(failed) if failed else ""))
+    return failed
+
+
 # ---------- QA ----------
 
 def qa(stems=None):
@@ -276,6 +313,8 @@ if __name__ == "__main__":
         if "--caption" in args: i = args.index("--caption"); cap = args[i + 1]; del args[i:i + 2]
         if "--from" in args: i = args.index("--from"); page = args[i + 1]; del args[i:i + 2]
         get_media(args[0], args[1], cap, page)
+    elif cmd == "restore":
+        sys.exit(1 if restore(set(args) or None) else 0)
     elif cmd == "qa":
         qa(set(args) or None)
     else:
