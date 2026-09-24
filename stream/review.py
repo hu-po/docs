@@ -108,11 +108,11 @@ function render(){const app=document.getElementById("app");const y=scrollY;app.i
   const tn=$("input",{class:"note",placeholder:"theme note (optional)",value:(P.themes[t.id]||{}).note||""});tn.oninput=()=>{P.themes[t.id]=P.themes[t.id]||{};P.themes[t.id].note=tn.value;mark();};b.append(tn);
   for(const p of t.papers||[])b.append(paper(p));app.append(b);}
  const themed=new Set((A.themes||[]).flatMap(t=>(t.papers||[]).map(p=>p.id)));
- const rest=D.ledger.filter(r=>!themed.has(r.id)&&r.role!=="ancestor").slice(0,60);
+ const rest=D.ledger.filter(r=>!themed.has(r.id)&&r.role!=="ancestor").slice(0,15);
  const tb=$("table",{},rest.map(r=>{const v=(P.papers[r.id]||{}).vote||0;return $("tr",{style:v<0?"opacity:.4":""},$("td",{class:"n"},r.score),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("div",{},badges(r))),$("td",{},vote(P.papers,r.id)));}));
- app.append($("div",{class:"block"},$("h3",{},"Not in a theme — top of the ledger (star to pull one in)"),tb));
+ app.append($("div",{class:"block"},$("details",{},$("summary",{},"Not in a theme — top "+rest.length+" of the ledger (star to pull one in)"),tb)));
  const anc=D.ledger.filter(r=>r.role==="ancestor");
- if(anc.length)app.append($("div",{class:"block"},$("h3",{},"Ancestors — older papers this week keeps citing"),$("table",{},anc.map(r=>$("tr",{},$("td",{class:"n"},(r.signals.cited_by_week||[]).length+"×"),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("span",{class:"pmeta"}," "+r.published.slice(0,4))),$("td",{},vote(P.papers,r.id)))))));
+ if(anc.length)app.append($("div",{class:"block"},$("details",{},$("summary",{},anc.length+" ancestors — older papers this week keeps citing"),$("table",{},anc.map(r=>$("tr",{},$("td",{class:"n"},(r.signals.cited_by_week||[]).length+"×"),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("span",{class:"pmeta"}," "+r.published.slice(0,4))),$("td",{},vote(P.papers,r.id))))))));
  const nt=$("textarea",{rows:5,placeholder:"anything else for the deck agent: order, what to lead with, what to cut, a paper that's missing…"});nt.value=P.notes||"";nt.oninput=()=>{P.notes=nt.value;mark();};
  app.append($("div",{class:"block"},$("h3",{},"Notes"),nt));scrollTo(0,y);}
 async function save(go){P.saved=new Date().toISOString();

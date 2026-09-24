@@ -1,62 +1,37 @@
 {
- "summary": "The week's heaviest signal is agents improving their own scaffolding: harness self-improvement papers from Google (RRSI) and NVIDIA (SoL-Pi) top the ledger, next to a component-level harness study and a distillation paper that folds harness gains back into the weights. A second large cluster turns code into training ground: repos, scientific codebases and running apps become verifiable RL environments and skills. Agent collectives run for days (Agora's 12-day, 13-worker run; Agensh at 1,024 agents), and several papers report what goes wrong when they do: cheating, collusion, taste. Outside agents, video world models are pushing on 3D-consistent memory and playability, and robot papers argue for grounding (3D, action tokens) over raw VLA scale. On-policy distillation got five papers that pick apart why it works and when it breaks, and DeepSeek-V4.1-Flash leads a small cluster on KV-cache and long-context cost. A late cluster of full-duplex voice/video models (Realtime-Venus, Gander, StepAudio 3 Realtime) splits the agent into a live talking frontend and a background worker.",
+ "summary": "The week's heaviest signal is agents improving their own scaffolding: harness self-improvement papers from Google (RRSI) and NVIDIA (SoL-Pi) top the ledger, next to a distillation paper that folds harness gains back into the weights and an ontology layer that data agents revise as they work. Outside agents, video world models are pushing on 3D-consistent memory, geometry-native latents and playability. Robot papers argue for grounding (3D objects, action tokens, world-model features, a VLM command interface) over raw VLA scale.",
  "title_candidates": [
   {
    "title": "Figure Review 001: The Harness Is the Model",
    "why": "top two papers and a harness-distillation paper all treat the scaffolding as the thing being trained"
   },
   {
-   "title": "Figure Review 001: Code Becomes the World",
-   "why": "the week's second-largest cluster turns codebases and running apps into RL environments, skills and research workspaces"
-  },
-  {
-   "title": "Figure Review 001: Agents in the Loop",
-   "why": "harness RSI, autoresearch swarms and self-evolving skills are three sizes of the same loop"
-  },
-  {
-   "title": "Figure Review 001: Harnesses, Worlds, and Swarms",
-   "why": "a plain roundup title that covers the three largest themes"
-  },
-  {
-   "title": "Figure Review 001: Talk While It Works",
-   "why": "the duplex theme and the harness theme meet: a live voice frontend delegating to a background harness (Realtime-Venus, Gander)"
+   "title": "Figure Review 001: Harnesses, Worlds, and Robots",
+   "why": "a plain roundup title that covers the three themes"
   }
  ],
  "themes": [
   {
    "id": "t1",
    "name": "Harness self-improvement",
-   "why": "The prompts, tools, memory and control flow around a frozen model are now being searched, regularized and distilled like weights. The 09.18 RSI stream, one week on.",
+   "why": "The prompts, tools, memory and control flow around a frozen model are now searched, regularized and distilled like weights, and the artifacts agents use (ontologies, skills) are revised from execution feedback. The 09.18 RSI stream, one week on.",
    "papers": [
+    {
+     "id": "2609.20519",
+     "why": "SoL-Pi: scales auto-research loops over many environments for token-efficient harness discovery",
+     "figs": [
+      "2609.20519_S0-F1"
+     ],
+     "media": [
+      "web_solpi_teaser"
+     ]
+    },
     {
      "id": "2609.24972",
      "why": "RRSI: constrains harness edit proposals so self-improvement gains survive out of distribution",
      "figs": [
       "2609.24972_S1-F1",
-      "2609.24972_S3-F2",
-      "2609.24972_S4-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.20519",
-     "why": "SoL-Pi: scales auto-research loops over many environments for token-efficient harness discovery",
-     "figs": [
-      "2609.20519_S0-F1",
-      "2609.20519_S2-F4"
-     ],
-     "media": [
-      "web_solpi_teaser",
-      "web_solpi_action_fusion"
-     ]
-    },
-    {
-     "id": "2609.20804",
-     "why": "ablates planning, action space and context management in a fixed coding harness across 176 settings",
-     "figs": [
-      "2609.20804_S0-F1",
-      "2609.20804_S2-F2",
-      "2609.20804_S3-F3"
+      "2609.24972_S3-F2"
      ],
      "media": []
     },
@@ -69,37 +44,19 @@
      "media": []
     },
     {
-     "id": "2609.09134",
-     "why": "co-evolves harness and model; on-policy correction helps weaker models catch up where imitation fails",
+     "id": "2609.15779",
+     "why": "EvoOntology: a self-evolving semantic layer between data agents and heterogeneous data",
      "figs": [
-      "2609.09134_S1-F1"
+      "2609.15779_Sx1-F1"
      ],
-     "media": []
-    },
-    {
-     "id": "2609.26457",
-     "why": "Weco: a research agent that optimizes its own code",
-     "figs": [
-      "2609.26457_S1-F1",
-      "2609.26457_S3-F2",
-      "2609.26457_S3-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.22086",
-     "why": "Designer-RSI: procedural memory evolved from real user traffic in an agentic design product",
-     "figs": [
-      "2609.22086_S1-F1",
-      "2609.22086_S4-F7"
-     ],
-     "media": []
+     "media": [
+      "web_evoontology_content_layer"
+     ]
     }
    ],
    "ancestors": [
     "2408.08435",
-    "2410.10762",
-    "2405.15793"
+    "2305.16291"
    ],
    "callbacks": [
     "2026.09.18.recursive_self_improvement"
@@ -107,250 +64,6 @@
   },
   {
    "id": "t2",
-   "name": "Code becomes the environment",
-   "why": "Codebases, scientific repos and running web apps are converted into verifiable RL tasks and skills with agentic pipelines instead of human-written issues.",
-   "papers": [
-    {
-     "id": "2609.22068",
-     "why": "CodeMidas: builds executable RL environments from implemented functionality, source code as the only input",
-     "figs": [
-      "2609.22068_S3-F1",
-      "2609.22068_S4-F5",
-      "2609.22068_S4-F6"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.19134",
-     "why": "ScienceIDE: turns scientific code repositories into agent-learnable environments",
-     "figs": [
-      "2609.19134_S2-F2",
-      "2609.19134_S3-F7",
-      "2609.19134_S2-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.22000",
-     "why": "RecreationWorld: agent must rediscover and rebuild a running reference app across five platforms",
-     "figs": [
-      "2609.22000_S0-F1",
-      "2609.22000_S1-F2",
-      "2609.22000_S3-F5"
-     ],
-     "media": [
-      "web_recbench_foodtruck_reference",
-      "web_recbench_foodtruck_recreation"
-     ]
-    },
-    {
-     "id": "2609.18805",
-     "why": "ProgramDistill: SWE tasks where desired behavior is inferred from a working reference web app",
-     "figs": [
-      "2609.18805_S1-F1",
-      "2609.18805_S3-F7",
-      "2609.18805_S3-F8"
-     ],
-     "media": [
-      "web_programdistill_demo"
-     ]
-    },
-    {
-     "id": "2609.05571",
-     "why": "Code2Skill: synthesizes verified, implementation-anchored agent skills from code units",
-     "figs": [
-      "2609.05571_S5-F4"
-     ],
-     "media": [
-      "web_code2skill_pipeline"
-     ]
-    },
-    {
-     "id": "2609.07925",
-     "why": "FrogNano: a 4B coding agent trained on online task synthesis",
-     "figs": [
-      "2609.07925_S0-F1",
-      "2609.07925_S1-F3",
-      "2609.07925_S3-F5"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.22978",
-     "why": "DeepSeek Elastic Compute: the sandbox infrastructure behind agentic RL at scale",
-     "figs": [
-      "2609.22978_S3-F1",
-      "2609.22978_S4-F2",
-      "2609.22978_S4-F6"
-     ],
-     "media": []
-    }
-   ],
-   "ancestors": [
-    "2310.06770",
-    "2504.21798",
-    "2601.11868"
-   ],
-   "callbacks": []
-  },
-  {
-   "id": "t3",
-   "name": "Research swarms and what they do unsupervised",
-   "why": "Many-agent research systems now run for days without a planner, and the same week brings reports of cheating, collusion and poor long-horizon taste.",
-   "papers": [
-    {
-     "id": "2609.18094",
-     "why": "Agora: Git DAG as shared memory; 13 LM workers ran ~12 days with no assigned tasks",
-     "figs": [
-      "2609.18094_S4-F3",
-      "2609.18094_S4-F4",
-      "2609.18094_S3-F1"
-     ],
-     "media": [
-      "web_agora_mechanisms"
-     ]
-    },
-    {
-     "id": "2609.26781",
-     "why": "Agensh: multi-agent harness scaled to 1,024 agents without a central orchestrator bottleneck",
-     "figs": [
-      "2609.26781_S0-F1",
-      "2609.26781_S0-F2",
-      "2609.26781_S1-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.15983",
-     "why": "Stellar Colosseum: many-agent harness for long-horizon math and TCS research",
-     "figs": [
-      "2609.15983_S0-F1"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.25199",
-     "why": "Lean Pool: a formal-math archive grown and maintained by AI agents",
-     "figs": [
-      "2609.25199_S2-F1",
-      "2609.25199_S4-F2",
-      "2609.25199_S8-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.04170",
-     "why": "case study of emergent cheating and whistleblowing in autonomous research swarms",
-     "figs": [
-      "2609.04170_S3-F1"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.24967",
-     "why": "collusion emerging between agents that verify each other's work over long horizons",
-     "figs": [
-      "2609.24967_S1-F1",
-      "2609.24967_S4-F4",
-      "2609.24967_S2-F2"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.25804",
-     "why": "Taste-Bench: measures the long-horizon decision quality (taste) of research and engineering agents",
-     "figs": [
-      "2609.25804_S4-F3",
-      "2609.25804_S3-F2"
-     ],
-     "media": [
-      "web_tastebench_fork"
-     ]
-    }
-   ],
-   "ancestors": [
-    "2504.08066",
-    "2304.03442"
-   ],
-   "callbacks": [
-    "2026.09.18.recursive_self_improvement"
-   ]
-  },
-  {
-   "id": "t4",
-   "name": "Self-evolving skills, indexes and memory",
-   "why": "Beyond the harness, the artifacts agents use (skills, ontologies, search indexes, procedural graphs) are revised from execution feedback during deployment.",
-   "papers": [
-    {
-     "id": "2609.17653",
-     "why": "GUI agent skills revised from execution feedback, training-free",
-     "figs": [
-      "2609.17653_S1-F1",
-      "2609.17653_S4-F6",
-      "2609.17653_S4-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.21749",
-     "why": "GraphSkillEvo: evolutionary optimization of graph-structured skills",
-     "figs": [
-      "2609.21749_S0-F1",
-      "2609.21749_S4-F3",
-      "2609.21749_A3-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.15779",
-     "why": "EvoOntology: a self-evolving semantic layer between data agents and heterogeneous data",
-     "figs": [
-      "2609.15779_Sx1-F1",
-      "2609.15779_Sx5-F4"
-     ],
-     "media": [
-      "web_evoontology_content_layer"
-     ]
-    },
-    {
-     "id": "2609.19656",
-     "why": "an index whose keys are evolved by agents to fit the retrieval environment",
-     "figs": [
-      "2609.19656_S3-F1",
-      "2609.19656_S4-F2",
-      "2609.19656_S5-F6"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.09153",
-     "why": "Procedural Graphs: self-evolving execution structures for agents",
-     "figs": [
-      "2609.09153_S1-F1",
-      "2609.09153_A5-F5",
-      "2609.09153_S5-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.17632",
-     "why": "EvolveTrade: trading agents refining tool-use policy from experience",
-     "figs": [
-      "2609.17632_S1-F1",
-      "2609.17632_S6-F3",
-      "2609.17632_S6-F5"
-     ],
-     "media": []
-    }
-   ],
-   "ancestors": [
-    "2305.16291",
-    "2303.11366"
-   ],
-   "callbacks": []
-  },
-  {
-   "id": "t5",
    "name": "World models with memory and geometry",
    "why": "Video world models are adding 3D-aware memory, geometry-native latents and real-time control to stay consistent over long horizons.",
    "papers": [
@@ -358,9 +71,7 @@
      "id": "2609.24984",
      "why": "WorldCrafter: camera-queryable implicit 3D memory for long-horizon consistent video",
      "figs": [
-      "2609.24984_S0-F1",
-      "2609.24984_S1-F2",
-      "2609.24984_S3-F7"
+      "2609.24984_S0-F1"
      ],
      "media": [
       "web_wcrafter-classroom"
@@ -370,47 +81,10 @@
      "id": "2609.24981",
      "why": "GAE: a geometry-native latent space shared by perception and generation",
      "figs": [
-      "2609.24981_S3-F2",
-      "2609.24981_S4-F5",
-      "2609.24981_S4-F3"
+      "2609.24981_S3-F2"
      ],
      "media": [
       "web_gae-progressive"
-     ]
-    },
-    {
-     "id": "2609.17909",
-     "why": "Zing-0.5: 5B autoregressive playable world model with joint keyboard and text control",
-     "figs": [
-      "2609.17909_S1-F2",
-      "2609.17909_S3-F3",
-      "2609.17909_S5-F7"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.20744",
-     "why": "Video DeltaNet: hybrid linear attention for livestream video generation",
-     "figs": [
-      "2609.20744_S2-F2",
-      "2609.20744_S5-F5",
-      "2609.20744_S2-F3"
-     ],
-     "media": [
-      "web_vdn-sample"
-     ]
-    },
-    {
-     "id": "2609.23658",
-     "why": "traces physics violations in video diffusion to attention mechanisms",
-     "figs": [
-      "2609.23658_S1-F1",
-      "2609.23658_S4-F2",
-      "2609.23658_S4-F4"
-     ],
-     "media": [
-      "web_physics-ball20",
-      "web_physics-wine"
      ]
     },
     {
@@ -418,32 +92,30 @@
      "why": "JEPA-Anything: one predictive-factorization recipe across seven different world domains",
      "figs": [
       "2609.20800_S3-F2",
-      "2609.20800_S3-F5",
-      "2609.20800_S3-F9"
+      "2609.20800_S3-F5"
      ],
      "media": []
     },
     {
-     "id": "2609.25001",
-     "why": "GameHorizon: multi-horizon gameplay data and evaluation",
+     "id": "2609.17909",
+     "why": "Zing-0.5: 5B autoregressive playable world model with joint keyboard and text control",
      "figs": [
-      "2609.25001_S0-F1",
-      "2609.25001_S3-F2"
+      "2609.17909_S1-F2",
+      "2609.17909_S3-F3"
      ],
      "media": []
     }
    ],
    "ancestors": [
-    "2503.20314",
-    "2506.08009",
-    "2503.11651"
+    "2503.11651",
+    "2506.08009"
    ],
    "callbacks": [
     "2026.09.11.world_action_models"
    ]
   },
   {
-   "id": "t6",
+   "id": "t3",
    "name": "Grounding robot policies",
    "why": "Robot papers put explicit structure under the policy (3D grounding, action tokenizers, world-model features, VLM agent interfaces) instead of relying on end-to-end VLA scale.",
    "papers": [
@@ -451,9 +123,7 @@
      "id": "2609.23863",
      "why": "Grounded Action Models: 3D object grounding as the robot foundation",
      "figs": [
-      "2609.23863_S1-F1",
-      "2609.23863_S4-F4",
-      "2609.23863_S4-F3"
+      "2609.23863_S1-F1"
      ],
      "media": [
       "web_gam-sort-ood"
@@ -479,49 +149,13 @@
      ]
     },
     {
-     "id": "2609.19138",
-     "why": "in-context robot learning with VLM agents at deployment",
-     "figs": [
-      "2609.19138_S1-F1",
-      "2609.19138_S3-F2",
-      "2609.19138_S5-F8"
-     ],
-     "media": []
-    },
-    {
      "id": "2609.24682",
      "why": "distills world-model representations into a compact VLA",
      "figs": [
-      "2609.24682_S1-F1",
-      "2609.24682_S3-F2",
-      "2609.24682_S4-F3"
+      "2609.24682_S1-F1"
      ],
      "media": [
       "web_thaw-rollouts"
-     ]
-    },
-    {
-     "id": "2609.10706",
-     "why": "HuRo: robotizes human videos for VLA pretraining",
-     "figs": [
-      "2609.10706_S1-F1",
-      "2609.10706_S3-F2",
-      "2609.10706_S4-F3"
-     ],
-     "media": [
-      "web_huro-robotized"
-     ]
-    },
-    {
-     "id": "2609.17172",
-     "why": "an anthropomorphic hand that uses fingers as legs for locomotion and manipulation",
-     "figs": [
-      "2609.17172_S5-F6",
-      "2609.17172_S6-F9"
-     ],
-     "media": [
-      "web_fingers-film",
-      "web_fingers-keyboard"
      ]
     }
    ],
@@ -531,209 +165,6 @@
    ],
    "callbacks": [
     "2026.09.11.world_action_models"
-   ]
-  },
-  {
-   "id": "t7",
-   "name": "On-policy distillation, taken apart",
-   "why": "Five papers in one week dissect on-policy distillation: termination-token mismatch, privileged teachers, token sparsity, teacher-student calibration, and when to stop.",
-   "papers": [
-    {
-     "id": "2609.20511",
-     "why": "length inflation traced to EOS-token mismatch between student and teacher",
-     "figs": [
-      "2609.20511_S1-F1",
-      "2609.20511_S3-F4",
-      "2609.20511_S4-F6"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.20612",
-     "why": "isolates what privileged information adds to on-policy self-distillation",
-     "figs": [
-      "2609.20612_S1-F1",
-      "2609.20612_S3-F2",
-      "2609.20612_S3-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.24432",
-     "why": "sparse OPD: supervising 1% of tokens, and the gradient-estimation problem",
-     "figs": [
-      "2609.24432_S5-F2",
-      "2609.24432_S5-F1"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.21619",
-     "why": "calibrates the teacher-student discrepancy signal in OPD",
-     "figs": [
-      "2609.21619_S1-F1",
-      "2609.21619_S2-F2",
-      "2609.21619_S4-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.20784",
-     "why": "RetireOPD: the self-teacher retires itself as agentic RL progresses",
-     "figs": [
-      "2609.20784_S3-F3",
-      "2609.20784_S0-F1",
-      "2609.20784_S4-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.18708",
-     "why": "value flattening: PPO critics stay flat where true state values change sharply",
-     "figs": [
-      "2609.18708_S1-F1",
-      "2609.18708_S4-F4",
-      "2609.18708_S5-F6"
-     ],
-     "media": []
-    }
-   ],
-   "ancestors": [
-    "2306.13649"
-   ],
-   "callbacks": []
-  },
-  {
-   "id": "t8",
-   "name": "Paying for long context",
-   "why": "Long agent sessions make the KV cache and prefill the cost bottleneck; the fixes range from DeepSeek's cache compression to SSD offload and linear-attention variants.",
-   "papers": [
-    {
-     "id": "2609.19969",
-     "why": "DeepSeek-V4.1-Flash: 552B MoE built around KV-cache compression",
-     "figs": [
-      "2609.19969_S1-F2",
-      "2609.19969_S1-F3"
-     ],
-     "media": [
-      "web_dsv41_kv_cache"
-     ]
-    },
-    {
-     "id": "2609.17652",
-     "why": "Fathom: per-query read depth over offloaded KV caches",
-     "figs": [
-      "2609.17652_S5-F2",
-      "2609.17652_S5-F3",
-      "2609.17652_S3-F1"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.18063",
-     "why": "serving 35B MoEs from SSD with trained routing prediction",
-     "figs": [
-      "2609.18063_S3-F1",
-      "2609.18063_S5-F3",
-      "2609.18063_S5-F2"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.26796",
-     "why": "Flash-dLLM: IO-aware KV caching for diffusion LLMs",
-     "figs": [
-      "2609.26796_S1-F2",
-      "2609.26796_S3-F5",
-      "2609.26796_S3-F7"
-     ],
-     "media": [
-      "web_flashdllm_scalability"
-     ]
-    },
-    {
-     "id": "2609.14320",
-     "why": "SpectralShift: context extension of Gated DeltaNet via spectral reparameterization",
-     "figs": [
-      "2609.14320_S1-F1"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.24797",
-     "why": "Complex KDA: more expressive delta-rule transitions for Kimi Delta Attention",
-     "figs": [
-      "2609.24797_S0-F2",
-      "2609.24797_S6-F9"
-     ],
-     "media": []
-    }
-   ],
-   "ancestors": [
-    "2309.06180",
-    "2205.14135"
-   ],
-   "callbacks": []
-  },
-  {
-   "id": "t9",
-   "name": "Talking while the agent works",
-   "why": "Full-duplex voice and video models become a live frontend that keeps listening, speaking and taking interruptions while a separate background loop reasons or runs tools, and hands results back mid-conversation.",
-   "papers": [
-    {
-     "id": "2609.13814",
-     "why": "two 9B full-duplex models (omni and audio) on one causal timeline, with a harness that runs delegated tasks asynchronously",
-     "figs": [
-      "2609.13814_S3-F4"
-     ],
-     "media": [
-      "web_rtvenus-system",
-      "web_rtvenus-radars"
-     ]
-    },
-    {
-     "id": "2609.08977",
-     "why": "Gander: a realtime 'cerebellum' on MiniCPM-o 4.5 chats while a back 'brain' runs multi-step agent tasks the user can revise mid-flight",
-     "figs": [
-      "2609.08977_S1-F1",
-      "2609.08977_S3-F3"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.14005",
-     "why": "StepAudio 3 Realtime: dual-stream duplex with state tokens every 320 ms, and Think-While-Speaking that reasons in parallel with spoken output",
-     "figs": [
-      "2609.14005_S6-F7",
-      "2609.14005_S5-F5"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.12623",
-     "why": "SteerDuplex: a taxonomy of what duplex models should be steerable on, and RL that cuts barge-in during pauses",
-     "figs": [
-      "2609.12623_S1-F1",
-      "2609.12623_S6-F4"
-     ],
-     "media": []
-    },
-    {
-     "id": "2609.21465",
-     "why": "OmniVChat: an agent-plus-video-generator studio synthesizes audio-visual dialogue data, then RL trains an omni model on it",
-     "figs": [
-      "2609.21465_S0-F2"
-     ],
-     "media": [
-      "web_omnivchat-rl"
-     ]
-    }
-   ],
-   "ancestors": [
-    "2410.00037"
-   ],
-   "callbacks": [
-    "2024.09.27.voice_mode"
    ]
   }
  ],
