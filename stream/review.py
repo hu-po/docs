@@ -10,7 +10,6 @@ the deck rounds and thumbnail prompts. Bound to 127.0.0.1 only; never published.
 """
 import datetime as dt, html, json, sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-from functools import partial
 from common import TOOLS, read_jsonl, stream_dir
 
 PAGE = r"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -145,6 +144,12 @@ def build(d):
     print(f"review.html: {len(analysis.get('themes', []))} themes, {sum(len(t.get('papers', [])) for t in analysis.get('themes', []))} themed papers")
 
 
+def live(d):
+    """The stream folder now. Deck round 1 renames <date>.untitled to <date>.<title> under a running server."""
+    if d.is_dir(): return d
+    return next((p for p in sorted(d.parent.glob(d.name[:10] + ".*")) if p.is_dir()), d)
+
+
 def start_deck(d):
     """Kick off the deck rounds, then the thumbnail prompts, detached (stream/run.sh)."""
     import subprocess
@@ -153,23 +158,26 @@ def start_deck(d):
     if lock.exists(): return b"deck already running"
     lock.touch()
     log = open(d / "run.log", "a")
-    subprocess.Popen(["bash", "-c", f'"$0" deck {date}; "$0" thumbnail {date}; rm -f "{lock}"', str(TOOLS / "run.sh")],
+    subprocess.Popen(["bash", "-c", f'"$0" deck {date}; "$0" thumbnail {date}; rm -f "{d.parent}"/{date}.*/.deck-running', str(TOOLS / "run.sh")],
                      stdout=log, stderr=log, start_new_session=True, cwd=str(d.parent))
     print(f"[{dt.datetime.now():%H:%M:%S}] deck rounds started")
     return b"deck rounds started"
 
 
 class Handler(SimpleHTTPRequestHandler):
+    def __init__(self, request, client, server):
+        super().__init__(request, client, server, directory=str(live(server.stream)))
+
     def do_POST(self):
         if self.path.split("?")[0] != "/picks": self.send_error(404); return
         body = self.rfile.read(int(self.headers.get("Content-Length", 0)))
         try: picks = json.loads(body)
         except ValueError: self.send_error(400); return
-        (self.server.stream / "picks.json").write_text(json.dumps(picks, indent=1, ensure_ascii=False))
+        (live(self.server.stream) / "picks.json").write_text(json.dumps(picks, indent=1, ensure_ascii=False))
         print(f"[{dt.datetime.now():%H:%M:%S}] picks.json saved ({sum(1 for v in picks.get('papers', {}).values() if v.get('vote') == 1)} starred)")
         msg = b"ok"
         if "deck=1" in self.path:
-            msg = start_deck(self.server.stream)
+            msg = start_deck(live(self.server.stream))
         self.send_response(200); self.end_headers(); self.wfile.write(msg)
 
     def log_message(self, *a): pass
@@ -182,7 +190,7 @@ if __name__ == "__main__":
     elif cmd == "serve":
         port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8767
         build(d)
-        srv = ThreadingHTTPServer(("127.0.0.1", port), partial(Handler, directory=str(d)))
+        srv = ThreadingHTTPServer(("127.0.0.1", port), Handler)
         srv.stream = d
         print(f"review: http://localhost:{port}/review.html")
         srv.serve_forever()
