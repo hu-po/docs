@@ -30,7 +30,8 @@ here, not in the prompts. Record every change in the changelog at the bottom (da
   than one section.
 - **Section divider:** a title plus a one- or two-sentence blurb saying what ties the section together.
   The blurb is factual and may be provocative, but it states no conclusions.
-- **Size:** about 40–60 figure slides, 5–8 sections. Roundup pace: breadth over depth.
+- **Size:** 3 sections of about 4 papers each, at most 2 visuals per paper: about 20–25 figure slides.
+  Small enough for Hugo to review in one sitting and to talk through each paper on stream.
 - **Verify everything.** Every arXiv id is resolved against the arXiv API (sweep.py / deck.py do this).
   Never type a title, author or date from memory. Web visuals carry a cite with the source URL.
 - **Live, not slides:** model or product launches from the week go in `analysis.json` → `news` for a
@@ -49,3 +50,5 @@ visually, with the title in **bold white condensed uppercase, top-left**. Recent
 
 - 2026-09-23: file created from the 09.11, 09.18 and 09.25 decks. Topic now comes out of the data, not before
   it. Review gate added. Web media allowed.
+- 2026-09-24: cut from 5–8 sections to 3 of about 4 papers, ≤2 visuals each. The 09.25 research came out
+  at 9 themes, 58 papers and 168 visuals, too much to review or to stream.

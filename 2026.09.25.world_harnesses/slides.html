@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Harnesses &middot; hu-po &middot; 2026.09.25</title>
+<style>
+  :root{
+    --bg:#0B0E0F; --panel:#141A1B; --ink:#E9EFED; --muted:#93A29E; --faint:#63736F;
+    --live:#56E0BE; --rule:#212A2A;
+    --sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono","DejaVu Sans Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:#000;color:var(--ink);font-family:var(--sans);overflow:hidden}
+
+  #stage{position:fixed;inset:0;background:#000;overflow:hidden}
+  #deck{width:1920px;height:1080px;position:absolute;left:0;top:0;transform-origin:0 0;background:var(--bg);overflow:hidden}
+  .slide{position:absolute;inset:0;display:none}
+  .slide.on{display:grid}
+
+  /* title */
+  .title{grid-template-rows:1fr;padding:0}
+  .title img{width:100%;height:100%;object-fit:contain;background:var(--bg);display:block}
+
+  /* section divider */
+  .sec{grid-template-rows:1fr;padding:100px 130px}
+  .secbody{display:flex;flex-direction:column;justify-content:center;gap:38px;max-width:1520px}
+  .sec .num{font-family:var(--mono);font-size:30px;letter-spacing:.2em;color:var(--live)}
+  .sec h2{font-size:94px;line-height:1.03;letter-spacing:-.03em;font-weight:700;text-wrap:balance}
+  .sec .blurb{font-size:36px;line-height:1.42;color:var(--muted);max-width:1340px;
+              padding-top:30px;border-top:1px solid var(--rule)}
+
+  /* figure */
+  .fig{grid-template-rows:1fr auto auto;padding:38px 56px 28px;gap:14px}
+  .fig .frame{min-height:0;background:#fff;border:1px solid var(--rule);padding:16px}
+  .fig img,.fig video{width:100%;height:100%;object-fit:contain;display:block}
+  .fig .frame.dark{background:#000}
+  .fig .ctx{font-size:25px;line-height:1.42;color:var(--ink);text-align:left;
+            max-width:1660px;justify-self:center;text-wrap:pretty}
+  .fig .ctx b{color:#fff;font-weight:600}
+  .fig .cite{font-family:var(--mono);font-size:21px;letter-spacing:.03em;color:var(--faint);text-align:center}
+
+  /* references */
+  .refs{grid-template-rows:1fr;padding:56px 80px}
+  .reflist{display:grid;grid-template-columns:repeat(3,1fr);gap:0 44px;align-content:center}
+  .ref{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .ref code{font-family:var(--mono);font-size:17px;color:var(--live)}
+  .ref .t b{display:block;font-size:19px;font-weight:600;line-height:1.22}
+  .ref .t span{font-family:var(--mono);font-size:15px;color:var(--faint)}
+
+  /* overview */
+  #overview{position:fixed;inset:0;background:rgba(6,9,10,.97);z-index:20;display:none;overflow-y:auto;padding:26px}
+  body.ov #overview{display:block}
+  .ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+  .ov{background:var(--panel);border:1px solid var(--rule);padding:0;cursor:pointer;
+      display:flex;flex-direction:column;gap:0;text-align:left;color:inherit;font:inherit;overflow:hidden}
+  .ov:hover,.ov:focus-visible{border-color:var(--live);outline:none}
+  .ov img{width:100%;aspect-ratio:16/10;object-fit:contain;background:#fff;display:block}
+  .ovcard{width:100%;aspect-ratio:16/10;background:linear-gradient(135deg,#182120,#0E1414);display:block}
+  .ov em{font-family:var(--mono);font-size:11px;font-style:normal;color:var(--muted);
+         padding:7px 8px;line-height:1.3;letter-spacing:.02em}
+  .ov.cur{border-color:var(--live)}
+  .ov.cur em{color:var(--live)}
+
+  /* hud */
+  #hud{position:fixed;left:0;right:0;bottom:0;display:flex;gap:16px;align-items:center;
+       padding:9px 16px;font-family:var(--mono);font-size:12px;letter-spacing:.09em;color:var(--faint);
+       background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,0));pointer-events:none;z-index:10}
+  #hud .grow{flex:1}
+  #prog{position:fixed;left:0;top:0;height:3px;background:var(--live);width:0;z-index:11}
+  body.clean #hud,body.clean #prog{opacity:0}
+  @media (prefers-reduced-motion:no-preference){#prog{transition:width .14s linear}}
+</style>
+<style>.cite a,.ref a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}.cite a:hover,.ref a:hover{color:var(--live)}</style>
+</head>
+<body>
+<div id="prog"></div>
+<div id="stage"><div id="deck"><section class="slide title"><img src="thumbnail.jpg" alt="World Harnesses"></section><section class="slide sec"><div class="secbody"><p class="num">01 / 03</p><h2>World models with memory and geometry</h2><p class="blurb">Four world models from this week: 3D-aware scene memory, geometry-native latents, one predictive interface across domains, and real-time keyboard-and-text control.</p></div></section><section class="slide fig"><div class="frame"><img src="figures/2609.24984_S0-F1.jpg" alt="WorldCrafter F1"></div><p class="ctx">WorldCrafter: camera-controlled exploration of static (a) and dynamic (b) scenes with reconstructed point clouds, subjects re-entering view (c), and scenes generated from text alone (d).</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24984" data-local="figures/.2609.24984.pdf" target="_blank" rel="noopener">Yu et al. &middot; WorldCrafter &middot; Fig. 1 &middot; arXiv:2609.24984</a></p></section><section class="slide fig"><div class="frame"><video src="figures/web_wcrafter-classroom.mp4" muted loop playsinline preload="metadata"></video></div><p class="ctx">WorldCrafter-generated video that explores a classroom and revisits previously observed viewpoints under WASD and arrow-key camera control.</p><p class="cite"><a href="https://drexubery.github.io/WorldCrafter/" target="_blank" rel="noopener">WorldCrafter project page</a> &middot; <a href="https://arxiv.org/pdf/2609.24984" data-local="figures/.2609.24984.pdf" target="_blank" rel="noopener">arXiv:2609.24984</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.17909_S0-F1.jpg" alt="Zing-0.5 F1"></div><p class="ctx">Zing-0.5: twelve generated environments across visual styles, from photoreal city and desert scenes to pixel-art, kart-racing and anime worlds.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.17909" data-local="figures/.2609.17909.pdf" target="_blank" rel="noopener">Chen et al. &middot; Zing-0.5 &middot; Fig. 1 &middot; arXiv:2609.17909</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.17909_S1-F2.jpg" alt="Zing-0.5 F2"></div><p class="ctx">Six frames from one interactive Zing-0.5 session: key symbols show movement inputs, pink labels show text instructions (cheer, open an umbrella), with recording timestamps.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.17909" data-local="figures/.2609.17909.pdf" target="_blank" rel="noopener">Chen et al. &middot; Zing-0.5 &middot; Fig. 2 &middot; arXiv:2609.17909</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.24981_S3-F2.jpg" alt="GAE F2"></div><p class="ctx">GAE: Stage 1 compresses frozen geometry-foundation features into a diffusable latent with a separate RGB head; Stage 2 flow-matches generated-view latents conditioned on reference latents, camera rays and text.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24981" data-local="figures/.2609.24981.pdf" target="_blank" rel="noopener">Lu et al. &middot; GAE &middot; Fig. 2 &middot; arXiv:2609.24981</a></p></section><section class="slide fig"><div class="frame"><video src="figures/web_gae-progressive.mp4" muted loop playsinline preload="metadata"></video></div><p class="ctx">GAE image-to-video generation on RealEstate10K, shown as progressive RGB and geometry output.</p><p class="cite"><a href="https://jiah-cloud.github.io/GAE.github.io/" target="_blank" rel="noopener">GAE project page</a> &middot; <a href="https://arxiv.org/pdf/2609.24981" data-local="figures/.2609.24981.pdf" target="_blank" rel="noopener">arXiv:2609.24981</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.20800_S3-F2.jpg" alt="JEPA-Anything F2"></div><p class="ctx">JEPA-Anything scenario atlas: domain contexts and outputs across terminal readout, latent world dynamics and scientific analysis, all through one factorized predictive-state interface.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.20800" data-local="figures/.2609.20800.pdf" target="_blank" rel="noopener">Cui et al. &middot; JEPA-Anything &middot; Fig. 2 &middot; arXiv:2609.20800</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.20800_S3-F5.jpg" alt="JEPA-Anything F5"></div><p class="ctx">(a) Relative MSE reduction of JEPA-Anything vs standard JEPA on nine prediction tasks (five-seed means). (b) CausalWorld closed-loop control return, mean ± SD over five seeds.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.20800" data-local="figures/.2609.20800.pdf" target="_blank" rel="noopener">Cui et al. &middot; JEPA-Anything &middot; Fig. 5 &middot; arXiv:2609.20800</a></p></section><section class="slide sec"><div class="secbody"><p class="num">02 / 03</p><h2>Grounding robot policies</h2><p class="blurb">Four robot papers put explicit structure under the policy: 3D object grounding, a command interface for an off-the-shelf VLM, an action tokenizer, and features distilled from a world model.</p></div></section><section class="slide fig"><div class="frame"><img src="figures/2609.23863_S1-F1.jpg" alt="Grounded Action Model F1"></div><p class="ctx">Grounded Action Model: language, 2D point or box prompts go through a pretrained 3D grounding model into image and detection tokens for action prediction, evaluated in and out of domain.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.23863" data-local="figures/.2609.23863.pdf" target="_blank" rel="noopener">Zhang et al. &middot; Grounded Action Model &middot; Fig. 1 &middot; arXiv:2609.23863</a></p></section><section class="slide fig"><div class="frame"><video src="figures/web_gam-sort-ood.mp4" muted loop playsinline preload="metadata"></video></div><p class="ctx">GAM rollout on a Franka arm: sort objects into bowls, out-of-distribution scene.</p><p class="cite"><a href="https://grounded-action-model.github.io/" target="_blank" rel="noopener">Grounded Action Model project page</a> &middot; <a href="https://arxiv.org/pdf/2609.23863" data-local="figures/.2609.23863.pdf" target="_blank" rel="noopener">arXiv:2609.23863</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.22966_S1-F1.jpg" alt="Robo Dawn F1"></div><p class="ctx">Robo Dawn transfers a general-purpose VLM to robot control through a human-intuitive action interface and in-context demonstrations.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.22966" data-local="figures/.2609.22966.pdf" target="_blank" rel="noopener">Guo et al. &middot; Robo Dawn &middot; Fig. 1 &middot; arXiv:2609.22966</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.22966_S3-F2.jpg" alt="Robo Dawn F2"></div><p class="ctx">Robo Dawn loop: the VLM sees multi-view observations, state, feedback and memory, reasons, and emits semantic commands that are grounded into planned motions; outcomes return as feedback.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.22966" data-local="figures/.2609.22966.pdf" target="_blank" rel="noopener">Guo et al. &middot; Robo Dawn &middot; Fig. 2 &middot; arXiv:2609.22966</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.18487_S4-F1.jpg" alt="ActionPiece F1"></div><p class="ctx">ActionPiece tokenizer: each eight-step action chunk becomes 16 discrete tokens; anchor, near and far chunks by physical action distance train a rank-preservation loss alongside reconstruction.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.18487" data-local="figures/.2609.18487.pdf" target="_blank" rel="noopener">Lian et al. &middot; ActionPiece &middot; Fig. 1 &middot; arXiv:2609.18487</a></p></section><section class="slide fig"><div class="frame"><img src="figures/web_actionpiece-prc.jpg" alt="ActionPiece project page"></div><p class="ctx">Within-cohort success rank vs (a) reconstruction-fidelity rank and (b) physical-rank-consistency rank over 55 evaluations; (c) LIBERO-Plus success of matched tokenizers.</p><p class="cite"><a href="https://deepcybo-physai.github.io/ActionPiece/" target="_blank" rel="noopener">ActionPiece project page</a> &middot; <a href="https://arxiv.org/pdf/2609.18487" data-local="figures/.2609.18487.pdf" target="_blank" rel="noopener">arXiv:2609.18487</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.24682_S1-F1.jpg" alt="THAW-VLA F1"></div><p class="ctx">THAW-VLA (0.8B): (a) LIBERO four-suite mean success vs parameter count for VLAs and world-model policies; (b) peak VRAM and latency of one inference against a 32 GB RTX 5090.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24682" data-local="figures/.2609.24682.pdf" target="_blank" rel="noopener">Dao et al. &middot; THAW-VLA &middot; Fig. 1 &middot; arXiv:2609.24682</a></p></section><section class="slide fig"><div class="frame"><video src="figures/web_thaw-rollouts.mp4" muted loop playsinline preload="metadata"></video></div><p class="ctx">THAW-VLA (0.8B) real-robot rollouts: single-arm fruit and egg pick-and-place (AgileX Nero), bimanual fruit handover (TRIP-Bag); inference on one RTX 5090.</p><p class="cite"><a href="https://thaw-vla.trung-dt.com/" target="_blank" rel="noopener">THAW-VLA project page</a> &middot; <a href="https://arxiv.org/pdf/2609.24682" data-local="figures/.2609.24682.pdf" target="_blank" rel="noopener">arXiv:2609.24682</a></p></section><section class="slide sec"><div class="secbody"><p class="num">03 / 03</p><h2>Harness self-improvement</h2><p class="blurb">The prompts, tools, memory and control flow around a frozen model are searched, regularized and distilled like weights. One week after the 09.18 recursive self-improvement stream.</p></div></section><section class="slide fig"><div class="frame"><img src="figures/2609.20519_S0-F1.jpg" alt="SoL-Pi F1"></div><p class="ctx">SoL-Pi: a research AI inspects execution traces, proposes harness changes and filters them through capability and cost gates; (b) held-out EdgeBench score and API cost vs Codex, Claude Code and Pi.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.20519" data-local="figures/.2609.20519.pdf" target="_blank" rel="noopener">Liu et al. &middot; SoL-Pi &middot; Fig. 1 &middot; arXiv:2609.20519</a></p></section><section class="slide fig"><div class="frame"><img src="figures/web_solpi_action_fusion.gif" alt="SoL-Pi project page"></div><p class="ctx">SoL-Pi Action Fusion: baseline needs three model API calls for an edit, its follow-up command and the next action; the fused harness runs the follow-up locally after a successful edit, using two.</p><p class="cite"><a href="https://nvlabs.github.io/SoL-Pi/" target="_blank" rel="noopener">SoL-Pi project page</a> &middot; <a href="https://arxiv.org/pdf/2609.20519" data-local="figures/.2609.20519.pdf" target="_blank" rel="noopener">arXiv:2609.20519</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.24972_S3-F2.jpg" alt="RRSI F2"></div><p class="ctx">RRSI overview: proposal-side constraints control how search capacity is used; selection-side constraints control which measured improvements become permanent harness state.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24972" data-local="figures/.2609.24972.pdf" target="_blank" rel="noopener">Xia et al. &middot; RRSI &middot; Fig. 2 &middot; arXiv:2609.24972</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.24972_S1-F1.jpg" alt="RRSI F1"></div><p class="ctx">(a) Relative gain on the evolve split vs on OOD held-out tasks for harness-evolution methods; dashed line is 1:1 transfer. (b–d) OOD held-out score of initial harness H₀, prior-method average and RRSI.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24972" data-local="figures/.2609.24972.pdf" target="_blank" rel="noopener">Xia et al. &middot; RRSI &middot; Fig. 1 &middot; arXiv:2609.24972</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.24974_S3-F1.jpg" alt="Harness-Zero F1"></div><p class="ctx">Harness-Zero: (1) evolve a private harness; (2) a harnessing agent passes or replaces each student proposal under the fixed target harness; (3) SFT the student on reviewed trajectories and deploy it under the target harness alone.</p><p class="cite"><a href="https://arxiv.org/pdf/2609.24974" data-local="figures/.2609.24974.pdf" target="_blank" rel="noopener">Ye et al. &middot; Harness-Zero &middot; Fig. 1 &middot; arXiv:2609.24974</a></p></section><section class="slide fig"><div class="frame"><img src="figures/2609.15779_Sx1-F1.jpg" alt="EvoOntology F1"></div><p class="ctx">EvoOntology: a data agent exploring heterogeneous sources directly (a) vs through an ontology layer revised by a diagnose–attribute–patch–evaluate loop (b).</p><p class="cite"><a href="https://arxiv.org/pdf/2609.15779" data-local="figures/.2609.15779.pdf" target="_blank" rel="noopener">Chong et al. &middot; EvoOntology &middot; Fig. 1 &middot; arXiv:2609.15779</a></p></section><section class="slide fig"><div class="frame"><img src="figures/web_evoontology_content_layer.jpg" alt="EvoOntology GitHub README"></div><p class="ctx">EvoOntology explorer, content layer of one ontology version: terms, mappings, constraints and evidence nodes with semantic and structural edges.</p><p class="cite"><a href="https://github.com/ruc-datalab/EvoOntology" target="_blank" rel="noopener">EvoOntology GitHub README</a> &middot; <a href="https://arxiv.org/pdf/2609.15779" data-local="figures/.2609.15779.pdf" target="_blank" rel="noopener">arXiv:2609.15779</a></p></section><section class="slide refs"><div class="reflist"><div class="ref"><code>2609.24984</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.24984" data-local="figures/.2609.24984.pdf" target="_blank" rel="noopener">WorldCrafter</a></b><span>Yu et al. &middot; 2026-09-21</span></div></div><div class="ref"><code>2609.17909</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.17909" data-local="figures/.2609.17909.pdf" target="_blank" rel="noopener">Zing-0.5</a></b><span>Chen et al. &middot; 2026-09-15</span></div></div><div class="ref"><code>2609.24981</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.24981" data-local="figures/.2609.24981.pdf" target="_blank" rel="noopener">GAE</a></b><span>Lu et al. &middot; 2026-09-21</span></div></div><div class="ref"><code>2609.20800</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.20800" data-local="figures/.2609.20800.pdf" target="_blank" rel="noopener">JEPA-Anything</a></b><span>Cui et al. &middot; 2026-09-17</span></div></div><div class="ref"><code>2609.23863</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.23863" data-local="figures/.2609.23863.pdf" target="_blank" rel="noopener">Grounded Action Model</a></b><span>Zhang et al. &middot; 2026-09-20</span></div></div><div class="ref"><code>2609.22966</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.22966" data-local="figures/.2609.22966.pdf" target="_blank" rel="noopener">Robo Dawn</a></b><span>Guo et al. &middot; 2026-09-19</span></div></div><div class="ref"><code>2609.18487</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.18487" data-local="figures/.2609.18487.pdf" target="_blank" rel="noopener">ActionPiece</a></b><span>Lian et al. &middot; 2026-09-16</span></div></div><div class="ref"><code>2609.24682</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.24682" data-local="figures/.2609.24682.pdf" target="_blank" rel="noopener">THAW-VLA</a></b><span>Dao et al. &middot; 2026-09-21</span></div></div><div class="ref"><code>2609.20519</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.20519" data-local="figures/.2609.20519.pdf" target="_blank" rel="noopener">SoL-Pi</a></b><span>Liu et al. &middot; 2026-09-17</span></div></div><div class="ref"><code>2609.24972</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.24972" data-local="figures/.2609.24972.pdf" target="_blank" rel="noopener">RRSI</a></b><span>Xia et al. &middot; 2026-09-21</span></div></div><div class="ref"><code>2609.24974</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.24974" data-local="figures/.2609.24974.pdf" target="_blank" rel="noopener">Harness-Zero</a></b><span>Ye et al. &middot; 2026-09-21</span></div></div><div class="ref"><code>2609.15779</code><div class="t"><b><a href="https://arxiv.org/pdf/2609.15779" data-local="figures/.2609.15779.pdf" target="_blank" rel="noopener">EvoOntology</a></b><span>Chong et al. &middot; 2026-09-14</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://drexubery.github.io/WorldCrafter/" target="_blank" rel="noopener">WorldCrafter project page</a></b><span>drexubery.github.io/WorldCrafter/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://jiah-cloud.github.io/GAE.github.io/" target="_blank" rel="noopener">GAE project page</a></b><span>jiah-cloud.github.io/GAE.github.io/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://grounded-action-model.github.io/" target="_blank" rel="noopener">Grounded Action Model project page</a></b><span>grounded-action-model.github.io/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://deepcybo-physai.github.io/ActionPiece/" target="_blank" rel="noopener">ActionPiece project page</a></b><span>deepcybo-physai.github.io/ActionPiece/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://thaw-vla.trung-dt.com/" target="_blank" rel="noopener">THAW-VLA project page</a></b><span>thaw-vla.trung-dt.com/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://nvlabs.github.io/SoL-Pi/" target="_blank" rel="noopener">SoL-Pi project page</a></b><span>nvlabs.github.io/SoL-Pi/</span></div></div><div class="ref"><code>web</code><div class="t"><b><a href="https://github.com/ruc-datalab/EvoOntology" target="_blank" rel="noopener">EvoOntology GitHub README</a></b><span>github.com/ruc-datalab/EvoOntology</span></div></div></div></section></div></div><div id="overview"><div class="ovgrid"><button class="ov" data-i="0"><img src="thumbnail.jpg" alt="" loading="lazy"><em>1. Title</em></button><button class="ov" data-i="1"><span class="ovcard"></span><em>2. World models with memory and geometry</em></button><button class="ov" data-i="2"><img src="figures/2609.24984_S0-F1.jpg" alt="" loading="lazy"><em>3. WorldCrafter F1</em></button><button class="ov" data-i="3"><span class="ovcard"></span><em>4. WorldCrafter project page</em></button><button class="ov" data-i="4"><img src="figures/2609.17909_S0-F1.jpg" alt="" loading="lazy"><em>5. Zing-0.5 F1</em></button><button class="ov" data-i="5"><img src="figures/2609.17909_S1-F2.jpg" alt="" loading="lazy"><em>6. Zing-0.5 F2</em></button><button class="ov" data-i="6"><img src="figures/2609.24981_S3-F2.jpg" alt="" loading="lazy"><em>7. GAE F2</em></button><button class="ov" data-i="7"><span class="ovcard"></span><em>8. GAE project page</em></button><button class="ov" data-i="8"><img src="figures/2609.20800_S3-F2.jpg" alt="" loading="lazy"><em>9. JEPA-Anything F2</em></button><button class="ov" data-i="9"><img src="figures/2609.20800_S3-F5.jpg" alt="" loading="lazy"><em>10. JEPA-Anything F5</em></button><button class="ov" data-i="10"><span class="ovcard"></span><em>11. Grounding robot policies</em></button><button class="ov" data-i="11"><img src="figures/2609.23863_S1-F1.jpg" alt="" loading="lazy"><em>12. Grounded Action Model F1</em></button><button class="ov" data-i="12"><span class="ovcard"></span><em>13. Grounded Action Model project page</em></button><button class="ov" data-i="13"><img src="figures/2609.22966_S1-F1.jpg" alt="" loading="lazy"><em>14. Robo Dawn F1</em></button><button class="ov" data-i="14"><img src="figures/2609.22966_S3-F2.jpg" alt="" loading="lazy"><em>15. Robo Dawn F2</em></button><button class="ov" data-i="15"><img src="figures/2609.18487_S4-F1.jpg" alt="" loading="lazy"><em>16. ActionPiece F1</em></button><button class="ov" data-i="16"><img src="figures/web_actionpiece-prc.jpg" alt="" loading="lazy"><em>17. ActionPiece project page</em></button><button class="ov" data-i="17"><img src="figures/2609.24682_S1-F1.jpg" alt="" loading="lazy"><em>18. THAW-VLA F1</em></button><button class="ov" data-i="18"><span class="ovcard"></span><em>19. THAW-VLA project page</em></button><button class="ov" data-i="19"><span class="ovcard"></span><em>20. Harness self-improvement</em></button><button class="ov" data-i="20"><img src="figures/2609.20519_S0-F1.jpg" alt="" loading="lazy"><em>21. SoL-Pi F1</em></button><button class="ov" data-i="21"><img src="figures/web_solpi_action_fusion.gif" alt="" loading="lazy"><em>22. SoL-Pi project page</em></button><button class="ov" data-i="22"><img src="figures/2609.24972_S3-F2.jpg" alt="" loading="lazy"><em>23. RRSI F2</em></button><button class="ov" data-i="23"><img src="figures/2609.24972_S1-F1.jpg" alt="" loading="lazy"><em>24. RRSI F1</em></button><button class="ov" data-i="24"><img src="figures/2609.24974_S3-F1.jpg" alt="" loading="lazy"><em>25. Harness-Zero F1</em></button><button class="ov" data-i="25"><img src="figures/2609.15779_Sx1-F1.jpg" alt="" loading="lazy"><em>26. EvoOntology F1</em></button><button class="ov" data-i="26"><img src="figures/web_evoontology_content_layer.jpg" alt="" loading="lazy"><em>27. EvoOntology GitHub README</em></button><button class="ov" data-i="27"><span class="ovcard"></span><em>28. References</em></button></div></div><div id="hud">
+  <span id="counter">1 / 66</span>
+  <span id="where"></span>
+  <span class="grow"></span>
+  <span>&larr; &rarr; SLIDE &middot; [ ] SECTION &middot; O OVERVIEW &middot; F FULLSCREEN &middot; C CLEAN</span>
+</div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var deck=document.getElementById('deck');
+  var counter=document.getElementById('counter');
+  var where=document.getElementById('where');
+  var prog=document.getElementById('prog');
+  var ovs=[].slice.call(document.querySelectorAll('.ov'));
+  var cards=[];
+  slides.forEach(function(s,k){ if(s.classList.contains('sec')) cards.push(k); });
+  var i=0;
+
+  function label(k){
+    var b=ovs[k]?ovs[k].querySelector('em'):null;
+    if(!b) return '';
+    return b.textContent.replace(/^\d+\.\s*/,'');
+  }
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('on',k===i);});
+    ovs.forEach(function(b,k){b.classList.toggle('cur',k===i);});
+    counter.textContent=(i+1)+' / '+slides.length;
+    where.textContent=label(i);
+    prog.style.width=(i/(slides.length-1)*100)+'%';
+    try{history.replaceState(null,'','#'+(i+1));}catch(e){}
+  }
+  function fit(){
+    var s=Math.min(innerWidth/1920,innerHeight/1080);
+    deck.style.transform='translate('+((innerWidth-1920*s)/2)+'px,'+((innerHeight-1080*s)/2)+'px) scale('+s+')';
+  }
+  addEventListener('resize',fit); fit();
+
+  function fromHash(){var n=parseInt((location.hash||'').replace('#',''),10);return isNaN(n)?0:n-1;}
+  show(fromHash());
+  addEventListener('hashchange',function(){if(fromHash()!==i)show(fromHash());});
+
+  function paper(dir){
+    var t=null;
+    for(var k=0;k<cards.length;k++){
+      if(dir>0&&cards[k]>i){t=cards[k];break;}
+      if(dir<0&&cards[k]<i)t=cards[k];
+    }
+    if(t!==null)show(t);
+  }
+
+  document.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(document.body.classList.contains('ov')&&(k==='Escape'||k==='o'||k==='O')){
+      document.body.classList.remove('ov');e.preventDefault();return;}
+    if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='j'){show(i+1);e.preventDefault();}
+    else if(k==='ArrowLeft'||k==='PageUp'||k==='k'){show(i-1);e.preventDefault();}
+    else if(k===']'){paper(1);e.preventDefault();}
+    else if(k==='['){paper(-1);e.preventDefault();}
+    else if(k==='Home'){show(0);}
+    else if(k==='End'){show(slides.length-1);}
+    else if(k==='o'||k==='O'){document.body.classList.add('ov');
+      var c=ovs[i];if(c)c.scrollIntoView({block:'center'});e.preventDefault();}
+    else if(k==='c'||k==='C'){document.body.classList.toggle('clean');}
+    else if(k==='f'||k==='F'){
+      if(document.fullscreenElement)document.exitFullscreen();
+      else if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen();}
+  });
+
+  ovs.forEach(function(b){b.addEventListener('click',function(){
+    show(parseInt(b.dataset.i,10));document.body.classList.remove('ov');});});
+
+  document.getElementById('stage').addEventListener('click',function(e){
+    show(e.clientX<innerWidth*0.28?i-1:i+1);});
+})();
+</script>
+<script>(function(){var v=[].slice.call(document.querySelectorAll('.slide video'));if(!v.length)return;
+function sync(){v.forEach(function(x){var on=x.closest('.slide').classList.contains('on');if(on&&x.paused){x.currentTime=0;x.play().catch(function(){});}if(!on&&!x.paused)x.pause();});}
+new MutationObserver(sync).observe(document.getElementById('deck'),{attributes:true,subtree:true,attributeFilter:['class']});sync();})();</script>
+<script>(function(){[].slice.call(document.querySelectorAll('.slide a')).forEach(function(a){
+a.addEventListener('click',function(e){e.stopPropagation();});
+var l=a.getAttribute('data-local');if(l&&location.protocol.indexOf('http')===0)fetch(l,{method:'HEAD'}).then(function(r){if(r.ok)a.href=l;}).catch(function(){});});})();</script>
+</body>
+</html>

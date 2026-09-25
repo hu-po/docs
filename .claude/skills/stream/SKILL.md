@@ -43,9 +43,9 @@ log. Override the model with `STREAM_MODEL=<model>`.
 
 ### Research rounds
 
-The agent reads the top ~80 abstracts. It clusters them into 5–9 themes, where each theme needs ≥3
-papers. For each paper it pulls figures (arXiv HTML → ar5iv → PDF crop) plus project-page and README
-media, **opens every image it lists**, and keeps the 1–3 best. It adds ancestors and callbacks where
+The agent reads the top ~80 abstracts. It keeps the 3 strongest themes of about 4 papers each (a
+theme needs ≥3 papers). For each paper it pulls figures (arXiv HTML → ar5iv → PDF crop) plus project-page and README
+media, **opens every image it lists**, and keeps the 1–2 best. It adds ancestors and callbacks where
 they sharpen a theme, and lists the week's launches for a live (no-slide) cold open. It proposes title
 candidates but never chooses one.
 

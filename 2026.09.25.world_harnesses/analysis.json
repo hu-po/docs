@@ -1,0 +1,189 @@
+{
+ "summary": "The week's heaviest signal is agents improving their own scaffolding: harness self-improvement papers from Google (RRSI) and NVIDIA (SoL-Pi) top the ledger, next to a distillation paper that folds harness gains back into the weights and an ontology layer that data agents revise as they work. Outside agents, video world models are pushing on 3D-consistent memory, geometry-native latents and playability. Robot papers argue for grounding (3D objects, action tokens, world-model features, a VLM command interface) over raw VLA scale.",
+ "title_candidates": [
+  {
+   "title": "Figure Review 001: The Harness Is the Model",
+   "why": "top two papers and a harness-distillation paper all treat the scaffolding as the thing being trained"
+  },
+  {
+   "title": "Figure Review 001: Harnesses, Worlds, and Robots",
+   "why": "a plain roundup title that covers the three themes"
+  }
+ ],
+ "themes": [
+  {
+   "id": "t1",
+   "name": "Harness self-improvement",
+   "why": "The prompts, tools, memory and control flow around a frozen model are now searched, regularized and distilled like weights, and the artifacts agents use (ontologies, skills) are revised from execution feedback. The 09.18 RSI stream, one week on.",
+   "papers": [
+    {
+     "id": "2609.20519",
+     "why": "SoL-Pi: scales auto-research loops over many environments for token-efficient harness discovery",
+     "figs": [
+      "2609.20519_S0-F1"
+     ],
+     "media": [
+      "web_solpi_teaser"
+     ]
+    },
+    {
+     "id": "2609.24972",
+     "why": "RRSI: constrains harness edit proposals so self-improvement gains survive out of distribution",
+     "figs": [
+      "2609.24972_S1-F1",
+      "2609.24972_S3-F2"
+     ],
+     "media": []
+    },
+    {
+     "id": "2609.24974",
+     "why": "Harness-Zero: distills harness-induced behavior into model weights so gains persist without the harness",
+     "figs": [
+      "2609.24974_S3-F1"
+     ],
+     "media": []
+    },
+    {
+     "id": "2609.15779",
+     "why": "EvoOntology: a self-evolving semantic layer between data agents and heterogeneous data",
+     "figs": [
+      "2609.15779_Sx1-F1"
+     ],
+     "media": [
+      "web_evoontology_content_layer"
+     ]
+    }
+   ],
+   "ancestors": [
+    "2408.08435",
+    "2305.16291"
+   ],
+   "callbacks": [
+    "2026.09.18.recursive_self_improvement"
+   ]
+  },
+  {
+   "id": "t2",
+   "name": "World models with memory and geometry",
+   "why": "Video world models are adding 3D-aware memory, geometry-native latents and real-time control to stay consistent over long horizons.",
+   "papers": [
+    {
+     "id": "2609.24984",
+     "why": "WorldCrafter: camera-queryable implicit 3D memory for long-horizon consistent video",
+     "figs": [
+      "2609.24984_S0-F1"
+     ],
+     "media": [
+      "web_wcrafter-classroom"
+     ]
+    },
+    {
+     "id": "2609.24981",
+     "why": "GAE: a geometry-native latent space shared by perception and generation",
+     "figs": [
+      "2609.24981_S3-F2"
+     ],
+     "media": [
+      "web_gae-progressive"
+     ]
+    },
+    {
+     "id": "2609.20800",
+     "why": "JEPA-Anything: one predictive-factorization recipe across seven different world domains",
+     "figs": [
+      "2609.20800_S3-F2",
+      "2609.20800_S3-F5"
+     ],
+     "media": []
+    },
+    {
+     "id": "2609.17909",
+     "why": "Zing-0.5: 5B autoregressive playable world model with joint keyboard and text control",
+     "figs": [
+      "2609.17909_S1-F2",
+      "2609.17909_S3-F3"
+     ],
+     "media": []
+    }
+   ],
+   "ancestors": [
+    "2503.11651",
+    "2506.08009"
+   ],
+   "callbacks": [
+    "2026.09.11.world_action_models"
+   ]
+  },
+  {
+   "id": "t3",
+   "name": "Grounding robot policies",
+   "why": "Robot papers put explicit structure under the policy (3D grounding, action tokenizers, world-model features, VLM agent interfaces) instead of relying on end-to-end VLA scale.",
+   "papers": [
+    {
+     "id": "2609.23863",
+     "why": "Grounded Action Models: 3D object grounding as the robot foundation",
+     "figs": [
+      "2609.23863_S1-F1"
+     ],
+     "media": [
+      "web_gam-sort-ood"
+     ]
+    },
+    {
+     "id": "2609.22966",
+     "why": "RoboDawn: exposes robot control to an agentic VLM through discrete commands",
+     "figs": [
+      "2609.22966_S1-F1",
+      "2609.22966_S3-F2"
+     ],
+     "media": []
+    },
+    {
+     "id": "2609.18487",
+     "why": "ActionPiece: action tokenization that preserves adjustments across demonstrations",
+     "figs": [
+      "2609.18487_S4-F1"
+     ],
+     "media": [
+      "web_actionpiece-prc"
+     ]
+    },
+    {
+     "id": "2609.24682",
+     "why": "distills world-model representations into a compact VLA",
+     "figs": [
+      "2609.24682_S1-F1"
+     ],
+     "media": [
+      "web_thaw-rollouts"
+     ]
+    }
+   ],
+   "ancestors": [
+    "2307.15818",
+    "2406.09246"
+   ],
+   "callbacks": [
+    "2026.09.11.world_action_models"
+   ]
+  }
+ ],
+ "news": [
+  {
+   "what": "Anthropic releases Claude Opus 5.5 (Sep 22): first of the Claude 5.5 family; $4/$20 per 1M input/output tokens; launch post has accuracy-vs-cost charts",
+   "url": "https://www.anthropic.com/claude-opus-5-5"
+  },
+  {
+   "what": "OpenAI releases GPT-6 Sol and GPT-6 Luna (Sep 22) in ChatGPT, Codex and the API; API prices 50% lower than GPT-5.6 promotional pricing",
+   "url": "https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925"
+  },
+  {
+   "what": "Xiaomi open-sources MiMo-V2.6 Pro and Flash (Sep 22), with a technical report; weights on Hugging Face",
+   "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6"
+  },
+  {
+   "what": "xAI releases Grok 4.7 (Sep 21): 500k context, $2/$6 per 1M input/output tokens below 200k prompt tokens",
+   "url": "https://docs.x.ai/developers/release-notes"
+  }
+ ]
+}

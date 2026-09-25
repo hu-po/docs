@@ -44,12 +44,13 @@ into themes, each with a best visual that you have actually looked at, ready for
    `recent` and `ancestor` rows.
 3. Search the week's news: model and product launches, from the launch posts themselves, for `news`.
    Use WebSearch/WebFetch, and never use numbers you haven't read at the source.
-4. Write a first `analysis.json`: 5–8 themes that emerge from clusters of papers (a theme needs ≥3
-   papers, or 2 with very strong signals), plus title candidates. Build nothing yet.
+4. Write a first `analysis.json`: the 3 strongest themes that emerge from clusters of papers, about 4
+   papers each (a theme needs ≥3 papers, or 2 with very strong signals), plus title candidates. Name
+   the runner-up clusters in `analysis.md` under what you left out. Build nothing yet.
 
 **Later rounds.** Each round, do the most valuable thing still missing. Pick from:
 - **Visuals.** For themed papers that have no `figs` yet: `{{TOOLS}}/py figures.py pull {{DIR}} <ids>`, then
-  **open and look at every figure you intend to list** (Read the jpg). List only the 1–3 best per
+  **open and look at every figure you intend to list** (Read the jpg). List only the 1–2 best per
   paper. Fix bad crops with `figures.py crop` (the PDF page and box, in points).
   Run `{{TOOLS}}/py figures.py qa {{DIR}}` and resolve what it flags.
 - **Project pages and GitHub READMEs.** For papers whose ledger `links` have a `project` or `github`
@@ -82,7 +83,7 @@ into themes, each with a best visual that you have actually looked at, ready for
 
 ## Stop
 
-When every themed paper has a visual you have looked at, themes have settled, and there are ≥ 40
-candidate visuals across ≥ 5 themes, or after round {{MAX_ROUNDS}}: do the end-of-round steps, then
+When every themed paper has a visual you have looked at, themes have settled, and there are 3 themes
+of about 4 papers each, or after round {{MAX_ROUNDS}}: do the end-of-round steps, then
 add the line `RESEARCH DONE` as the last line of `log.md` and exit. If it is already there, exit
 immediately. If the network or arXiv is down, log that and exit. Never invent content.

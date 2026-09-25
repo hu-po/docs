@@ -2,7 +2,7 @@
 """The review gate: a local page where Hugo stars / vetoes before any deck is built.
 
   stream/py review.py build <stream-dir>              # writes <stream>/review.html (gitignored)
-  stream/py review.py serve <stream-dir> [--port 8767] # serves the folder on 127.0.0.1, saves picks.json
+  stream/py review.py serve <stream-dir> [--port N]    # serves the folder on 127.0.0.1 (a free port if no --port), saves picks.json
 
 Reads ledger.jsonl + analysis.json + figures/captions.json (+ picks.json to restore earlier choices).
 The Save button POSTs to /picks, which writes <stream>/picks.json (gitignored); "Save & start deck" also starts
@@ -10,7 +10,6 @@ the deck rounds and thumbnail prompts. Bound to 127.0.0.1 only; never published.
 """
 import datetime as dt, html, json, sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-from functools import partial
 from common import TOOLS, read_jsonl, stream_dir
 
 PAGE = r"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -67,10 +66,12 @@ function vote(obj,key,el){const cur=(obj[key]||{}).vote||0;const w=$("span",{cla
  const mk=(v,cls,label)=>$("button",{class:cls+(cur===v?" on":""),title:v>0?"star":"veto",on:{click:()=>{obj[key]=obj[key]||{};obj[key].vote=obj[key].vote===v?0:v;mark();render();}}},label);
  w.append(mk(1,"s","★"),mk(-1,"x","✕"));return w;}
 function fig(stem){const c=D.captions[stem]||{};return c;}
-function media(stem,cls){const f=D.files[stem];if(!f)return $("div",{class:"pmeta"},"missing "+stem);
- return /\.(mp4|webm|mov)$/.test(f)?$("video",{src:"figures/"+f,muted:"",loop:"",autoplay:"",playsinline:""}):$("img",{src:"figures/"+f,loading:"lazy",alt:stem});}
-function lightbox(stem){const lb=document.getElementById("lb");lb.innerHTML="";lb.append(media(stem),$("p",{},stem+" — "+(fig(stem).caption||"")));lb.classList.add("on");}
-document.getElementById("lb").onclick=()=>document.getElementById("lb").classList.remove("on");
+function media(stem,big){const f=D.files[stem];if(!f)return $("div",{class:"pmeta"},"missing "+stem);
+ if(!/\.(mp4|webm|mov)$/.test(f))return $("img",{src:"figures/"+f,loading:"lazy",alt:stem});
+ // the muted attribute does not mute a script-created video; only the property does
+ const v=$("video",{src:"figures/"+f,loop:"",autoplay:"",playsinline:"",preload:"metadata"});v.muted=true;if(big)v.controls=true;return v;}
+function lightbox(stem){const lb=document.getElementById("lb");lb.innerHTML="";lb.append(media(stem,true),$("p",{},stem+" — "+(fig(stem).caption||"")));lb.classList.add("on");}
+document.getElementById("lb").onclick=e=>{if(e.target.tagName==="VIDEO")return;const lb=e.currentTarget;lb.classList.remove("on");lb.innerHTML="";};
 function badges(r){const s=r.signals||{},b=[];
  if(s.hf_upvotes)b.push($("span",{class:"b"+(s.hf_upvotes>=100?" hot":"")},"HF ▲"+s.hf_upvotes));
  if(s.dair)b.push($("span",{class:"b hot"},"dair "+s.dair.split(" ").slice(0,3).join(" ")));
@@ -106,11 +107,11 @@ function render(){const app=document.getElementById("app");const y=scrollY;app.i
   const tn=$("input",{class:"note",placeholder:"theme note (optional)",value:(P.themes[t.id]||{}).note||""});tn.oninput=()=>{P.themes[t.id]=P.themes[t.id]||{};P.themes[t.id].note=tn.value;mark();};b.append(tn);
   for(const p of t.papers||[])b.append(paper(p));app.append(b);}
  const themed=new Set((A.themes||[]).flatMap(t=>(t.papers||[]).map(p=>p.id)));
- const rest=D.ledger.filter(r=>!themed.has(r.id)&&r.role!=="ancestor").slice(0,60);
+ const rest=D.ledger.filter(r=>!themed.has(r.id)&&r.role!=="ancestor").slice(0,15);
  const tb=$("table",{},rest.map(r=>{const v=(P.papers[r.id]||{}).vote||0;return $("tr",{style:v<0?"opacity:.4":""},$("td",{class:"n"},r.score),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("div",{},badges(r))),$("td",{},vote(P.papers,r.id)));}));
- app.append($("div",{class:"block"},$("h3",{},"Not in a theme — top of the ledger (star to pull one in)"),tb));
+ app.append($("div",{class:"block"},$("details",{},$("summary",{},"Not in a theme — top "+rest.length+" of the ledger (star to pull one in)"),tb)));
  const anc=D.ledger.filter(r=>r.role==="ancestor");
- if(anc.length)app.append($("div",{class:"block"},$("h3",{},"Ancestors — older papers this week keeps citing"),$("table",{},anc.map(r=>$("tr",{},$("td",{class:"n"},(r.signals.cited_by_week||[]).length+"×"),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("span",{class:"pmeta"}," "+r.published.slice(0,4))),$("td",{},vote(P.papers,r.id)))))));
+ if(anc.length)app.append($("div",{class:"block"},$("details",{},$("summary",{},anc.length+" ancestors — older papers this week keeps citing"),$("table",{},anc.map(r=>$("tr",{},$("td",{class:"n"},(r.signals.cited_by_week||[]).length+"×"),$("td",{},$("a",{href:r.links.abs,target:"_blank"},r.title),$("span",{class:"pmeta"}," "+r.published.slice(0,4))),$("td",{},vote(P.papers,r.id))))))));
  const nt=$("textarea",{rows:5,placeholder:"anything else for the deck agent: order, what to lead with, what to cut, a paper that's missing…"});nt.value=P.notes||"";nt.oninput=()=>{P.notes=nt.value;mark();};
  app.append($("div",{class:"block"},$("h3",{},"Notes"),nt));scrollTo(0,y);}
 async function save(go){P.saved=new Date().toISOString();
@@ -143,6 +144,12 @@ def build(d):
     print(f"review.html: {len(analysis.get('themes', []))} themes, {sum(len(t.get('papers', [])) for t in analysis.get('themes', []))} themed papers")
 
 
+def live(d):
+    """The stream folder now. Deck round 1 renames <date>.untitled to <date>.<title> under a running server."""
+    if d.is_dir(): return d
+    return next((p for p in sorted(d.parent.glob(d.name[:10] + ".*")) if p.is_dir()), d)
+
+
 def start_deck(d):
     """Kick off the deck rounds, then the thumbnail prompts, detached (stream/run.sh)."""
     import subprocess
@@ -151,23 +158,26 @@ def start_deck(d):
     if lock.exists(): return b"deck already running"
     lock.touch()
     log = open(d / "run.log", "a")
-    subprocess.Popen(["bash", "-c", f'"$0" deck {date}; "$0" thumbnail {date}; rm -f "{lock}"', str(TOOLS / "run.sh")],
+    subprocess.Popen(["bash", "-c", f'"$0" deck {date}; "$0" thumbnail {date}; rm -f "{d.parent}"/{date}.*/.deck-running', str(TOOLS / "run.sh")],
                      stdout=log, stderr=log, start_new_session=True, cwd=str(d.parent))
     print(f"[{dt.datetime.now():%H:%M:%S}] deck rounds started")
     return b"deck rounds started"
 
 
 class Handler(SimpleHTTPRequestHandler):
+    def __init__(self, request, client, server):
+        super().__init__(request, client, server, directory=str(live(server.stream)))
+
     def do_POST(self):
         if self.path.split("?")[0] != "/picks": self.send_error(404); return
         body = self.rfile.read(int(self.headers.get("Content-Length", 0)))
         try: picks = json.loads(body)
         except ValueError: self.send_error(400); return
-        (self.server.stream / "picks.json").write_text(json.dumps(picks, indent=1, ensure_ascii=False))
+        (live(self.server.stream) / "picks.json").write_text(json.dumps(picks, indent=1, ensure_ascii=False))
         print(f"[{dt.datetime.now():%H:%M:%S}] picks.json saved ({sum(1 for v in picks.get('papers', {}).values() if v.get('vote') == 1)} starred)")
         msg = b"ok"
         if "deck=1" in self.path:
-            msg = start_deck(self.server.stream)
+            msg = start_deck(live(self.server.stream))
         self.send_response(200); self.end_headers(); self.wfile.write(msg)
 
     def log_message(self, *a): pass
@@ -178,10 +188,10 @@ if __name__ == "__main__":
     cmd, d = sys.argv[1], stream_dir(sys.argv[2])
     if cmd == "build": build(d)
     elif cmd == "serve":
-        port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8767
+        port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 0
         build(d)
-        srv = ThreadingHTTPServer(("127.0.0.1", port), partial(Handler, directory=str(d)))
+        srv = ThreadingHTTPServer(("127.0.0.1", port), Handler)
         srv.stream = d
-        print(f"review: http://localhost:{port}/review.html")
+        print(f"review: http://localhost:{srv.server_address[1]}/review.html")
         srv.serve_forever()
     else: raise SystemExit(__doc__)

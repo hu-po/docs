@@ -8,6 +8,7 @@
   stream/py figures.py get   <stream-dir> <media-url> <stem> [--caption "..."] [--from <page-url>]
   stream/py figures.py qa    <stream-dir> [stems...]                     # flag crops worth a second look
   stream/py figures.py restore <stream-dir> [stems...]                   # rebuild missing files from captions.json
+  stream/py figures.py pdfs  <stream-dir> [ids...]                       # local PDF of every deck paper (slide links open it)
 
 Files land in <stream>/figures/ (gitignored). arXiv figures are named <id>_S<sec>-F<n>.jpg (same as past
 streams); web media are named web_<stem>.<ext>. Captions + provenance go to figures/captions.json.
@@ -87,6 +88,27 @@ def pdf_doc(aid):
         if not r: return None
         p.write_bytes(r.content)
     return fitz.open(p)
+
+
+def deck_pdfs(d, ids=None):
+    """Cache the PDF of every paper in deck.json (or the given ids) as figures/.<id>.pdf, the deck's local links."""
+    if not ids:
+        spec = json.loads((d / "deck.json").read_text()); ids = []
+        for sec in spec["sections"]:
+            for s in sec["slides"]:
+                a = s.get("paper") or s["fig"].split("_")[0]
+                if not s["fig"].startswith("web_") or s.get("paper"):
+                    if a not in ids: ids.append(a)
+    missing = []
+    for a in ids:
+        p = FIG / f".{a.replace('/', '')}.pdf"
+        if not p.exists():
+            r = get(f"https://arxiv.org/pdf/{a}")
+            if r and r.content[:4] == b"%PDF": p.write_bytes(r.content); time.sleep(1)
+            else: missing.append(a); continue
+        print(f"{a}  {p.stat().st_size / 1e6:.1f} MB")
+    if missing: print("no PDF: " + " ".join(missing))
+    return not missing
 
 
 def pdf_crop(doc, n):
@@ -315,6 +337,8 @@ if __name__ == "__main__":
         get_media(args[0], args[1], cap, page)
     elif cmd == "restore":
         sys.exit(1 if restore(set(args) or None) else 0)
+    elif cmd == "pdfs":
+        sys.exit(0 if deck_pdfs(d, args) else 1)
     elif cmd == "qa":
         qa(set(args) or None)
     else:
