@@ -4,9 +4,9 @@
 
 ### Links
 
-**YouTube:**
+**YouTube:** https://youtube.com/live/9YaJsc4Aux8
 
-**X:**
+**X:** https://x.com/i/broadcasts/1qxvveXYMeqxB
 
 **Slides:** [slides.html](slides.html)
 
