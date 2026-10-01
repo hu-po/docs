@@ -8,6 +8,8 @@
 
 **X:**
 
+**Slides:** [slides.html](slides.html)
+
 ### References
 
 Self-Play Pretraining with Zero Data
