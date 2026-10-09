@@ -23,10 +23,9 @@ I source my papers from the following places:
 - [ML-Papers-of-the-Week](https://github.com/dair-ai/ML-Papers-of-the-Week)
 - [EmergentMind](https://www.emergentmind.com/)
 - [alphaXiv](https://www.alphaxiv.org/)
-- [Semantic Scholar](https://www.semanticscholar.org/) (older papers this week's papers keep citing)
-- [X.com](https://x.com/i/lists/1653485531546767361) and [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week), by hand
-
-Stream prep is agent-assisted: see [`stream/`](stream/FORMAT.md) (sweep → analysis → review → deck).
+- [Semantic Scholar](https://www.semanticscholar.org/)
+- [X.com](https://x.com/i/lists/1653485531546767361)
+- [Reddit](https://www.reddit.com/user/deephugs/m/ml/top/?t=week)
 
 ### Citation
 
@@ -34,6 +33,6 @@ Stream prep is agent-assisted: see [`stream/`](stream/FORMAT.md) (sweep → anal
 @misc{hu-po-stream,
   title={hu-po livestreams},
   author={Hugo Ponte},
-  year={2025},
+  year={2026},
   url={https://github.com/hu-po/docs}
 }
